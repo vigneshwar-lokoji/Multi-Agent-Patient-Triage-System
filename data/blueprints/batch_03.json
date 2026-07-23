@@ -1,0 +1,1002 @@
+[
+  {
+    "blueprint_id": "ent_otitis_media_peds_01",
+    "condition_family": "ear_pain",
+    "department": "pediatrics",
+    "esi_levels": [4],
+    "age_range": [1, 9],
+    "probable_condition": "acute otitis media",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Ear pain with fever following an upper respiratory illness in a daycare-attending child is classic otitis media; stable vitals, non-urgent.",
+    "duration_options": ["1 day", "2 days", "3 days"],
+    "exact_problem": "ear pain and pulling at the ear, with fever",
+    "pain_location": "ear",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["low-grade fever in the evenings", "fever around 100-101F for two days"],
+    "chief_complaint_templates": [
+      "child keeps pulling at the ear and crying, fever since {duration}",
+      "ear pain and fussiness for {duration}, wont stop crying"
+    ],
+    "hpi_templates": [
+      "Child has been pulling at the ear and irritable for {duration}, with fever. Symptoms began after a cold with runny nose and cough picked up at daycare last week. Given {last_medication}.",
+      "Fussy and feverish for {duration}, tugging at the ear, poor sleep. Had a cold with runny nose at daycare before this started. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [100, 130],
+      "systolic_bp": [85, 100],
+      "diastolic_bp": [55, 70],
+      "respiratory_rate": [20, 28],
+      "temperature_c": [37.8, 38.8],
+      "spo2": [96, 99],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {
+        "recent_infections": ["cold with runny nose and cough, 1 week ago"],
+        "family_history": [],
+        "contributing_factors": ["recent cold with runny nose and cough"]
+      },
+      {
+        "medical_history": ["recurrent ear infections"],
+        "family_history": ["sibling: frequent ear infections"],
+        "contributing_factors": ["history of recurrent ear infections"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular toddler meals",
+        "sleep_routine": "disturbed by ear pain and crying at night",
+        "physical_activity": "attends daycare on weekdays",
+        "last_meal_options": ["few spoons of rice, refused rest", "milk, 2 hours ago"],
+        "contributing_factors": ["attends daycare on weekdays"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["warm compress on the ear"],
+        "pharmacy_meds_taken": ["paracetamol syrup"],
+        "last_medication_taken": "paracetamol syrup, 4 hours ago"
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "pediatrician visit for cold, 5 days ago"]
+  },
+  {
+    "blueprint_id": "ent_epistaxis_anticoagulant_01",
+    "condition_family": "bleeding",
+    "department": "emergency",
+    "esi_levels": [3],
+    "age_range": [60, 85],
+    "probable_condition": "anticoagulant-related epistaxis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Recurrent nosebleed on anticoagulant therapy with stable vitals is urgent but not immediately life-threatening; needs bleeding control and INR check.",
+    "duration_options": ["30 minutes", "1 hour", "45 minutes"],
+    "exact_problem": "bleeding from the nose, not stopping with pressure",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "nose bleeding for {duration}, wont stop",
+      "blood coming from nose since {duration}, tried pinching it"
+    ],
+    "hpi_templates": [
+      "Spontaneous nosebleed for {duration}, ongoing despite pinching the nose and leaning forward. On {last_medication}. No trauma reported.",
+      "Patient reports nose bleeding for {duration}, soaked through several tissues. Takes blood thinners regularly. Applied {home_remedies} without success."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [78, 102],
+      "systolic_bp": [140, 170],
+      "diastolic_bp": [80, 98],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [96, 99],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["atrial fibrillation", "hypertension"],
+        "medications": ["warfarin 5mg", "amlodipine 5mg"],
+        "family_history": [],
+        "contributing_factors": ["takes warfarin for atrial fibrillation"]
+      },
+      {
+        "medical_history": ["mechanical heart valve replacement"],
+        "medications": ["warfarin 5mg"],
+        "past_surgeries": ["heart valve replacement, 6 years ago"],
+        "family_history": [],
+        "contributing_factors": ["warfarin after valve replacement surgery"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular home-cooked meals",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "light walking daily",
+        "last_meal_options": ["breakfast, 3 hours ago", "lunch, 2 hours ago"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["pinching the nose and leaning forward", "ice pack on the bridge of the nose"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "warfarin 5mg, this morning as usual",
+        "contributing_factors": ["warfarin dose taken as usual this morning"]
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "ENT clinic for nosebleed, a few months ago"]
+  },
+  {
+    "blueprint_id": "ent_peritonsillar_abscess_01",
+    "condition_family": "throat_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [15, 40],
+    "probable_condition": "peritonsillar abscess",
+    "contributing_factors": [],
+    "red_flags": ["trismus (difficulty opening mouth)", "muffled voice", "uvula deviation"],
+    "rationale": "Worsening unilateral throat pain with trismus and muffled voice after inadequately treated tonsillitis suggests peritonsillar abscess; needs urgent surgical drainage.",
+    "duration_options": ["3 days", "4 days", "5 days"],
+    "exact_problem": "severe one-sided throat pain, worse when swallowing",
+    "pain_location": "one side of the throat",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": ["fever climbing over the last two days"],
+    "chief_complaint_templates": [
+      "bad throat pain on one side for {duration}, can barely swallow",
+      "throat hurts really bad, one side, cant open mouth properly, {duration}"
+    ],
+    "hpi_templates": [
+      "Progressively worsening one-sided throat pain for {duration}, now with difficulty opening the mouth and a muffled voice. Started as general sore throat, treated with {pharmacy_meds} without improvement, then localized to one side with worsening fever.",
+      "Severe unilateral throat pain for {duration}, difficulty swallowing even liquids, voice sounds muffled. Had a sore throat last week partially treated with {last_medication}, now worse with drooling and trouble opening the mouth."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [92, 115],
+      "systolic_bp": [110, 130],
+      "diastolic_bp": [68, 86],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [38.0, 39.2],
+      "spo2": [96, 99],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["recurrent tonsillitis"],
+        "family_history": [],
+        "contributing_factors": ["history of recurrent tonsillitis"]
+      },
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "skipping meals due to throat pain",
+        "sleep_routine": "disturbed by throat pain and drooling",
+        "physical_activity": "none this week, feeling unwell",
+        "last_meal_options": ["only sips of water, refusing food", "warm soup, barely swallowed, yesterday"],
+        "contributing_factors": ["skipping meals due to throat pain"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["warm salt water gargles"],
+        "pharmacy_meds_taken": ["throat lozenges", "amoxicillin left over from before"],
+        "last_medication_taken": "leftover amoxicillin, 2 days ago, stopped early",
+        "contributing_factors": ["incomplete antibiotic course from leftover amoxicillin"]
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2, 3],
+    "last_treated_options": ["clinic visit for sore throat, 5 days ago", null]
+  },
+  {
+    "blueprint_id": "ophto_angle_closure_glaucoma_01",
+    "condition_family": "eye_pain",
+    "department": "emergency",
+    "esi_levels": [2],
+    "age_range": [50, 80],
+    "probable_condition": "acute angle-closure glaucoma",
+    "contributing_factors": [],
+    "red_flags": ["severe eye pain with halos around lights", "sudden vision loss", "fixed mid-dilated pupil"],
+    "rationale": "Sudden severe eye pain with halos, headache, nausea and vomiting in an older adult is a classic angle-closure glaucoma presentation requiring emergent care.",
+    "duration_options": ["2 hours", "3 hours", "4 hours"],
+    "exact_problem": "severe eye pain with blurred vision and seeing halos around lights",
+    "pain_location": "one eye, spreading to the forehead",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden bad eye pain and blurry vision for {duration}, seeing rings around lights",
+      "eye hurts a lot, headache and vomiting, started {duration} ago"
+    ],
+    "hpi_templates": [
+      "Sudden onset severe pain in one eye for {duration}, with blurred vision, halos around lights, headache, and two episodes of vomiting. Eye appears red. Dimmed the lights at home and tried {home_remedies} without relief.",
+      "Acute eye pain and headache for {duration}, nauseated with vomiting, seeing halos around lights in a dark room. No trauma. Took {last_medication} for the headache without help."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [75, 100],
+      "systolic_bp": [130, 160],
+      "diastolic_bp": [80, 96],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [96, 99],
+      "pain_score": [7, 10]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["farsightedness (hyperopia)"],
+        "family_history": ["mother: glaucoma"],
+        "contributing_factors": ["family history of glaucoma"]
+      },
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "light activity, mostly at home",
+        "last_meal_options": ["dinner, 3 hours ago", "evening tea, 2 hours ago"],
+        "recent_diet_change": "sat in a dark room watching a movie for a long time this evening",
+        "contributing_factors": ["prolonged time in a dark room before symptoms began"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["dimmed the lights and rested"],
+        "pharmacy_meds_taken": ["paracetamol for headache"],
+        "last_medication_taken": "paracetamol, 2 hours ago, no relief"
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ophto_corneal_foreign_body_01",
+    "condition_family": "eye_injury",
+    "department": "surgery",
+    "esi_levels": [4],
+    "age_range": [20, 55],
+    "probable_condition": "corneal foreign body / abrasion",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Eye pain and foreign body sensation after grinding work without eye protection is consistent with a corneal foreign body; low acuity, needs slit-lamp exam.",
+    "duration_options": ["2 hours", "3 hours", "5 hours"],
+    "exact_problem": "foreign body sensation in the eye with tearing and redness",
+    "pain_location": "eye",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "something got into my eye at work, hurts and keeps watering, {duration}",
+      "eye feels like something is stuck in it since {duration}, cant stop blinking"
+    ],
+    "hpi_templates": [
+      "Eye pain and foreign body sensation for {duration} after metal grinding work without eye protection. Excessive tearing and redness, mild blurring. Tried {home_remedies}.",
+      "Patient reports gritty, painful sensation in the eye for {duration}, occurred while working at {work_pattern}. Rinsed with {home_remedies}, no relief."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 90],
+      "systolic_bp": [112, 132],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "manual labor at work",
+        "last_meal_options": ["lunch, 3 hours ago", "tea break, 1 hour ago"],
+        "work_pattern": "a metal workshop, no eye protection provided",
+        "contributing_factors": ["works in a metal workshop without eye protection"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["rinsed the eye with water", "rinsed the eye with saline"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "renal_aki_dehydration_nsaid_01",
+    "condition_family": "kidney_injury",
+    "department": "general_medicine",
+    "esi_levels": [2, 3],
+    "age_range": [55, 85],
+    "probable_condition": "acute kidney injury from dehydration and NSAID use",
+    "contributing_factors": [],
+    "red_flags": ["reduced urine output", "confusion in an elderly patient"],
+    "rationale": "Reduced urine output and lethargy in an elderly patient on regular NSAIDs with poor fluid intake during hot weather points to NSAID-related acute kidney injury superimposed on dehydration.",
+    "duration_options": ["2 days", "3 days", "4 days"],
+    "exact_problem": "generally unwell, reduced urination, and tiredness",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "feeling weak and not passing much urine for {duration}",
+      "very tired and dizzy for {duration}, hardly went to the bathroom"
+    ],
+    "hpi_templates": [
+      "Progressive weakness and reduced urine output for {duration}. Poor fluid intake during hot weather. Regularly takes {last_medication} for joint pain. Family noticed increasing drowsiness.",
+      "Patient reports feeling unwell and passing very little urine for {duration}, with dry mouth and dizziness on standing. Has been taking {pharmacy_meds} daily for knee pain, poor water intake this week."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [92, 115],
+      "systolic_bp": [95, 115],
+      "diastolic_bp": [55, 75],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.8, 37.6],
+      "spo2": [94, 98],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["osteoarthritis", "hypertension"],
+        "medications": ["ibuprofen 400mg regularly", "amlodipine 5mg"],
+        "family_history": [],
+        "contributing_factors": ["regular ibuprofen use for osteoarthritis joint pain"]
+      },
+      {
+        "medical_history": ["chronic kidney disease, mild"],
+        "medications": ["diclofenac occasionally"],
+        "family_history": [],
+        "contributing_factors": ["existing mild kidney disease with diclofenac use"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "reduced appetite this week",
+        "sleep_routine": "6 hours, more drowsy than usual",
+        "physical_activity": "limited due to joint pain",
+        "last_meal_options": ["small breakfast, barely touched lunch", "tea only since morning"],
+        "recent_diet_change": "drinking much less water than usual in the hot weather",
+        "contributing_factors": ["poor fluid intake during hot weather"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": ["ibuprofen for joint pain"],
+        "last_medication_taken": "ibuprofen 400mg, this morning as usual",
+        "contributing_factors": ["continued ibuprofen despite feeling unwell"]
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "general clinic for joint pain, a few weeks ago"]
+  },
+  {
+    "blueprint_id": "endo_dka_01",
+    "condition_family": "diabetic_crisis",
+    "department": "emergency",
+    "esi_levels": [1, 2],
+    "age_range": [14, 45],
+    "probable_condition": "diabetic ketoacidosis",
+    "contributing_factors": [],
+    "red_flags": ["fruity breath odor", "deep rapid breathing", "altered mental status"],
+    "rationale": "Vomiting, deep rapid breathing, and drowsiness in a type 1 diabetic who missed insulin doses during a febrile illness is classic diabetic ketoacidosis; immediate management required.",
+    "duration_options": ["1 day", "2 days"],
+    "exact_problem": "vomiting, deep breathing, and severe thirst",
+    "pain_location": "generalized abdominal discomfort",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null, "mild fever with a cold this week"],
+    "chief_complaint_templates": [
+      "vomiting a lot and breathing weird for {duration}, so thirsty",
+      "cant stop throwing up, feels short of breath, {duration}"
+    ],
+    "hpi_templates": [
+      "Vomiting multiple times with deep, rapid breathing for {duration}. Extreme thirst and frequent urination. Missed insulin doses for two days due to a cold and poor appetite. Increasingly drowsy.",
+      "Patient with known type 1 diabetes reports {duration} of vomiting, abdominal discomfort, and unusually deep breathing. Skipped insulin doses because of reduced oral intake during a viral illness. Family noted fruity-smelling breath."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [110, 140],
+      "systolic_bp": [95, 115],
+      "diastolic_bp": [55, 72],
+      "respiratory_rate": [26, 36],
+      "temperature_c": [37.0, 38.2],
+      "spo2": [95, 99],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["type 1 diabetes mellitus"],
+        "medications": ["insulin glargine", "insulin aspart"],
+        "family_history": ["father: type 1 diabetes"],
+        "contributing_factors": ["known type 1 diabetes on insulin therapy"]
+      },
+      {
+        "medical_history": ["type 1 diabetes mellitus"],
+        "medications": ["insulin glargine"],
+        "recent_infections": ["viral cold, this week"],
+        "family_history": [],
+        "contributing_factors": ["recent viral illness reducing oral intake"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "barely eating due to nausea this week",
+        "sleep_routine": "disturbed, drowsy during the day",
+        "physical_activity": "none, feeling too weak",
+        "last_meal_options": ["a few sips of juice, refused food", "nothing since yesterday"],
+        "contributing_factors": ["barely eating due to nausea this week"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "missed insulin doses for two days",
+        "contributing_factors": ["missed insulin doses for two days"]
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "endo_thyroid_storm_01",
+    "condition_family": "thyroid_crisis",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [25, 55],
+    "probable_condition": "thyroid storm",
+    "contributing_factors": [],
+    "red_flags": ["high fever with racing heart", "agitation and confusion", "very high heart rate"],
+    "rationale": "High fever, severe tachycardia, tremor, and agitation in a patient with poorly controlled hyperthyroidism who stopped medication is consistent with thyroid storm; life-threatening emergency.",
+    "duration_options": ["12 hours", "1 day"],
+    "exact_problem": "racing heart, high fever, and severe agitation",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["high fever, came on suddenly"],
+    "chief_complaint_templates": [
+      "heart racing really fast and burning up with fever, {duration}",
+      "shaking, sweating a lot, heart pounding, since {duration}"
+    ],
+    "hpi_templates": [
+      "Sudden high fever with racing heart and severe agitation for {duration}. Known hyperthyroidism, stopped {last_medication} a few weeks ago due to feeling better. Profuse sweating and hand tremor noted.",
+      "Patient with hyperthyroidism reports {duration} of palpitations, high fever, restlessness, and confusion. Ran out of {pharmacy_meds} and had not refilled. Family reports irritability and weight loss over recent weeks."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [140, 180],
+      "systolic_bp": [100, 140],
+      "diastolic_bp": [55, 80],
+      "respiratory_rate": [24, 32],
+      "temperature_c": [39.5, 41.0],
+      "spo2": [94, 98],
+      "pain_score": [0, 3]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["Graves disease (hyperthyroidism)"],
+        "medications": ["methimazole 10mg"],
+        "family_history": ["mother: thyroid disease"],
+        "contributing_factors": ["known Graves disease, stopped methimazole"]
+      },
+      {
+        "medical_history": ["hyperthyroidism"],
+        "medications": ["carbimazole 5mg"],
+        "family_history": [],
+        "contributing_factors": ["ran out of carbimazole refill"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "increased appetite but losing weight",
+        "sleep_routine": "poor sleep, restless for weeks",
+        "physical_activity": "unusually restless and unable to sit still",
+        "last_meal_options": ["breakfast, 4 hours ago", "snack, 2 hours ago"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["cold compress on the forehead"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "stopped thyroid medication a few weeks ago"
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "endocrinology clinic, a few months ago"]
+  },
+  {
+    "blueprint_id": "gi_upper_gi_bleed_01",
+    "condition_family": "gi_bleed",
+    "department": "surgery",
+    "esi_levels": [2],
+    "age_range": [40, 75],
+    "probable_condition": "upper gastrointestinal bleed",
+    "contributing_factors": [],
+    "red_flags": ["vomiting blood", "black tarry stools", "dizziness on standing"],
+    "rationale": "Hematemesis and melena in a patient with heavy NSAID and alcohol use points to an upper GI bleed, likely peptic ulcer; needs urgent endoscopy.",
+    "duration_options": ["today", "since this morning", "last 12 hours"],
+    "exact_problem": "vomiting blood and passing black, tarry stools",
+    "pain_location": "upper abdomen",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "vomited blood {duration}, feeling very weak",
+      "passing black stools and feeling dizzy, started {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports vomiting blood and passing black, tarry stools {duration}. Long history of taking {last_medication} for back pain, along with regular alcohol use. Dizziness on standing, appears pale.",
+      "{duration} of coffee-ground vomiting and dark stools, with lightheadedness. Heavy use of {pharmacy_meds} for chronic pain over recent weeks, drinks alcohol most evenings. No prior similar episodes."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [105, 130],
+      "systolic_bp": [85, 105],
+      "diastolic_bp": [55, 70],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [95, 99],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["chronic back pain", "peptic ulcer disease, years ago"],
+        "medications": ["diclofenac 50mg regularly"],
+        "family_history": [],
+        "contributing_factors": ["long-term diclofenac use for chronic back pain"]
+      },
+      {
+        "medical_history": ["heavy alcohol use"],
+        "family_history": [],
+        "contributing_factors": ["regular heavy alcohol use"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "irregular meals, frequent alcohol in the evening",
+        "sleep_routine": "6 hours",
+        "physical_activity": "sedentary",
+        "last_meal_options": ["skipped dinner, only drinks last night", "light snack, alcohol later"],
+        "contributing_factors": ["frequent alcohol use in the evenings"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": ["diclofenac for back pain"],
+        "last_medication_taken": "diclofenac 50mg, yesterday evening",
+        "contributing_factors": ["diclofenac taken on an empty stomach"]
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gi_lower_gi_bleed_01",
+    "condition_family": "gi_bleed",
+    "department": "surgery",
+    "esi_levels": [3],
+    "age_range": [55, 85],
+    "probable_condition": "lower gastrointestinal bleed (likely diverticular)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Painless bright red rectal bleeding in an older adult with a history of diverticulosis and stable vitals suggests a diverticular lower GI bleed; urgent but not immediately life-threatening.",
+    "duration_options": ["today", "since this morning", "last few hours"],
+    "exact_problem": "passing bright red blood from the rectum, painless",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "passing blood from the back passage {duration}, no pain",
+      "noticed blood in the toilet {duration}, feels fine otherwise"
+    ],
+    "hpi_templates": [
+      "Patient reports several episodes of painless bright red rectal bleeding {duration}. Known history of diverticulosis on prior colonoscopy. No abdominal pain, mild lightheadedness. Regular bowel habits otherwise.",
+      "{duration} of painless rectal bleeding, bright red, mixed with stool. History of diverticular disease. No NSAID use, no vomiting blood. Feels mildly tired."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 105],
+      "systolic_bp": [105, 130],
+      "diastolic_bp": [65, 85],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [96, 99],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["diverticulosis"],
+        "past_surgeries": ["colonoscopy, 2 years ago"],
+        "family_history": [],
+        "contributing_factors": ["known diverticulosis from prior colonoscopy"]
+      },
+      {
+        "medical_history": ["diverticulosis", "hypertension"],
+        "medications": ["amlodipine 5mg"],
+        "family_history": [],
+        "contributing_factors": ["known diverticulosis with hypertension"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "low-fiber diet, mostly rice and bread",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "light walking",
+        "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"],
+        "contributing_factors": ["long-term low-fiber diet"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "colonoscopy follow-up, 2 years ago"]
+  },
+  {
+    "blueprint_id": "ortho_hip_fracture_fall_elderly_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [2, 3],
+    "age_range": [65, 95],
+    "probable_condition": "hip fracture from a fall",
+    "contributing_factors": [],
+    "red_flags": ["unable to bear weight", "visibly shortened and rotated leg"],
+    "rationale": "A fall in an elderly patient with osteoporosis resulting in an inability to bear weight and a shortened, externally rotated leg is consistent with a hip fracture.",
+    "duration_options": ["1 hour ago", "2 hours ago", "this morning"],
+    "exact_problem": "hip pain after a fall, unable to stand or walk",
+    "pain_location": "hip",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell at home {duration} and cant stand up, hip hurts a lot",
+      "slipped and fell {duration}, hip pain, cant put weight on the leg"
+    ],
+    "hpi_templates": [
+      "Patient fell at home {duration}, landing on the hip. Unable to bear weight since, severe hip pain. Leg appears shortened and turned outward. History of osteoporosis, poor vision noted by family.",
+      "Reports a fall {duration}, slipping on a wet floor. Immediate hip pain and inability to walk afterward. Known osteoporosis on {pharmacy_meds}. Lives alone, uses a walking stick normally."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 108],
+      "systolic_bp": [110, 145],
+      "diastolic_bp": [65, 88],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [94, 98],
+      "pain_score": [7, 10]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["osteoporosis"],
+        "medications": ["calcium and vitamin D supplements"],
+        "family_history": ["mother: hip fracture in old age"],
+        "contributing_factors": ["known osteoporosis with weak bones"]
+      },
+      {
+        "medical_history": ["osteoporosis", "poor vision, cataracts"],
+        "medications": ["alendronate weekly"],
+        "family_history": [],
+        "contributing_factors": ["poor vision increasing fall risk"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, low calcium intake",
+        "sleep_routine": "6 hours",
+        "physical_activity": "uses a walking stick, limited mobility",
+        "last_meal_options": ["breakfast, 2 hours ago", "lunch, 1 hour ago"],
+        "contributing_factors": ["limited mobility, uses a walking stick"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["tried to rest and ice the hip"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "calcium supplement, this morning as usual"
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "clinic visit for osteoporosis, a few months ago"]
+  },
+  {
+    "blueprint_id": "surg_laceration_kitchen_01",
+    "condition_family": "trauma",
+    "department": "surgery",
+    "esi_levels": [4],
+    "age_range": [20, 60],
+    "probable_condition": "deep hand laceration from a kitchen knife",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A clean deep laceration from a kitchen knife with ongoing bleeding but stable vitals needs wound exploration and closure; low acuity.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "45 minutes ago"],
+    "exact_problem": "deep cut on the hand, bleeding, from a kitchen knife",
+    "pain_location": "hand",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "cut my hand badly with a kitchen knife {duration}, still bleeding",
+      "sliced my hand while cooking {duration}, wrapped it in a cloth"
+    ],
+    "hpi_templates": [
+      "Patient cut the hand with a kitchen knife while chopping vegetables {duration}. Deep laceration with active bleeding, controlled somewhat with {home_remedies}. No numbness reported, moves fingers normally.",
+      "Reports a deep cut to the hand from a kitchen knife {duration} while cooking. Applied {home_remedies} and wrapped the wound. Bleeding has slowed but wound edges gape open."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [80, 100],
+      "systolic_bp": [112, 132],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, cooks at home daily",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "moderate, household work",
+        "last_meal_options": ["was cooking dinner when it happened", "was preparing lunch when it happened"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["wrapped the hand in a clean cloth", "applied pressure with a towel"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_concussion_sports_01",
+    "condition_family": "head_injury",
+    "department": "neurology",
+    "esi_levels": [3],
+    "age_range": [12, 25],
+    "probable_condition": "mild traumatic brain injury (concussion)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Brief loss of consciousness, headache, and confusion after a sports head collision with normal vitals suggests concussion; needs neurological observation, not immediately life-threatening.",
+    "duration_options": ["1 hour ago", "2 hours ago", "30 minutes ago"],
+    "exact_problem": "hit head during sports, brief confusion and headache since",
+    "pain_location": "head, generalized",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "hit my head playing sports {duration}, feel dizzy and confused",
+      "collided with another player {duration}, head hurts, felt dazed"
+    ],
+    "hpi_templates": [
+      "Patient collided head-first with another player during {work_pattern} {duration}. Brief loss of consciousness reported by teammates, now with headache, dizziness, and slight confusion. No vomiting. Rested on the sidelines with {home_remedies}.",
+      "Head-to-head collision during {work_pattern} {duration}, momentarily dazed and unsteady afterward. Headache and mild nausea since. No memory gaps beyond the moment of impact. Coach applied {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 95],
+      "systolic_bp": [108, 128],
+      "diastolic_bp": [65, 82],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [4, 6]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals",
+        "sleep_routine": "7-8 hours",
+        "physical_activity": "plays competitive sports regularly",
+        "last_meal_options": ["pre-game snack, 2 hours ago", "lunch, 3 hours ago"],
+        "work_pattern": "a football match",
+        "contributing_factors": ["plays competitive contact sports regularly"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["rested on the sidelines", "ice pack on the head"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_anaphylaxis_food_01",
+    "condition_family": "allergic_reaction",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [5, 40],
+    "probable_condition": "anaphylaxis (food allergen)",
+    "contributing_factors": [],
+    "red_flags": ["difficulty breathing with facial swelling", "widespread hives", "throat tightness"],
+    "rationale": "Facial swelling, hives, and difficulty breathing within minutes of eating a known allergen is anaphylaxis; immediate epinephrine and airway management required.",
+    "duration_options": ["10 minutes ago", "15 minutes ago", "5 minutes ago"],
+    "exact_problem": "face swelling, hives all over, and difficulty breathing after eating",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "face swelling up and cant breathe right, started {duration}",
+      "covered in hives and throat feels tight, ate something {duration}"
+    ],
+    "hpi_templates": [
+      "Sudden facial and lip swelling with widespread hives beginning {duration}, shortly after eating {allergen_food}. Progressive difficulty breathing and throat tightness. Known allergy history. Took {pharmacy_meds} at home.",
+      "Patient developed hives, facial swelling, and wheeze {duration} after eating {allergen_food}. Voice sounds hoarse, feels lightheaded. Took {last_medication} without improvement."
+    ],
+    "slots": {
+      "allergen_food": ["peanuts hidden in a sauce", "shrimp in a curry", "a dessert with tree nuts", "fried food cooked in peanut oil"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [115, 150],
+      "systolic_bp": [85, 105],
+      "diastolic_bp": [50, 68],
+      "respiratory_rate": [26, 34],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [88, 94],
+      "pain_score": [0, 3]
+    },
+    "backgrounds": [
+      {
+        "allergies": ["peanuts"],
+        "family_history": ["mother: food allergies"],
+        "contributing_factors": ["known peanut allergy"]
+      },
+      {
+        "allergies": ["shellfish"],
+        "family_history": [],
+        "contributing_factors": ["known shellfish allergy"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "usually avoids known allergens",
+        "sleep_routine": "7 hours",
+        "physical_activity": "normal daily activity",
+        "last_meal_options": ["ate at a restaurant, unfamiliar with the ingredients", "ate a snack from an unfamiliar new brand"],
+        "contributing_factors": ["ate food from an unfamiliar source, unsure of ingredients"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": ["antihistamine tablet at home"],
+        "last_medication_taken": "antihistamine, a few minutes ago, symptoms still worsening",
+        "contributing_factors": ["antihistamine alone insufficient for worsening symptoms"]
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "allergy clinic visit, a year ago"]
+  },
+  {
+    "blueprint_id": "ortho_low_back_pain_lifting_01",
+    "condition_family": "back_pain",
+    "department": "orthopedics",
+    "esi_levels": [4, 5],
+    "age_range": [25, 55],
+    "probable_condition": "mechanical low back strain",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Acute low back pain after heavy lifting with normal neurological findings and stable vitals is a mechanical strain; low acuity, no red flags for cauda equina.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "lower back pain, worse with movement",
+    "pain_location": "lower back",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "hurt my back lifting something heavy, pain for {duration}",
+      "lower back pain since {duration}, hard to bend or stand straight"
+    ],
+    "hpi_templates": [
+      "Acute lower back pain for {duration}, began while lifting {heavy_object}. Pain worsens with bending and prolonged standing. No leg weakness or numbness. Tried {home_remedies}.",
+      "Patient reports {duration} of lower back pain after lifting {heavy_object}. No bowel or bladder symptoms, no leg tingling. Took {last_medication} with partial relief."
+    ],
+    "slots": {
+      "heavy_object": ["furniture while moving house", "boxes at the warehouse", "a water drum", "luggage at the airport"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [70, 90],
+      "systolic_bp": [112, 132],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals",
+        "sleep_routine": "6-7 hours, uncomfortable due to back pain",
+        "physical_activity": "manual labor job with frequent heavy lifting",
+        "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"],
+        "work_pattern": "a warehouse job",
+        "contributing_factors": ["manual labor job with frequent heavy lifting"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["hot water bag on the back", "rest lying flat"],
+        "pharmacy_meds_taken": ["pain relief gel"],
+        "last_medication_taken": "ibuprofen 400mg, 6 hours ago, partial relief"
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2, 3],
+    "last_treated_options": [null, "physiotherapy a few months ago for similar pain"]
+  },
+  {
+    "blueprint_id": "gm_pyelonephritis_01",
+    "condition_family": "urinary_infection",
+    "department": "general_medicine",
+    "esi_levels": [3],
+    "age_range": [20, 60],
+    "probable_condition": "acute pyelonephritis",
+    "contributing_factors": [],
+    "red_flags": ["high fever with flank pain", "rigors"],
+    "rationale": "Fever with chills, flank pain, and urinary symptoms following an untreated lower urinary tract infection indicates ascending infection to the kidney; needs prompt antibiotics.",
+    "duration_options": ["2 days", "3 days"],
+    "exact_problem": "high fever with chills and pain in the side/back, along with burning urination",
+    "pain_location": "flank, radiating to the back",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["high fever with shaking chills"],
+    "chief_complaint_templates": [
+      "high fever with chills and pain in my side for {duration}",
+      "burning when I pee and now fever with back pain, {duration}"
+    ],
+    "hpi_templates": [
+      "High fever with shaking chills and flank pain for {duration}, following several days of burning urination that was not fully treated. Nausea present, one episode of vomiting. Took {pharmacy_meds} for the burning without completing a course.",
+      "Patient reports {duration} of fever with chills, flank pain, and urinary burning/frequency. Initial urinary symptoms were treated with {last_medication} but not finished. Now with worsening back pain and fatigue."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [100, 125],
+      "systolic_bp": [95, 118],
+      "diastolic_bp": [58, 78],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [38.8, 40.0],
+      "spo2": [95, 99],
+      "pain_score": [5, 8]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["recurrent urinary tract infections"],
+        "family_history": [],
+        "contributing_factors": ["history of recurrent urinary tract infections"]
+      },
+      {
+        "medical_history": ["type 2 diabetes"],
+        "medications": ["metformin 500mg"],
+        "family_history": ["mother: type 2 diabetes"],
+        "contributing_factors": ["diabetes increasing infection risk"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, reduced appetite since illness",
+        "sleep_routine": "disturbed by fever and chills",
+        "physical_activity": "mostly resting since symptoms began",
+        "last_meal_options": ["tea and toast this morning", "skipped breakfast, unwell"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["increased water intake", "cranberry juice"],
+        "pharmacy_meds_taken": ["over-the-counter urinary alkalizer", "leftover antibiotic tablets"],
+        "last_medication_taken": "leftover antibiotic tablets, incomplete course",
+        "contributing_factors": ["incomplete antibiotic course allowing infection to ascend"]
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": ["pharmacy visit for burning urination, 4 days ago", null]
+  }
+]
