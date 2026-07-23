@@ -1,0 +1,1202 @@
+[
+  {
+    "patient_id": "PT-00001",
+    "archetype": "influenza_like_illness",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 51,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00002",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 2,
+    "age": 62,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00003",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 1,
+    "age": 80,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00004",
+    "archetype": "acute_back_pain",
+    "department": "orthopedics",
+    "esi_level": 4,
+    "age": 62,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00005",
+    "archetype": "acute_abdomen",
+    "department": "surgery",
+    "esi_level": 2,
+    "age": 74,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00006",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 2,
+    "age": 51,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00007",
+    "archetype": "suicidal_ideation",
+    "department": "psychiatry",
+    "esi_level": 3,
+    "age": 65,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00008",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 40,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00009",
+    "archetype": "panic_attack",
+    "department": "psychiatry",
+    "esi_level": 4,
+    "age": 52,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00010",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 30,
+    "sex": "male",
+    "arrival_mode": "wheelchair",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00011",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 26,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient is anxious and exaggerates a minor condition"
+  },
+  {
+    "patient_id": "PT-00012",
+    "archetype": "appendicitis",
+    "department": "surgery",
+    "esi_level": 2,
+    "age": 46,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00013",
+    "archetype": "palpitations_afib",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 67,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00014",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 1,
+    "age": 65,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00015",
+    "archetype": "moderate_allergic_reaction",
+    "department": "emergency",
+    "esi_level": 4,
+    "age": 32,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00016",
+    "archetype": "palpitations_afib",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 65,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00017",
+    "archetype": "acute_psychosis",
+    "department": "psychiatry",
+    "esi_level": 3,
+    "age": 41,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00018",
+    "archetype": "pediatric_asthma",
+    "department": "pediatrics",
+    "esi_level": 2,
+    "age": 14,
+    "sex": "male",
+    "arrival_mode": "wheelchair",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00019",
+    "archetype": "influenza_like_illness",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 70,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00020",
+    "archetype": "minor_head_injury",
+    "department": "emergency",
+    "esi_level": 4,
+    "age": 80,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00021",
+    "archetype": "med_refill_hypertension",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 81,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00022",
+    "archetype": "palpitations_afib",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 66,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00023",
+    "archetype": "panic_attack",
+    "department": "psychiatry",
+    "esi_level": 4,
+    "age": 48,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00024",
+    "archetype": "pediatric_ear_infection",
+    "department": "pediatrics",
+    "esi_level": 4,
+    "age": 9,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00025",
+    "archetype": "opioid_overdose",
+    "department": "emergency",
+    "esi_level": 2,
+    "age": 33,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00026",
+    "archetype": "dehydration",
+    "department": "emergency",
+    "esi_level": 3,
+    "age": 78,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00027",
+    "archetype": "acute_abdomen",
+    "department": "surgery",
+    "esi_level": 2,
+    "age": 72,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00028",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 29,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00029",
+    "archetype": "minor_head_injury",
+    "department": "emergency",
+    "esi_level": 4,
+    "age": 66,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00030",
+    "archetype": "septic_shock",
+    "department": "resuscitation",
+    "esi_level": 1,
+    "age": 87,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00031",
+    "archetype": "septic_shock",
+    "department": "resuscitation",
+    "esi_level": 1,
+    "age": 64,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00032",
+    "archetype": "septic_shock",
+    "department": "resuscitation",
+    "esi_level": 1,
+    "age": 67,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00033",
+    "archetype": "appendicitis",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 23,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00034",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 57,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00035",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 2,
+    "age": 28,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00036",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 50,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00037",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 20,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00038",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 40,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00039",
+    "archetype": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_level": 4,
+    "age": 0,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00040",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 34,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00041",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 34,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00042",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 4,
+    "age": 58,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00043",
+    "archetype": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_level": 3,
+    "age": 0,
+    "sex": "male",
+    "arrival_mode": "wheelchair",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00044",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 4,
+    "age": 69,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00045",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 55,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00046",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 51,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00047",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 2,
+    "age": 53,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00048",
+    "archetype": "cardiac_arrest",
+    "department": "resuscitation",
+    "esi_level": 1,
+    "age": 49,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00049",
+    "archetype": "opioid_overdose",
+    "department": "emergency",
+    "esi_level": 1,
+    "age": 33,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00050",
+    "archetype": "pelvic_pain",
+    "department": "obgyn",
+    "esi_level": 4,
+    "age": 49,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00051",
+    "archetype": "vertigo",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 38,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00052",
+    "archetype": "deep_laceration",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 31,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00053",
+    "archetype": "heart_failure_exacerbation",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 87,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00054",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 52,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00055",
+    "archetype": "influenza_like_illness",
+    "department": "general_medicine",
+    "esi_level": 4,
+    "age": 36,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00056",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 4,
+    "age": 27,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00057",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 4,
+    "age": 73,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00058",
+    "archetype": "acute_psychosis",
+    "department": "psychiatry",
+    "esi_level": 2,
+    "age": 40,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00059",
+    "archetype": "ankle_injury",
+    "department": "orthopedics",
+    "esi_level": 5,
+    "age": 51,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00060",
+    "archetype": "panic_attack",
+    "department": "psychiatry",
+    "esi_level": 3,
+    "age": 42,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00061",
+    "archetype": "acute_abdomen",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 81,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00062",
+    "archetype": "wrist_fracture",
+    "department": "orthopedics",
+    "esi_level": 3,
+    "age": 68,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00063",
+    "archetype": "ankle_injury",
+    "department": "orthopedics",
+    "esi_level": 4,
+    "age": 26,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00064",
+    "archetype": "ankle_injury",
+    "department": "orthopedics",
+    "esi_level": 4,
+    "age": 29,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00065",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 26,
+    "sex": "male",
+    "arrival_mode": "wheelchair",
+    "twist": "patient is anxious and exaggerates a minor condition"
+  },
+  {
+    "patient_id": "PT-00066",
+    "archetype": "syncope",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 22,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00067",
+    "archetype": "deep_laceration",
+    "department": "surgery",
+    "esi_level": 4,
+    "age": 41,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00068",
+    "archetype": "heart_failure_exacerbation",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 82,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00069",
+    "archetype": "med_refill_hypertension",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 63,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00070",
+    "archetype": "influenza_like_illness",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 31,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00071",
+    "archetype": "ankle_injury",
+    "department": "orthopedics",
+    "esi_level": 5,
+    "age": 47,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00072",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 2,
+    "age": 64,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00073",
+    "archetype": "vertigo",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 57,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00074",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 75,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient is anxious and exaggerates a minor condition"
+  },
+  {
+    "patient_id": "PT-00075",
+    "archetype": "pediatric_asthma",
+    "department": "pediatrics",
+    "esi_level": 3,
+    "age": 3,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00076",
+    "archetype": "active_labor",
+    "department": "obgyn",
+    "esi_level": 2,
+    "age": 18,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00077",
+    "archetype": "influenza_like_illness",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 74,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00078",
+    "archetype": "heart_failure_exacerbation",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 86,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00079",
+    "archetype": "acute_psychosis",
+    "department": "psychiatry",
+    "esi_level": 2,
+    "age": 45,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00080",
+    "archetype": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_level": 3,
+    "age": 1,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00081",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 73,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00082",
+    "archetype": "acute_back_pain",
+    "department": "orthopedics",
+    "esi_level": 5,
+    "age": 53,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00083",
+    "archetype": "acute_back_pain",
+    "department": "orthopedics",
+    "esi_level": 3,
+    "age": 65,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00084",
+    "archetype": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_level": 3,
+    "age": 4,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient is anxious and exaggerates a minor condition"
+  },
+  {
+    "patient_id": "PT-00085",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 2,
+    "age": 65,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00086",
+    "archetype": "wrist_fracture",
+    "department": "orthopedics",
+    "esi_level": 3,
+    "age": 35,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00087",
+    "archetype": "pediatric_ear_infection",
+    "department": "pediatrics",
+    "esi_level": 5,
+    "age": 0,
+    "sex": "male",
+    "arrival_mode": "wheelchair",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00088",
+    "archetype": "moderate_allergic_reaction",
+    "department": "emergency",
+    "esi_level": 3,
+    "age": 53,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00089",
+    "archetype": "first_seizure",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 70,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00090",
+    "archetype": "first_trimester_bleeding",
+    "department": "obgyn",
+    "esi_level": 2,
+    "age": 33,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00091",
+    "archetype": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_level": 4,
+    "age": 5,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00092",
+    "archetype": "moderate_allergic_reaction",
+    "department": "emergency",
+    "esi_level": 3,
+    "age": 55,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00093",
+    "archetype": "palpitations_afib",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 61,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00094",
+    "archetype": "stroke_symptoms",
+    "department": "neurology",
+    "esi_level": 2,
+    "age": 66,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00095",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 46,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00096",
+    "archetype": "minor_head_injury",
+    "department": "emergency",
+    "esi_level": 4,
+    "age": 38,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00097",
+    "archetype": "deep_laceration",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 26,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00098",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 71,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient is anxious and exaggerates a minor condition"
+  },
+  {
+    "patient_id": "PT-00099",
+    "archetype": "acute_abdomen",
+    "department": "surgery",
+    "esi_level": 2,
+    "age": 68,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00100",
+    "archetype": "dehydration",
+    "department": "emergency",
+    "esi_level": 3,
+    "age": 90,
+    "sex": "male",
+    "arrival_mode": "ambulance",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00101",
+    "archetype": "hyperglycemia",
+    "department": "general_medicine",
+    "esi_level": 3,
+    "age": 50,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00102",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 78,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00103",
+    "archetype": "acute_abdomen",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 64,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00104",
+    "archetype": "pediatric_asthma",
+    "department": "pediatrics",
+    "esi_level": 3,
+    "age": 2,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00105",
+    "archetype": "acute_back_pain",
+    "department": "orthopedics",
+    "esi_level": 4,
+    "age": 65,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient has poor English, chief complaint is fragmented"
+  },
+  {
+    "patient_id": "PT-00106",
+    "archetype": "syncope",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 79,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00107",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 3,
+    "age": 21,
+    "sex": "female",
+    "arrival_mode": "wheelchair",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00108",
+    "archetype": "deep_laceration",
+    "department": "surgery",
+    "esi_level": 4,
+    "age": 35,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00109",
+    "archetype": "syncope",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 63,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "patient self-diagnosed incorrectly and leads with the wrong theory"
+  },
+  {
+    "patient_id": "PT-00110",
+    "archetype": "appendicitis",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 43,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00111",
+    "archetype": "stable_chest_pain",
+    "department": "cardiology",
+    "esi_level": 3,
+    "age": 66,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00112",
+    "archetype": "acute_back_pain",
+    "department": "orthopedics",
+    "esi_level": 3,
+    "age": 30,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "patient downplays symptoms, chief complaint sounds milder than reality"
+  },
+  {
+    "patient_id": "PT-00113",
+    "archetype": "vertigo",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 60,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "elderly patient with vague, nonspecific complaint"
+  },
+  {
+    "patient_id": "PT-00114",
+    "archetype": "ankle_injury",
+    "department": "orthopedics",
+    "esi_level": 5,
+    "age": 29,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00115",
+    "archetype": "appendicitis",
+    "department": "surgery",
+    "esi_level": 3,
+    "age": 15,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "relevant detail buried mid-narrative, complaint mentions something else"
+  },
+  {
+    "patient_id": "PT-00116",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 22,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "atypical presentation for this condition"
+  },
+  {
+    "patient_id": "PT-00117",
+    "archetype": "syncope",
+    "department": "cardiology",
+    "esi_level": 2,
+    "age": 34,
+    "sex": "female",
+    "arrival_mode": "ambulance",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00118",
+    "archetype": "pediatric_ear_infection",
+    "department": "pediatrics",
+    "esi_level": 4,
+    "age": 10,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00119",
+    "archetype": "uti",
+    "department": "general_medicine",
+    "esi_level": 5,
+    "age": 79,
+    "sex": "female",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  },
+  {
+    "patient_id": "PT-00120",
+    "archetype": "migraine",
+    "department": "neurology",
+    "esi_level": 4,
+    "age": 23,
+    "sex": "male",
+    "arrival_mode": "walk_in",
+    "twist": "presentation is textbook-typical"
+  }
+]
