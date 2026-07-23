@@ -1,0 +1,1003 @@
+[
+  {
+    "blueprint_id": "card_stable_angina_01",
+    "condition_family": "chest_pain",
+    "department": "cardiology",
+    "esi_levels": [3],
+    "age_range": [45, 80],
+    "probable_condition": "stable exertional angina",
+    "contributing_factors": ["chest tightness on exertion, eases with rest"],
+    "red_flags": [],
+    "rationale": "Exertional pattern relieved by rest with stable vitals; needs cardiology workup, not resuscitation.",
+    "duration_options": ["2 weeks", "1 month", "3 weeks"],
+    "exact_problem": "chest heaviness on climbing stairs or walking fast",
+    "pain_location": "central chest, sometimes to left shoulder",
+    "pain_patterns": ["intermittent"],
+    "chief_complaint_templates": [
+      "chest gets heavy when I climb stairs, been {duration} now",
+      "getting chest tightness while walking fast, goes away with rest"
+    ],
+    "hpi_templates": [
+      "Episodes of central chest tightness on exertion for {duration}, each lasting 5-10 minutes, consistently relieved by rest. No pain at rest, no night symptoms. Took {pharmacy_meds} believing it was gas. Walks slower now to avoid the tightness.",
+      "Recurrent exertional chest heaviness for {duration}, radiating occasionally to the left shoulder, settling within minutes of rest. No rest pain or breathlessness at rest. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [72, 96],
+      "systolic_bp": [128, 158],
+      "diastolic_bp": [78, 96],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [95, 98],
+      "pain_score": [2, 5]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["hypertension", "high cholesterol", "smoker for 15 years"],
+        "medications": ["telmisartan 40mg", "atorvastatin 10mg"],
+        "family_history": ["father: heart attack at 58"],
+        "contributing_factors": ["hypertension with high cholesterol", "long smoking history", "family history of heart attack"]
+      },
+      {
+        "medical_history": ["type 2 diabetes"],
+        "medications": ["metformin 500mg"],
+        "family_history": ["mother: type 2 diabetes"],
+        "contributing_factors": ["diabetes as cardiac risk factor"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "oily food, frequent fried snacks",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "no regular exercise, sedentary work",
+        "last_meal_options": ["fried snacks with tea, 2 hours ago", "regular lunch, 4 hours ago"],
+        "contributing_factors": ["oily diet with no regular exercise"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["rest when tightness comes"],
+        "pharmacy_meds_taken": ["antacid tablets"],
+        "last_medication_taken": "antacid, yesterday night",
+        "contributing_factors": ["episodes treated as gas with antacids"]
+      }
+    ],
+    "prior_episodes_options": [3, 5, 8],
+    "last_treated_options": [null, "general clinic, BP check 2 months ago"]
+  },
+  {
+    "blueprint_id": "card_afib_holiday_heart_01",
+    "condition_family": "palpitations",
+    "department": "cardiology",
+    "esi_levels": [2, 3],
+    "age_range": [40, 75],
+    "probable_condition": "atrial fibrillation with rapid rate",
+    "contributing_factors": ["irregular rapid heartbeat since onset"],
+    "red_flags": ["sustained rapid irregular pulse"],
+    "rationale": "Rapid irregular rhythm needs ECG confirmation and rate control; giddiness raises priority.",
+    "duration_options": ["4 hours", "since this morning", "6 hours"],
+    "exact_problem": "fast irregular fluttering of the heart with giddiness",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "heart is fluttering very fast since {duration}, feeling giddy",
+      "heartbeat is going irregular and fast, never felt like this before"
+    ],
+    "hpi_templates": [
+      "Palpitations for {duration}, described as rapid and irregular, with mild giddiness on standing. Symptoms began the morning after heavy alcohol at a wedding party. No chest pain, no syncope. Tried {home_remedies} without relief.",
+      "Sudden irregular racing heartbeat noticed {duration} ago, after a late night of heavy alcohol and little sleep at a family function. Mild breathlessness on walking. No prior similar episode confirmed."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [122, 162],
+      "systolic_bp": [98, 126],
+      "diastolic_bp": [62, 82],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [95, 98],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["hypertension"],
+        "medications": ["amlodipine 5mg"],
+        "family_history": ["father: hypertension"],
+        "age_range": [45, 75],
+        "contributing_factors": ["underlying hypertension"]
+      },
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal meals, weekend drinking",
+        "recent_diet_change": "heavy alcohol at a wedding party last night",
+        "sleep_routine": "slept 3-4 hours after the function",
+        "physical_activity": "moderately active",
+        "last_meal_options": ["party dinner, late last night", "only tea since morning"],
+        "contributing_factors": ["heavy alcohol the previous night", "very short sleep after the party"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lying down", "drinking water"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "card_htn_urgency_missed_meds_01",
+    "condition_family": "hypertension",
+    "department": "cardiology",
+    "esi_levels": [3],
+    "age_range": [45, 80],
+    "probable_condition": "hypertensive urgency after stopping medication",
+    "contributing_factors": ["blood pressure tablets stopped for days"],
+    "red_flags": ["severely elevated blood pressure"],
+    "rationale": "Severely elevated BP without end-organ symptoms; urgent controlled reduction, not resuscitation.",
+    "duration_options": ["3 days", "5 days", "1 week"],
+    "exact_problem": "heavy head and neck stiffness with very high BP",
+    "pain_location": "back of the head and neck",
+    "pain_patterns": ["constant"],
+    "chief_complaint_templates": [
+      "head is heavy from {duration}, my BP tablets got over and I did not buy",
+      "neck is stiff and head heavy, stopped my BP tablets {duration} back"
+    ],
+    "hpi_templates": [
+      "Occipital heaviness and neck stiffness for {duration}. Ran out of BP tablets and did not refill for over a week. Home BP machine showed {home_bp}. No chest pain, no visual complaints, no weakness. Eating salty pickles and fried snacks daily.",
+      "Patient stopped antihypertensives {duration} ago after tablets ran out. Progressive head heaviness. Checked BP at a pharmacy: {home_bp}. No breathlessness, no focal deficit."
+    ],
+    "slots": {
+      "home_bp": ["190/110", "200/115", "185/105"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 102],
+      "systolic_bp": [182, 208],
+      "diastolic_bp": [102, 118],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [95, 99],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["hypertension for 8 years", "type 2 diabetes"],
+        "medications": ["telmisartan 40mg - stopped", "metformin 500mg"],
+        "family_history": ["mother: hypertension", "father: stroke"],
+        "contributing_factors": ["longstanding hypertension", "family history of stroke"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "salty pickles and fried snacks daily",
+        "sleep_routine": "6 hours",
+        "physical_activity": "morning walk stopped last month",
+        "last_meal_options": ["rice with pickle, 3 hours ago", "fried snacks with tea, 1 hour ago"],
+        "contributing_factors": ["daily salty and fried food", "stopped regular walks"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lemon water", "rest"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "metformin this morning, no BP tablet"
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": ["BP recorded high at pharmacy yesterday", null]
+  },
+  {
+    "blueprint_id": "neuro_stroke_window_01",
+    "condition_family": "stroke",
+    "department": "neurology",
+    "esi_levels": [1, 2],
+    "age_range": [55, 90],
+    "probable_condition": "acute ischemic stroke",
+    "contributing_factors": ["sudden one-sided weakness with slurred speech"],
+    "red_flags": ["facial droop", "one-sided arm weakness", "slurred speech within treatment window"],
+    "rationale": "Sudden focal deficit inside the thrombolysis window; immediate stroke-team activation.",
+    "duration_options": ["40 minutes", "1 hour", "90 minutes"],
+    "exact_problem": "face deviated to one side, arm not lifting, speech slurred",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "face is bent to one side and hand is not lifting since {duration}",
+      "speech became unclear suddenly {duration} back, one side feels weak"
+    ],
+    "hpi_templates": [
+      "Sudden onset facial droop, right-sided arm weakness and slurred speech {duration} ago while {activity}. Family initially waited hoping it would pass, then called the ambulance. Known hypertensive, tablets taken irregularly. No seizure, no head injury, no vomiting.",
+      "Acute one-sided weakness and slurred speech beginning {duration} ago during {activity}. Face visibly deviated. On irregular BP medication; missed doses frequently. Brought immediately by family."
+    ],
+    "slots": {
+      "activity": ["watching television", "having breakfast", "walking to the bathroom"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 112],
+      "systolic_bp": [168, 202],
+      "diastolic_bp": [92, 112],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.5, 37.2],
+      "spo2": [94, 98],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["hypertension, irregular medication", "smoker for 25 years"],
+        "medications": ["amlodipine 5mg - taken irregularly"],
+        "family_history": ["father: stroke"],
+        "contributing_factors": ["hypertension with irregular medication", "long smoking history", "family history of stroke"]
+      },
+      {
+        "medical_history": ["type 2 diabetes", "hypertension"],
+        "medications": ["metformin 500mg", "telmisartan 40mg"],
+        "family_history": ["mother: hypertension"],
+        "contributing_factors": ["diabetes with hypertension"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, high salt",
+        "sleep_routine": "7 hours",
+        "physical_activity": "minimal, mostly at home",
+        "last_meal_options": ["breakfast idli, 2 hours ago", "tea only this morning"],
+        "contributing_factors": ["high salt diet with minimal activity"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["family waited hoping symptoms would pass"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null,
+        "contributing_factors": ["family waited before calling for help"]
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "BP check at clinic, 3 months ago"]
+  },
+  {
+    "blueprint_id": "neuro_migraine_exam_stress_01",
+    "condition_family": "headache",
+    "department": "neurology",
+    "esi_levels": [3, 4],
+    "age_range": [16, 45],
+    "probable_condition": "migraine with visual aura",
+    "contributing_factors": ["flashing zigzag lights before the headache"],
+    "red_flags": [],
+    "rationale": "Recurrent one-sided throbbing headache with typical aura and normal exam; symptomatic treatment and neurology follow-up.",
+    "duration_options": ["6 hours", "since last night", "1 day"],
+    "exact_problem": "one-sided throbbing headache with nausea and light sensitivity",
+    "pain_location": "right or left half of the head, behind the eye",
+    "pain_patterns": ["constant", "worsening"],
+    "chief_complaint_templates": [
+      "one side of my head is throbbing since {duration}, light is hurting my eyes",
+      "bad headache {duration}, saw zigzag lines before it started"
+    ],
+    "hpi_templates": [
+      "Throbbing hemicranial headache for {duration}, preceded by flashing zigzag lights for 20 minutes. Nausea with one episode of vomiting; photophobia. Skipped meals during exam preparation and slept poorly all week. Similar episodes previously, this one worse.",
+      "Unilateral throbbing headache since {duration} with visual aura at onset. Light and sound sensitivity; prefers dark room. Long phone screen use at night and skipped meals recently. Known similar episodes."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 96],
+      "systolic_bp": [106, 132],
+      "diastolic_bp": [66, 86],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {
+        "family_history": ["mother: migraine"],
+        "contributing_factors": ["family history of migraine"]
+      },
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "irregular during exams, skipping meals",
+        "recent_diet_change": "living on instant noodles and coffee this week",
+        "sleep_routine": "4-5 hours during exam preparation, on phone screen till late night",
+        "physical_activity": "none this month",
+        "last_meal_options": ["instant noodles, last night", "coffee only since morning"],
+        "contributing_factors": ["skipped meals during exam preparation", "poor sleep for a week", "long phone screen use at night"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["dark room rest", "cold cloth on forehead"],
+        "pharmacy_meds_taken": ["paracetamol"],
+        "last_medication_taken": "paracetamol 500mg, 3 hours ago, no relief"
+      }
+    ],
+    "prior_episodes_options": [2, 3, 5],
+    "last_treated_options": [null, "took tablets from pharmacy during last episode"]
+  },
+  {
+    "blueprint_id": "neuro_bppv_positional_01",
+    "condition_family": "vertigo",
+    "department": "neurology",
+    "esi_levels": [3, 4],
+    "age_range": [35, 75],
+    "probable_condition": "benign paroxysmal positional vertigo",
+    "contributing_factors": ["spinning triggered by turning the head or rolling in bed"],
+    "red_flags": [],
+    "rationale": "Brief positional spinning without focal deficits or hearing loss; peripheral pattern, outpatient priority after assessment.",
+    "duration_options": ["2 days", "3 days", "since yesterday"],
+    "exact_problem": "room spinning for seconds when turning the head",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "head spins when I turn in bed, started {duration} back",
+      "getting spinning feeling on looking up or turning, {duration} now"
+    ],
+    "hpi_templates": [
+      "Brief episodes of rotational vertigo for {duration}, lasting under a minute, triggered by rolling in bed or looking up. Nausea during episodes, no vomiting. No hearing change, no tinnitus, no weakness, no speech difficulty. Walks carefully holding walls during episodes.",
+      "Positional spinning sensation since {duration}, provoked by turning the head quickly. Settles within a minute of staying still. No headache, no focal symptoms, hearing normal."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 94],
+      "systolic_bp": [112, 142],
+      "diastolic_bp": [70, 90],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [96, 99],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["similar vertigo episode 2 years ago, settled with tablets"],
+        "family_history": [],
+        "contributing_factors": ["previous similar vertigo episode"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal meals",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "long hours of desk work looking down",
+        "last_meal_options": ["light breakfast, avoiding food due to nausea", "tea and toast, 2 hours ago"],
+        "contributing_factors": ["long hours of desk work looking down"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lying still", "ginger tea for nausea"],
+        "pharmacy_meds_taken": ["a vertigo tablet suggested by pharmacist"],
+        "last_medication_taken": "vertigo tablet, this morning"
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_asthma_exacerbation_dust_01",
+    "condition_family": "breathlessness",
+    "department": "emergency",
+    "esi_levels": [2, 3],
+    "age_range": [16, 50],
+    "probable_condition": "acute asthma exacerbation",
+    "contributing_factors": ["wheezing and breathlessness after dust exposure"],
+    "red_flags": ["speaking in incomplete sentences", "low oxygen saturation"],
+    "rationale": "Known asthmatic with audible wheeze and reduced saturation; needs nebulization and monitoring now.",
+    "duration_options": ["3 hours", "since last night", "5 hours"],
+    "exact_problem": "wheezing with chest tightness and difficulty breathing",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "breathing is very difficult since {duration}, chest is making whistling sound",
+      "asthma attack coming, inhaler not helping since {duration}"
+    ],
+    "hpi_templates": [
+      "Progressive wheeze and breathlessness for {duration} after cleaning a dusty storeroom. Salbutamol inhaler used {puffs} puffs with little relief; controller inhaler ran out last week and was not refilled. Speaking in short phrases. No fever, no chest pain.",
+      "Known asthmatic with worsening wheeze for {duration}, triggered after dust exposure while {trigger_activity}. Reliever inhaler used repeatedly with poor response. Preventer inhaler not refilled for a week. Night symptoms increasing this season."
+    ],
+    "slots": {
+      "puffs": ["4", "6", "8"],
+      "trigger_activity": ["cleaning a dusty storeroom", "sweeping the terrace", "shifting old boxes at work"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [102, 128],
+      "systolic_bp": [116, 142],
+      "diastolic_bp": [72, 92],
+      "respiratory_rate": [24, 34],
+      "temperature_c": [36.5, 37.2],
+      "spo2": [89, 94],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["asthma since childhood"],
+        "medications": ["salbutamol inhaler", "budesonide inhaler - not refilled"],
+        "allergies": ["dust"],
+        "family_history": ["mother: asthma"],
+        "contributing_factors": ["known asthma with dust allergy", "controller inhaler not refilled", "family history of asthma"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal meals",
+        "sleep_routine": "disturbed by night cough this week",
+        "physical_activity": "avoids running due to breathlessness",
+        "last_meal_options": ["light dinner last night, too breathless to eat today", "tea only since morning"],
+        "contributing_factors": ["night cough disturbing sleep this week"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["steam inhalation", "sitting upright"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "salbutamol inhaler, 30 minutes ago"
+      }
+    ],
+    "prior_episodes_options": [2, 3, 5],
+    "last_treated_options": ["nebulized at a clinic during last season", null]
+  },
+  {
+    "blueprint_id": "gm_pneumonia_postflu_01",
+    "condition_family": "breathlessness",
+    "department": "general_medicine",
+    "esi_levels": [2, 3],
+    "age_range": [55, 85],
+    "probable_condition": "community-acquired pneumonia after influenza",
+    "contributing_factors": ["chest infection following recent flu-like illness"],
+    "red_flags": ["breathlessness with low oxygen", "high fever in elderly"],
+    "rationale": "Elderly with fever, productive cough and hypoxia after flu; needs urgent antibiotics and oxygen assessment.",
+    "duration_options": ["3 days", "4 days"],
+    "exact_problem": "fever with productive cough and breathlessness",
+    "pain_location": "right or left side of chest, worse on deep breath",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": ["high fever with chills, worse at night"],
+    "chief_complaint_templates": [
+      "fever and cough with yellow phlegm from {duration}, breathing heavy",
+      "had flu last week, now fever came back with bad cough and tiredness"
+    ],
+    "hpi_templates": [
+      "Fever with chills and productive cough with yellow sputum for {duration}, following a flu-like illness two weeks ago that had improved. Breathless walking to the toilet. Pleuritic chest discomfort on coughing. Smoker for many years. Appetite poor, fluid intake low.",
+      "Recurrent fever and worsening productive cough {duration} after apparent recovery from recent flu. Breathlessness on minimal exertion; sharp chest pain on deep breathing. Reduced eating and drinking since fever returned."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [98, 122],
+      "systolic_bp": [102, 132],
+      "diastolic_bp": [62, 84],
+      "respiratory_rate": [22, 30],
+      "temperature_c": [38.2, 39.4],
+      "spo2": [89, 94],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["smoker for 30 years", "hypertension"],
+        "medications": ["amlodipine 5mg"],
+        "recent_infections": ["influenza-like illness, 2 weeks ago"],
+        "family_history": ["father: hypertension"],
+        "contributing_factors": ["long smoking history", "recent influenza weakened the chest"]
+      },
+      {
+        "medical_history": ["type 2 diabetes"],
+        "medications": ["metformin 500mg"],
+        "recent_infections": ["influenza-like illness, 2 weeks ago"],
+        "family_history": ["mother: type 2 diabetes"],
+        "contributing_factors": ["diabetes lowering infection resistance", "recent influenza weakened the chest"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, reduced since illness",
+        "sleep_routine": "disturbed by night cough and fever",
+        "physical_activity": "mostly homebound this week",
+        "last_meal_options": ["few spoons of rice gruel this morning", "tea and biscuits, refused lunch"],
+        "contributing_factors": ["poor eating and low fluid intake during illness"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["steam inhalation", "turmeric milk"],
+        "pharmacy_meds_taken": ["cough syrup", "paracetamol"],
+        "last_medication_taken": "paracetamol 650mg, 4 hours ago",
+        "contributing_factors": ["only cough syrup and paracetamol taken while the illness progressed"]
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": ["pharmacy gave cough syrup 2 days ago", null]
+  },
+  {
+    "blueprint_id": "surg_renal_colic_summer_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [20, 60],
+    "probable_condition": "ureteric stone (renal colic)",
+    "contributing_factors": ["colicky loin pain moving toward the groin"],
+    "red_flags": ["writhing colicky flank pain", "vomiting with flank pain"],
+    "rationale": "Classic loin-to-groin colic with restlessness; needs analgesia, urine testing and imaging urgently.",
+    "duration_options": ["3 hours", "5 hours", "since midnight"],
+    "exact_problem": "severe cramping pain from the side of the back toward the groin",
+    "pain_location": "right or left loin, radiating to the groin",
+    "pain_patterns": ["intermittent", "worsening"],
+    "chief_complaint_templates": [
+      "terrible pain in my side since {duration}, coming in waves, cant sit still",
+      "back side pain going down to lower area, vomited also, {duration} now"
+    ],
+    "hpi_templates": [
+      "Severe colicky loin pain radiating to the groin for {duration}, coming in waves; patient restless and unable to lie still. Two episodes of vomiting. Burning urination with darker urine today. Works outdoors in the sun and drinks little water. Previous kidney stone episode 3 years ago.",
+      "Waves of intense flank-to-groin pain for {duration} with nausea and vomiting. Restless, pacing during pain spikes. Urine appears dark; mild burning. Low daily water intake during hot weather reported."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [96, 122],
+      "systolic_bp": [122, 152],
+      "diastolic_bp": [76, 96],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.6, 37.4],
+      "spo2": [96, 99],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["kidney stone 3 years ago, passed spontaneously"],
+        "family_history": ["father: kidney stones"],
+        "contributing_factors": ["previous kidney stone episode", "family history of kidney stones"]
+      },
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "high salt food, frequent red meat",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "outdoor work in the sun most of the day",
+        "last_meal_options": ["lunch, vomited afterwards", "nothing since the pain started"],
+        "work_pattern": "outdoor work in the sun",
+        "contributing_factors": ["low water intake during outdoor work in the sun", "high salt diet"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["hot water bag on the side", "walking around during pain"],
+        "pharmacy_meds_taken": ["a painkiller from the pharmacy"],
+        "last_medication_taken": "painkiller tablet, 2 hours ago, no relief"
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "scan done 3 years ago showed a small stone"]
+  },
+  {
+    "blueprint_id": "surg_cholecystitis_fatty_meal_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [30, 65],
+    "probable_condition": "acute cholecystitis",
+    "contributing_factors": ["right upper abdominal pain after a heavy oily meal"],
+    "red_flags": ["right upper quadrant tenderness with fever"],
+    "rationale": "RUQ pain after fatty food with fever and known gallstones; urgent surgical assessment and ultrasound.",
+    "duration_options": ["8 hours", "12 hours", "since last night"],
+    "exact_problem": "constant pain under the right ribs spreading to the right shoulder",
+    "pain_location": "right upper abdomen, to the right shoulder blade",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["low-grade fever since the pain started"],
+    "chief_complaint_templates": [
+      "pain under my right ribs since {duration}, started after festival dinner",
+      "right side upper stomach paining badly {duration}, vomited twice"
+    ],
+    "hpi_templates": [
+      "Constant right upper quadrant pain for {duration}, beginning a few hours after a heavy oily festival dinner. Radiates to the right shoulder blade. Two episodes of vomiting; low-grade fever. Gallstones were seen on an ultrasound last year but surgery was postponed. Similar milder episodes after fatty food previously.",
+      "Severe steady pain below the right ribs for {duration} following an oily celebration meal, with nausea, vomiting and fever. Known gallstones on old scan; advised surgery earlier but deferred. Pain worse on deep breathing."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [94, 118],
+      "systolic_bp": [112, 142],
+      "diastolic_bp": [70, 92],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [37.7, 38.7],
+      "spo2": [95, 99],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["gallstones on ultrasound last year, surgery deferred"],
+        "family_history": ["mother: gallstone surgery"],
+        "contributing_factors": ["known gallstones with surgery deferred", "family history of gallstones"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "fond of fried and oily food",
+        "recent_diet_change": "festival week with rich oily meals daily",
+        "sleep_routine": "7 hours, disturbed by pain since yesterday",
+        "physical_activity": "light housework only",
+        "last_meal_options": ["heavy oily festival dinner last night", "refused food since the pain began"],
+        "contributing_factors": ["festival week of rich oily meals"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["ajwain water", "hot water bag"],
+        "pharmacy_meds_taken": ["antacid syrup"],
+        "last_medication_taken": "antacid syrup, 5 hours ago, no relief",
+        "contributing_factors": ["pain initially treated as acidity at home"]
+      }
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": ["ultrasound at private clinic last year", null]
+  },
+  {
+    "blueprint_id": "gm_uti_lower_01",
+    "condition_family": "urinary",
+    "department": "general_medicine",
+    "esi_levels": [4],
+    "age_range": [18, 70],
+    "sex": "female",
+    "probable_condition": "lower urinary tract infection",
+    "contributing_factors": ["burning urination with frequent small volumes"],
+    "red_flags": [],
+    "rationale": "Classic cystitis symptoms without fever or flank pain; urine test and oral antibiotics.",
+    "duration_options": ["2 days", "3 days"],
+    "exact_problem": "burning while passing urine, going repeatedly",
+    "pain_location": "lower abdomen, above the pubic bone",
+    "pain_patterns": ["intermittent"],
+    "chief_complaint_templates": [
+      "burning while passing urine from {duration}, going again and again",
+      "lower stomach discomfort and urine burning since {duration}"
+    ],
+    "hpi_templates": [
+      "Burning micturition for {duration} with frequency and urgency, passing small volumes. Mild suprapubic discomfort. No fever, no flank pain, no vomiting. Holds urine through long work shifts and drinks little water during the day. Tried cranberry juice at home.",
+      "Dysuria and frequency since {duration}. Suprapubic heaviness, urine cloudy and strong-smelling. No fever or back pain. Reports holding urine for hours at work and low daily water intake."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 94],
+      "systolic_bp": [104, 132],
+      "diastolic_bp": [66, 86],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.4],
+      "spo2": [97, 100],
+      "pain_score": [2, 5]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["similar urine infection last year"],
+        "family_history": ["mother: type 2 diabetes"],
+        "contributing_factors": ["previous urine infection"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal meals, little water during work",
+        "sleep_routine": "6-7 hours",
+        "physical_activity": "long standing shifts at a store counter",
+        "last_meal_options": ["lunch 2 hours ago", "breakfast only, busy shift"],
+        "work_pattern": "long shifts with few breaks",
+        "contributing_factors": ["holding urine through long shifts", "low water intake during the day"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["cranberry juice", "drinking more water since yesterday"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "pharmacy suggested a urine test, not done"]
+  },
+  {
+    "blueprint_id": "em_hypoglycemia_insulin_01",
+    "condition_family": "diabetic_emergency",
+    "department": "emergency",
+    "esi_levels": [2],
+    "age_range": [40, 75],
+    "probable_condition": "insulin-induced hypoglycemia",
+    "contributing_factors": ["insulin taken but dinner skipped"],
+    "red_flags": ["confusion with sweating in a diabetic", "documented low sugar reading"],
+    "rationale": "Symptomatic hypoglycemia with low glucometer reading; immediate glucose correction and observation.",
+    "duration_options": ["30 minutes", "1 hour"],
+    "exact_problem": "sweating, shaking and confusion with low sugar reading",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "suddenly sweating and shaking since {duration}, sugar showed {glucometer} on machine",
+      "feeling confused and weak, home sugar machine showed {glucometer}"
+    ],
+    "hpi_templates": [
+      "Sudden sweating, tremors and confusion {duration} ago. Took the usual evening insulin dose but skipped dinner while {distraction}. Home glucometer read {glucometer} mg/dl. Family gave sugar water with partial improvement. On insulin for several years.",
+      "Diabetic on insulin found sweating and disoriented {duration} ago; glucometer showed {glucometer} mg/dl. Insulin taken on time but the meal was missed after {distraction}. Improving after glucose biscuits but still drowsy."
+    ],
+    "slots": {
+      "glucometer": ["48", "52", "58"],
+      "distraction": ["attending guests at home", "a long phone call with family", "watching a late night match"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [102, 126],
+      "systolic_bp": [112, 146],
+      "diastolic_bp": [70, 92],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.2, 36.9],
+      "spo2": [96, 100],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["type 2 diabetes on insulin for 6 years", "hypertension"],
+        "medications": ["mixtard insulin twice daily", "telmisartan 40mg"],
+        "family_history": ["mother: type 2 diabetes"],
+        "contributing_factors": ["long-term insulin use", "family history of diabetes"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "fixed meal times with insulin, missed tonight",
+        "sleep_routine": "7 hours",
+        "physical_activity": "evening walks",
+        "last_meal_options": ["lunch was the last proper meal", "skipped dinner, only sugar water after symptoms"],
+        "contributing_factors": ["dinner skipped after taking insulin"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["sugar water given by family", "glucose biscuits"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "evening insulin dose, before symptoms began"
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": ["diabetes clinic review, 2 months ago", null]
+  },
+  {
+    "blueprint_id": "obgyn_first_trimester_bleed_01",
+    "condition_family": "pregnancy",
+    "department": "obgyn",
+    "esi_levels": [2],
+    "age_range": [19, 40],
+    "sex": "female",
+    "probable_condition": "threatened miscarriage (first trimester bleeding)",
+    "contributing_factors": ["early pregnancy confirmed by home test", "spotting with cramping in early pregnancy"],
+    "red_flags": ["vaginal bleeding in known early pregnancy"],
+    "rationale": "Bleeding in early pregnancy is high-risk until ectopic or miscarriage is excluded; urgent scan and obstetric review even with stable vitals.",
+    "duration_options": ["since this morning", "6 hours", "since last night"],
+    "exact_problem": "spotting with lower abdominal cramps in early pregnancy",
+    "pain_location": "lower abdomen, cramping",
+    "pain_patterns": ["intermittent"],
+    "chief_complaint_templates": [
+      "I am about 2 months pregnant and noticed spotting {duration}",
+      "light bleeding with cramps {duration}, pregnancy test was positive last month"
+    ],
+    "hpi_templates": [
+      "Known early pregnancy of about 8 weeks confirmed by home test; light vaginal spotting for {duration} with intermittent lower abdominal cramping. Travelled by bus on a long bumpy journey the previous day. No heavy bleeding, no clots, no fainting. First scan not yet done.",
+      "Approximately 8 weeks pregnant with spotting since {duration} and mild cramping. No prior scan. Long day of standing and travel before onset. No dizziness, bleeding lighter than a period."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [82, 104],
+      "systolic_bp": [102, 128],
+      "diastolic_bp": [62, 82],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [2, 5]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["one previous miscarriage 2 years ago"],
+        "family_history": [],
+        "contributing_factors": ["previous miscarriage raises the risk"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal meals with pregnancy nausea in mornings",
+        "sleep_routine": "7 hours",
+        "physical_activity": "household work, long day of standing and travel yesterday",
+        "last_meal_options": ["light breakfast, nauseous", "lunch 3 hours ago"],
+        "contributing_factors": ["long bumpy bus travel the previous day", "long hours standing"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["bed rest since noticing the spotting"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "folic acid, this morning"
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "pregnancy confirmed at local clinic, scan advised"]
+  },
+  {
+    "blueprint_id": "peds_asthma_playground_01",
+    "condition_family": "pediatric_breathlessness",
+    "department": "pediatrics",
+    "esi_levels": [2, 3],
+    "age_range": [3, 12],
+    "probable_condition": "pediatric asthma exacerbation",
+    "contributing_factors": ["wheezing after playing in a dusty playground"],
+    "red_flags": ["child speaking in short phrases", "visible effort in breathing"],
+    "rationale": "Known asthmatic child with audible wheeze and increased work of breathing; immediate nebulization and observation.",
+    "duration_options": ["2 hours", "since evening", "4 hours"],
+    "exact_problem": "whistling breath with cough and difficulty breathing",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "my child is breathing with whistling sound since {duration}, pump not helping much",
+      "kid started coughing and breathing fast after playing, {duration} now"
+    ],
+    "hpi_templates": [
+      "Known asthmatic child with wheeze and cough for {duration}, beginning after playing in a dusty playground. Salbutamol pump given {puffs} times with partial relief. Speaking in short phrases, using tummy muscles to breathe. Preventer inhaler used irregularly. No fever.",
+      "Parent reports wheeze and fast breathing for {duration} after outdoor play in dust. Reliever pump repeated with limited effect; child tired and preferring to sit up. Preventer often missed on school days. Similar episode last season."
+    ],
+    "slots": {
+      "puffs": ["2", "3", "4"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [118, 152],
+      "systolic_bp": [92, 112],
+      "diastolic_bp": [56, 74],
+      "respiratory_rate": [30, 42],
+      "temperature_c": [36.6, 37.3],
+      "spo2": [90, 94],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["asthma diagnosed at age 3", "eczema as a baby"],
+        "medications": ["salbutamol inhaler with spacer", "budesonide inhaler - used irregularly"],
+        "allergies": ["dust"],
+        "family_history": ["mother: asthma"],
+        "contributing_factors": ["known asthma with dust allergy", "preventer inhaler used irregularly", "family history of asthma"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal child diet",
+        "sleep_routine": "woke last night coughing",
+        "physical_activity": "active, plays outdoors daily",
+        "last_meal_options": ["refused dinner, too breathless", "few bites of snack after school"],
+        "contributing_factors": ["night cough disturbing sleep"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["steam in the bathroom", "sitting the child upright"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "salbutamol pump, 30 minutes ago"
+      }
+    ],
+    "prior_episodes_options": [1, 2, 4],
+    "last_treated_options": ["nebulized at clinic last month", null]
+  },
+  {
+    "blueprint_id": "psych_alcohol_withdrawal_01",
+    "condition_family": "psychiatric",
+    "department": "psychiatry",
+    "esi_levels": [2, 3],
+    "age_range": [30, 60],
+    "probable_condition": "alcohol withdrawal syndrome",
+    "contributing_factors": ["daily alcohol stopped abruptly 2 days ago"],
+    "red_flags": ["tremors with rising pulse after stopping alcohol"],
+    "rationale": "Withdrawal with autonomic signs risks progressing to seizures or delirium; needs monitored treatment, then psychiatry and de-addiction referral.",
+    "duration_options": ["since yesterday", "1 day", "2 days"],
+    "exact_problem": "shaking hands, sweating and restlessness after stopping alcohol",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "hands are shaking and not able to sleep since I stopped drinking {duration} back",
+      "sweating and heart beating fast, stopped alcohol {duration} ago"
+    ],
+    "hpi_templates": [
+      "Tremors, sweating and anxiety for {duration}, beginning about 48 hours after abruptly stopping daily alcohol. Was drinking {quantity} daily for years; stopped after {reason}. No seizures so far, no visual disturbances. Slept barely 2 hours last night. Previous withdrawal episode settled at a hospital.",
+      "Restlessness, hand tremors and racing heart since {duration}. Daily drinker of {quantity}; last drink 2 days ago after {reason}. Nausea, poor sleep, irritability. No confusion currently, oriented but anxious."
+    ],
+    "slots": {
+      "quantity": ["a quarter bottle of whisky", "3-4 pegs of rum", "several glasses of local liquor"],
+      "reason": ["a family promise", "money problems", "a health scare from a friend's illness"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [104, 132],
+      "systolic_bp": [138, 168],
+      "diastolic_bp": [86, 102],
+      "respiratory_rate": [16, 24],
+      "temperature_c": [36.8, 37.6],
+      "spo2": [96, 99],
+      "pain_score": [0, 3]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["daily alcohol use for 10 years", "one previous withdrawal episode treated in hospital"],
+        "family_history": ["father: alcohol dependence"],
+        "contributing_factors": ["long-term daily alcohol use", "previous withdrawal episode", "family history of alcohol dependence"]
+      },
+      {
+        "medical_history": ["daily alcohol use for 6 years", "fatty liver on old scan"],
+        "family_history": [],
+        "contributing_factors": ["long-term daily alcohol use", "fatty liver from alcohol"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "poor appetite, often drinks instead of dinner",
+        "recent_diet_change": "eating very little since stopping alcohol",
+        "sleep_routine": "barely 2 hours since stopping",
+        "physical_activity": "manual labor job, absent this week",
+        "last_meal_options": ["few bites of rice, this morning", "tea only since yesterday"],
+        "contributing_factors": ["poor nutrition with alcohol replacing meals"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lemon water", "trying to sleep"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [1, 2],
+    "last_treated_options": ["treated for withdrawal at a hospital last year", null]
+  },
+  {
+    "blueprint_id": "em_cellulitis_diabetic_leg_01",
+    "condition_family": "skin_infection",
+    "department": "emergency",
+    "esi_levels": [3, 4],
+    "age_range": [35, 75],
+    "probable_condition": "lower limb cellulitis",
+    "contributing_factors": ["small scratch while gardening ignored for days"],
+    "red_flags": ["spreading redness with fever"],
+    "rationale": "Spreading skin infection in a diabetic needs prompt antibiotics; risk of rapid progression.",
+    "duration_options": ["3 days", "4 days"],
+    "exact_problem": "red, hot, swollen lower leg with fever",
+    "pain_location": "right or left lower leg, spreading upward",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": ["fever started yesterday evening", null],
+    "chief_complaint_templates": [
+      "leg is red and swollen from {duration}, now fever also came",
+      "small scratch on leg became big red patch, paining and hot, {duration} now"
+    ],
+    "hpi_templates": [
+      "Redness, warmth and swelling of the lower leg for {duration}, beginning around a small scratch sustained while gardening that was ignored. Redness spreading upward daily; fever since yesterday. Diabetic with irregular tablets and recent high home sugar readings. Applied {home_remedies} without benefit.",
+      "Progressive painful red swollen area on the lower leg for {duration} after a minor gardening scratch. Walking painful; fever and chills since last evening. Sugars poorly controlled recently; tablets taken irregularly."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [92, 116],
+      "systolic_bp": [112, 146],
+      "diastolic_bp": [68, 90],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [37.7, 38.8],
+      "spo2": [95, 99],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["type 2 diabetes, irregular medication"],
+        "medications": ["metformin 500mg - taken irregularly"],
+        "family_history": ["father: type 2 diabetes"],
+        "contributing_factors": ["diabetes with irregular tablets and high sugars", "family history of diabetes"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals, sweets on most days",
+        "sleep_routine": "7 hours, disturbed by leg pain",
+        "physical_activity": "gardening daily in the backyard",
+        "last_meal_options": ["normal lunch, 3 hours ago", "breakfast and tea"],
+        "contributing_factors": ["daily gardening with minor injuries", "frequent sweets despite diabetes"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["turmeric paste on the wound", "hot water compress"],
+        "pharmacy_meds_taken": ["paracetamol for fever"],
+        "last_medication_taken": "paracetamol 650mg, 6 hours ago",
+        "contributing_factors": ["home paste applied instead of early treatment"]
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "pharmacy dressing 2 days ago"]
+  }
+]
