@@ -1,0 +1,603 @@
+[
+  {
+    "blueprint_id": "gm_gastritis_nsaid_01",
+    "condition_family": "abdominal_pain",
+    "department": "general_medicine",
+    "esi_levels": [3],
+    "age_range": [20, 55],
+    "probable_condition": "NSAID-induced gastritis",
+    "contributing_factors": ["painkiller taken on an empty stomach"],
+    "red_flags": [],
+    "rationale": "Stable vitals with classic gastritis picture following NSAID misuse; needs assessment and PPI trial, not resuscitation.",
+    "duration_options": ["1 day", "2 days", "3 days"],
+    "exact_problem": "burning pain in upper abdomen",
+    "pain_location": "epigastric, non-radiating",
+    "pain_patterns": ["worsening", "intermittent"],
+    "chief_complaint_templates": [
+      "stomach is paining since {duration}, feels like burning inside",
+      "burning in my stomach for {duration} now, cold milk helps a little",
+      "my stomach burns when its empty, going on {duration}"
+    ],
+    "hpi_templates": [
+      "Burning epigastric pain for {duration}, worse on empty stomach, partially relieved by food and cold milk. Took {pharmacy_meds} for {med_reason} {med_timing}. Working {work_pattern}. Sleep reduced. No vomiting, no melena, no weight loss.",
+      "Patient reports {duration} of burning upper abdominal pain. Notes taking {pharmacy_meds} {med_timing} for {med_reason}. Meals irregular; {work_pattern}. Denies hematemesis or black stools."
+    ],
+    "slots": {
+      "med_reason": ["a shoulder strain", "lower back pain", "knee pain after lifting"],
+      "med_timing": ["3 days ago", "earlier this week", "for the past 4 days"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [76, 102],
+      "systolic_bp": [110, 138],
+      "diastolic_bp": [70, 90],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.3],
+      "spo2": [96, 99],
+      "pain_score": [4, 7]
+    },
+    "backgrounds": [
+      {
+        "family_history": ["father: peptic ulcer", "mother: hypertension"],
+        "contributing_factors": ["family history of peptic ulcer"]
+      },
+      {
+        "medical_history": ["hypertension"],
+        "medications": ["amlodipine 5mg"],
+        "family_history": ["mother: type 2 diabetes"],
+        "age_range": [38, 55]
+      },
+      {"family_history": [], "recent_infections": ["covid, 5 months ago"]}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "skips breakfast, heavy spicy dinner late at night",
+        "sleep_routine": "4-5 hours per night for 2 weeks due to night shifts",
+        "physical_activity": "heavy lifting at warehouse job",
+        "last_meal_options": ["spicy noodles, 11pm yesterday", "leftover biryani, midnight", "nothing since yesterday evening"],
+        "work_pattern": "night shifts at a warehouse",
+        "contributing_factors": ["sleep deprivation from night shifts", "late-night spicy meals", "heavy lifting strain at work"]
+      },
+      {
+        "diet_routine": "irregular meals, mostly outside food",
+        "recent_diet_change": "started skipping lunch since workload increased",
+        "sleep_routine": "broken sleep, about 5 hours",
+        "physical_activity": "sedentary desk job, no exercise",
+        "last_meal_options": ["tea and biscuits this morning", "samosa and tea, yesterday 8pm"],
+        "work_pattern": "long desk hours with skipped meals",
+        "contributing_factors": ["long gaps between meals from skipped lunches", "broken sleep with work stress", "sedentary desk routine"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["cold milk"],
+        "pharmacy_meds_taken": ["an unlabeled painkiller from a friend"],
+        "last_medication_taken": "unknown painkiller tablet, 8 hours ago",
+        "contributing_factors": ["unidentified painkiller taken without prescription"]
+      },
+      {
+        "home_remedies_tried": ["ginger tea", "antacid syrup"],
+        "pharmacy_meds_taken": ["diclofenac from the local pharmacy"],
+        "last_medication_taken": "diclofenac 50mg, 12 hours ago",
+        "contributing_factors": ["diclofenac bought without prescription"]
+      }
+    ],
+    "prior_episodes_options": [0, 0, 1],
+    "last_treated_options": [null, "local pharmacy consult, 2 days ago"]
+  },
+  {
+    "blueprint_id": "neuro_tension_headache_eyestrain_01",
+    "condition_family": "headache",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [18, 45],
+    "probable_condition": "tension-type headache with digital eye strain",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Normal vitals and neuro-intact presentation; band-like headache with clear screen-time trigger and eye strain; outpatient priority.",
+    "duration_options": ["1 week", "5 days", "10 days"],
+    "exact_problem": "dull pressing headache with eye burning",
+    "pain_location": "band-like, both temples and forehead",
+    "pain_patterns": ["intermittent", "constant"],
+    "chief_complaint_templates": [
+      "head is aching from {duration}, not going even with rest",
+      "constant headache since {duration}, my eyes also burn by evening",
+      "having headache almost daily for {duration}"
+    ],
+    "hpi_templates": [
+      "Dull band-like headache for {duration}, worse by evening. Reports burning and watering of eyes for about a week. Started {job_change} with {screen_hours} hours of screen time daily. Sleep reduced to {sleep_hours} hours. Tried {home_remedies}; took {pharmacy_meds}. No vomiting, no visual loss, no weakness, no fever. Neuro grossly intact.",
+      "Patient describes pressing headache across forehead for {duration}, building through the workday. Eyes burn by end of day; rubbing them frequently. Recently {job_change}; screen exposure around {screen_hours} hours. Increased coffee to {coffee} cups daily. No focal deficits reported."
+    ],
+    "slots": {
+      "job_change": ["a new IT support job", "working from home on a new project", "night-shift data entry work"],
+      "screen_hours": ["10", "11", "12"],
+      "sleep_hours": ["5", "6"],
+      "coffee": ["4", "5", "6"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [68, 92],
+      "systolic_bp": [108, 132],
+      "diastolic_bp": [68, 86],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"family_history": ["mother: migraine"]},
+      {"family_history": []},
+      {
+        "medical_history": ["myopia, glasses prescription 3 years old"],
+        "family_history": ["father: hypertension"],
+        "contributing_factors": ["outdated glasses prescription"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals but heavy caffeine",
+        "recent_diet_change": "doubled coffee intake since the new job",
+        "sleep_routine": "sleeping 5-6 hours, phone use till late",
+        "physical_activity": "sedentary, stopped evening walks a month ago",
+        "last_meal_options": ["rice and dal, 2pm today", "sandwich and coffee, this morning"],
+        "contributing_factors": [
+          "long daily screen exposure at new job",
+          "burning eyes from visual strain",
+          "reduced sleep with late phone use",
+          "doubled coffee intake"
+        ]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["balm on forehead", "steam inhalation"],
+        "pharmacy_meds_taken": ["paracetamol from the pharmacy"],
+        "last_medication_taken": "paracetamol 650mg, 5 hours ago"
+      },
+      {
+        "home_remedies_tried": ["head massage with oil"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2, 3],
+    "last_treated_options": [null, null, "eye checkup pending, appointment not taken"]
+  },
+  {
+    "blueprint_id": "resus_acs_exertional_01",
+    "condition_family": "chest_pain",
+    "department": "resuscitation",
+    "esi_levels": [1, 2],
+    "age_range": [45, 82],
+    "probable_condition": "acute coronary syndrome",
+    "contributing_factors": ["onset during physical exertion"],
+    "red_flags": [
+      "crushing chest pain radiating to left arm",
+      "diaphoresis",
+      "hypotension or tachycardia with hypoxia"
+    ],
+    "rationale": "Classic ACS presentation with unstable vitals; immediate resuscitation-track workup indicated.",
+    "duration_options": ["45 minutes", "1 hour", "2 hours"],
+    "exact_problem": "crushing central chest pressure with breathlessness",
+    "pain_location": "substernal, radiating to left arm and jaw",
+    "pain_patterns": ["constant", "worsening"],
+    "chief_complaint_templates": [
+      "chest feels very tight, cant catch my breath properly",
+      "heavy pressure on my chest since {duration}, arm is also paining",
+      "chest pain and sweating a lot, started while {exertion}"
+    ],
+    "hpi_templates": [
+      "Crushing substernal chest pressure for {duration}, radiating to the left arm, associated with diaphoresis and nausea. Onset while {exertion}. Took {last_medication} with no relief.",
+      "Patient reports {duration} of severe central chest pain radiating to jaw and left arm, with sweating and shortness of breath. Onset during {exertion}. No relief from rest; earlier took {last_medication}."
+    ],
+    "slots": {
+      "exertion": ["climbing stairs", "mowing the lawn", "carrying groceries uphill", "an argument at home"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [104, 138],
+      "systolic_bp": [86, 108],
+      "diastolic_bp": [52, 70],
+      "respiratory_rate": [22, 30],
+      "temperature_c": [36.4, 37.2],
+      "spo2": [88, 94],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {
+        "medical_history": ["hypertension", "type 2 diabetes", "smoker for 20 years"],
+        "medications": ["telmisartan 40mg", "metformin 500mg"],
+        "family_history": ["father: heart attack at 52"],
+        "contributing_factors": [
+          "longstanding hypertension and diabetes",
+          "heavy smoking history",
+          "family history of early heart attack"
+        ]
+      },
+      {
+        "medical_history": ["hypertension", "high cholesterol"],
+        "medications": ["amlodipine 5mg", "atorvastatin 20mg"],
+        "past_surgeries": ["hernia repair 2015"],
+        "family_history": ["mother: hypertension", "father: stroke"],
+        "contributing_factors": [
+          "longstanding hypertension with high cholesterol",
+          "family history of stroke and hypertension"
+        ]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "oily food, heavy dinners",
+        "sleep_routine": "6 hours, disturbed",
+        "physical_activity": "mostly sedentary, occasional yard work",
+        "last_meal_options": ["fried breakfast, 3 hours ago", "heavy lunch with sweets, 2 hours ago"],
+        "contributing_factors": ["oily diet with sedentary routine"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["rest", "drinking warm water"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "antacid gel, 30 minutes ago",
+        "contributing_factors": ["took antacid at home believing it was gas"]
+      },
+      {
+        "home_remedies_tried": ["rest"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": "chewed one aspirin from the home cabinet, 20 minutes ago"
+      }
+    ],
+    "prior_episodes_options": [0, 0, 1],
+    "last_treated_options": [null, "primary care clinic for BP review, 1 month ago"]
+  },
+  {
+    "blueprint_id": "surg_appendicitis_migratory_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [12, 40],
+    "probable_condition": "acute appendicitis",
+    "contributing_factors": [
+      "pain migrated from navel to right lower quadrant",
+      "refusing food since onset",
+      "street food wrongly blamed by patient"
+    ],
+    "red_flags": ["migratory right lower quadrant pain", "rebound tenderness", "fever with anorexia"],
+    "rationale": "Migratory RLQ pain with fever and guarding is presumed appendicitis until ruled out; surgical evaluation urgently.",
+    "duration_options": ["18 hours", "1 day", "36 hours"],
+    "exact_problem": "sharp pain in right lower abdomen",
+    "pain_location": "right lower quadrant, started around the navel",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": ["low-grade, rising since this morning"],
+    "chief_complaint_templates": [
+      "bad stomach pain since {duration}, I think the {street_food} last night was spoiled",
+      "pain near my belly button moved to the right side, hurts when I walk",
+      "right side stomach pain for {duration}, no interest in eating anything"
+    ],
+    "hpi_templates": [
+      "Periumbilical pain beginning {duration} ago, now localized to the right lower quadrant. Worse with movement and coughing. Anorexia and nausea; one episode of vomiting. Patient attributes it to {street_food} eaten the previous night. Low-grade fever noted at home. Tried {home_remedies}.",
+      "Patient reports {duration} of abdominal pain that started centrally and shifted to the right iliac fossa. Refusing food since yesterday. Pain sharp on walking; lying still helps. Ate {street_food} the night before onset and suspects food poisoning. Took {pharmacy_meds} without relief."
+    ],
+    "slots": {
+      "street_food": ["pani puri from a roadside stall", "shawarma", "chaat", "leftover fried rice"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [92, 118],
+      "systolic_bp": [104, 128],
+      "diastolic_bp": [64, 84],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [37.6, 38.6],
+      "spo2": [96, 99],
+      "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["seasonal allergies"],
+        "allergies": ["dust"],
+        "family_history": ["father: type 2 diabetes"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "college canteen food, frequent street snacks",
+        "sleep_routine": "7 hours, normal",
+        "physical_activity": "walks to college, occasional cricket",
+        "last_meal_options": ["few sips of water only since last night", "refused breakfast, only water"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lemon water for suspected food poisoning"],
+        "pharmacy_meds_taken": ["oral rehydration solution"],
+        "last_medication_taken": "ORS, 4 hours ago"
+      },
+      {
+        "home_remedies_tried": [],
+        "pharmacy_meds_taken": ["loperamide from pharmacy"],
+        "last_medication_taken": "loperamide, 10 hours ago",
+        "contributing_factors": ["loperamide self-medication delayed arrival"]
+      }
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_viral_fever_daycare_01",
+    "condition_family": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_levels": [3, 4],
+    "age_range": [1, 8],
+    "probable_condition": "viral upper respiratory infection with fever",
+    "contributing_factors": [
+      "daycare exposure to sick children",
+      "evening fever spikes typical of viral illness",
+      "reduced feeding during illness"
+    ],
+    "red_flags": [],
+    "rationale": "Febrile but well-perfused child, drinking fluids, no danger signs; standard pediatric assessment queue.",
+    "duration_options": ["2 days", "3 days"],
+    "exact_problem": "fever with runny nose and reduced appetite",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["spikes in the evening, responds to syrup", "comes every 6-8 hours as medicine wears off"],
+    "chief_complaint_templates": [
+      "my kid has fever from {duration}, not eating properly",
+      "fever keeps coming back every evening since {duration}",
+      "child is warm and cranky for {duration}, nose is running"
+    ],
+    "hpi_templates": [
+      "Fever for {duration}, peaking in the evenings, responding partially to paracetamol syrup. Runny nose and mild cough. Attends daycare where {sick_contact}. Taking fluids, fewer solids. Urine output maintained per parent. No rash, no breathing difficulty, no lethargy between spikes.",
+      "Parent reports {duration} of fever with coryza. Several children at daycare {sick_contact}. Child playful between fever spikes, drinking well. Appetite reduced. No vomiting, no seizures, immunizations up to date."
+    ],
+    "slots": {
+      "sick_contact": ["two classmates were sent home sick this week", "a sibling had the same cold last week", "several kids have similar symptoms"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [110, 150],
+      "systolic_bp": [90, 108],
+      "diastolic_bp": [55, 70],
+      "respiratory_rate": [22, 30],
+      "temperature_c": [38.0, 39.3],
+      "spo2": [96, 99],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {"medical_history": ["one prior febrile episode last winter"], "family_history": ["mother: asthma"]}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "normal toddler diet, reduced during illness",
+        "sleep_routine": "disturbed by night-time fever spikes",
+        "physical_activity": "active child, currently less playful",
+        "last_meal_options": ["few spoons of rice and curd, this afternoon", "half a glass of milk, 2 hours ago"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["lukewarm sponging"],
+        "pharmacy_meds_taken": ["paracetamol syrup"],
+        "last_medication_taken": "paracetamol syrup 5ml, 4 hours ago"
+      }
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "pediatric clinic, 1 day ago, advised monitoring"]
+  },
+  {
+    "blueprint_id": "ortho_ankle_sprain_gym_01",
+    "condition_family": "limb_injury",
+    "department": "orthopedics",
+    "esi_levels": [4, 5],
+    "age_range": [16, 45],
+    "probable_condition": "lateral ankle sprain",
+    "contributing_factors": ["sudden ankle twist during activity"],
+    "red_flags": [],
+    "rationale": "Weight-bearing partially possible, no deformity, distal pulses intact; low-acuity orthopedic assessment.",
+    "duration_options": ["2 hours", "5 hours", "1 day"],
+    "exact_problem": "twisted ankle, swollen and painful on the outer side",
+    "pain_location": "lateral ankle below the bone prominence",
+    "pain_patterns": ["constant", "worsening"],
+    "chief_complaint_templates": [
+      "twisted my ankle {mechanism}, its swollen now",
+      "ankle got sprained {duration} back, paining while walking",
+      "leg twisted {mechanism}, can walk a little but it hurts"
+    ],
+    "hpi_templates": [
+      "Inversion injury to the ankle {duration} ago while {mechanism_long}. Immediate pain and swelling over the lateral malleolus. Able to bear partial weight. No numbness, toes warm and pink. Applied {home_remedies} at home.",
+      "Patient rolled the ankle inward {duration} ago while {mechanism_long}. Lateral swelling with tenderness, no obvious deformity. Partial weight-bearing possible. {home_remedies} applied before arrival."
+    ],
+    "slots": {
+      "mechanism": ["at the gym", "playing badminton", "on the stairs", "during football"],
+      "mechanism_long": ["landing badly during a gym workout", "playing badminton after months of no exercise", "missing a step on the stairs", "playing football on uneven ground"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [70, 96],
+      "systolic_bp": [110, 134],
+      "diastolic_bp": [70, 88],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["previous sprain of the same ankle, 2 years ago"],
+        "family_history": [],
+        "contributing_factors": ["previous sprain weakened the same ankle"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "regular meals",
+        "sleep_routine": "7 hours, normal",
+        "physical_activity": "recently restarted intense workouts after sedentary months",
+        "last_meal_options": ["lunch 3 hours ago", "protein shake after gym"],
+        "contributing_factors": ["intense activity resumed after a sedentary gap"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["ice pack", "leg elevation"],
+        "pharmacy_meds_taken": ["pain relief spray"],
+        "last_medication_taken": null
+      },
+      {
+        "home_remedies_tried": ["crepe bandage"],
+        "pharmacy_meds_taken": ["ibuprofen from pharmacy"],
+        "last_medication_taken": "ibuprofen 400mg, 2 hours ago"
+      }
+    ],
+    "prior_episodes_options": [0, 0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_panic_attack_overwork_01",
+    "condition_family": "psychiatric",
+    "department": "psychiatry",
+    "esi_levels": [3, 4],
+    "age_range": [18, 50],
+    "probable_condition": "panic attack",
+    "contributing_factors": ["prior similar episode with normal cardiac workup"],
+    "red_flags": [],
+    "rationale": "Hyperventilation with normal oxygenation and prior normal cardiac workup suggests panic; needs assessment to exclude organic cause then psychiatric referral.",
+    "duration_options": ["30 minutes", "1 hour"],
+    "exact_problem": "racing heart, breathlessness and fear, tingling fingers",
+    "pain_location": null,
+    "pain_patterns": [],
+    "chief_complaint_templates": [
+      "heart is racing and I cant breathe properly, feels like something bad will happen",
+      "sudden chest tightness and shaking since {duration}, very scared",
+      "breathing fast, hands are tingling, this happened before also"
+    ],
+    "hpi_templates": [
+      "Sudden onset palpitations, breathlessness and perioral tingling {duration} ago during {trigger}. Similar episode {prior_context}. Reports sleeping poorly for weeks and heavy intake of {stimulant}. No syncope, no exertional pattern.",
+      "Patient hyperventilating with subjective chest tightness for {duration}, began during {trigger}. Carpopedal spasm sensation in fingers. {prior_context}. Sleep poor; consuming {stimulant} daily to keep up with work."
+    ],
+    "slots": {
+      "trigger": ["a work deadline call", "an argument with the manager", "reviewing pending bills late at night"],
+      "prior_context": ["2 weeks ago; ECG at that time was reported normal", "last month, settled on its own before reaching hospital"],
+      "stimulant": ["4-5 coffees and an energy drink", "6 cups of tea and energy drinks"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [102, 128],
+      "systolic_bp": [126, 152],
+      "diastolic_bp": [78, 96],
+      "respiratory_rate": [24, 32],
+      "temperature_c": [36.5, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [2, 5]
+    },
+    "backgrounds": [
+      {
+        "family_history": ["mother: anxiety disorder"],
+        "contributing_factors": ["family history of anxiety"]
+      },
+      {"medical_history": ["no chronic illness, recent normal ECG"], "family_history": []}
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "irregular, eats at desk",
+        "recent_diet_change": "increased energy drinks to handle deadlines",
+        "sleep_routine": "4-5 hours, wakes with worry",
+        "physical_activity": "none for the past 3 months",
+        "last_meal_options": ["coffee and a sandwich, 5 hours ago", "energy drink only since morning"],
+        "contributing_factors": [
+          "sustained work stress and deadlines",
+          "high caffeine and energy drink intake",
+          "poor sleep for weeks"
+        ]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["splashing cold water on face", "breathing into hands"],
+        "pharmacy_meds_taken": [],
+        "last_medication_taken": null
+      }
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": ["emergency visit 2 weeks ago, discharged with normal ECG", null]
+  },
+  {
+    "blueprint_id": "em_dehydration_gastro_01",
+    "condition_family": "dehydration",
+    "department": "emergency",
+    "esi_levels": [3],
+    "age_range": [16, 70],
+    "probable_condition": "acute gastroenteritis with moderate dehydration",
+    "contributing_factors": ["contaminated outside food before onset", "unable to keep up fluid intake"],
+    "red_flags": ["postural dizziness", "reduced urine output"],
+    "rationale": "Ongoing losses with postural symptoms and tachycardia indicate moderate dehydration needing IV fluids and monitoring.",
+    "duration_options": ["1 day", "2 days"],
+    "exact_problem": "loose motions and vomiting with weakness and giddiness on standing",
+    "pain_location": "crampy, around the navel",
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null, "mild fever on the first day, settled now"],
+    "chief_complaint_templates": [
+      "loose motions since {duration}, feeling very weak and dizzy",
+      "vomiting and motions from {duration}, cant keep water down",
+      "stomach upset after eating {food}, now head spins when I stand"
+    ],
+    "hpi_templates": [
+      "Watery stools {stool_count} times daily for {duration} with {vomit_count} episodes of vomiting, after eating {food}. Continued working {work_pattern} despite illness. Dizziness on standing since this morning; urine darker and less frequent; unable to keep fluids down. Took {pharmacy_meds}; stool frequency reduced but weakness worsened.",
+      "Patient reports {duration} of diarrhea and vomiting following {food}. Unable to maintain oral fluid intake. Worked {work_pattern} through the illness. Now giddy on standing with dry mouth. Took {pharmacy_meds}."
+    ],
+    "slots": {
+      "food": ["roadside pani puri", "unrefrigerated leftover curry", "juice from a street vendor"],
+      "stool_count": ["6-7", "8-10", "5-6"],
+      "vomit_count": ["3", "4-5", "2"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [100, 124],
+      "systolic_bp": [92, 110],
+      "diastolic_bp": [58, 74],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.8, 37.8],
+      "spo2": [96, 99],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"family_history": []},
+      {
+        "medical_history": ["type 2 diabetes"],
+        "medications": ["metformin 500mg"],
+        "family_history": ["father: type 2 diabetes"],
+        "age_range": [35, 70],
+        "contributing_factors": ["diabetes increases dehydration risk"]
+      }
+    ],
+    "lifestyles": [
+      {
+        "diet_routine": "eats outside food frequently due to work",
+        "sleep_routine": "6-7 hours normally, disturbed since illness",
+        "physical_activity": "physically demanding job on feet all day",
+        "last_meal_options": ["only sips of ORS today", "half a banana this morning, vomited after"],
+        "work_pattern": "outdoors in the heat",
+        "contributing_factors": ["continued outdoor work in the heat while unwell"]
+      },
+      {
+        "diet_routine": "eats outside food frequently due to work",
+        "sleep_routine": "6-7 hours normally, disturbed since illness",
+        "physical_activity": "on feet through long shifts",
+        "last_meal_options": ["only sips of ORS today", "refused food since yesterday"],
+        "work_pattern": "long shifts in a hot kitchen",
+        "contributing_factors": ["continued long shifts in a hot kitchen while unwell"]
+      }
+    ],
+    "self_treatments": [
+      {
+        "home_remedies_tried": ["ORS", "lemon water with salt"],
+        "pharmacy_meds_taken": ["loperamide"],
+        "last_medication_taken": "loperamide, 6 hours ago",
+        "contributing_factors": ["loperamide masked stool losses while dehydration progressed"]
+      },
+      {
+        "home_remedies_tried": ["ORS"],
+        "pharmacy_meds_taken": ["some tablets a neighbor gave for loose motions"],
+        "last_medication_taken": "unknown tablet from neighbor, 6 hours ago",
+        "contributing_factors": ["unknown tablets taken instead of seeking care"]
+      }
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "pharmacy consult yesterday"]
+  }
+]
