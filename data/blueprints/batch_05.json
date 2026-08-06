@@ -1,0 +1,648 @@
+[
+  {
+    "blueprint_id": "gm_hepatitis_a_01",
+    "condition_family": "fever",
+    "department": "general_medicine",
+    "esi_levels": [3],
+    "age_range": [10, 40],
+    "probable_condition": "acute hepatitis A",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Jaundice, dark urine, and nausea following contaminated street food/water exposure indicates acute viral hepatitis A; supportive care, not immediately life-threatening.",
+    "duration_options": ["4 days", "5 days", "1 week"],
+    "exact_problem": "yellowing of the eyes and skin, with nausea and dark urine",
+    "pain_location": "upper right abdomen, mild",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["mild fever that has now settled", null],
+    "chief_complaint_templates": [
+      "eyes turned yellow and feeling nauseous for {duration}",
+      "dark urine and yellow skin for {duration}, no appetite"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of nausea, poor appetite, and dark urine, now with yellowing of the eyes and skin noticed by family. Recently ate {street_food}. Mild right upper abdominal discomfort.",
+      "{duration} of fatigue and nausea, followed by jaundice. Drank water from an unreliable source while traveling. Tried {home_remedies} without improvement."
+    ],
+    "slots": {"street_food": ["roadside chaat", "cut fruit from a street vendor", "water from an unfiltered source", "food at a roadside dhaba"]},
+    "vitals_ranges": {
+      "heart_rate": [75, 95], "systolic_bp": [105, 125], "diastolic_bp": [65, 82],
+      "respiratory_rate": [14, 18], "temperature_c": [36.8, 37.6], "spo2": [97, 100], "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "frequent street food and outside water", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["street food, 2 days ago", "home food, but drank outside water"], "contributing_factors": ["frequent street food and unreliable water sources"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["lots of fluids", "rest"], "pharmacy_meds_taken": ["antacid tablets"], "last_medication_taken": "antacid, yesterday"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_typhoid_fever_01",
+    "condition_family": "fever",
+    "department": "general_medicine",
+    "esi_levels": [3],
+    "age_range": [10, 45],
+    "probable_condition": "typhoid fever (enteric fever)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sustained stepwise fever over a week with abdominal discomfort and relative bradycardia following contaminated food/water exposure suggests typhoid fever.",
+    "duration_options": ["6 days", "1 week", "8 days"],
+    "exact_problem": "prolonged fever, worse each evening, with stomach discomfort",
+    "pain_location": "generalized abdomen",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": ["stepwise rising fever, worse in the evenings"],
+    "chief_complaint_templates": [
+      "fever for {duration} that keeps getting worse each evening",
+      "high fever for {duration}, stomach discomfort, feeling weak"
+    ],
+    "hpi_templates": [
+      "Sustained fever for {duration}, rising in a stepwise pattern each evening, with generalized abdominal discomfort and loss of appetite. Ate {street_food} around a week before symptoms started. Took {pharmacy_meds} without improvement.",
+      "Patient reports {duration} of persistent fever, worse in the evenings, with headache, abdominal discomfort, and constipation. Drank untreated water while traveling. Tried {home_remedies}."
+    ],
+    "slots": {"street_food": ["roadside chaat", "cut fruit from a street vendor", "food at a roadside dhaba", "water from an unfiltered source"]},
+    "vitals_ranges": {
+      "heart_rate": [75, 95], "systolic_bp": [100, 122], "diastolic_bp": [62, 80],
+      "respiratory_rate": [16, 20], "temperature_c": [38.5, 39.8], "spo2": [96, 99], "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "frequent street food and outside water", "sleep_routine": "disturbed by fever", "physical_activity": "reduced, feeling weak", "last_meal_options": ["street food, over a week ago", "home food, but drank outside water"], "contributing_factors": ["frequent street food and unreliable water sources"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tepid sponging"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 4 hours ago, fever returns"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "local clinic, fever medicine given, 3 days ago"]
+  },
+  {
+    "blueprint_id": "gm_dengue_fever_01",
+    "condition_family": "fever",
+    "department": "general_medicine",
+    "esi_levels": [3],
+    "age_range": [10, 50],
+    "probable_condition": "dengue fever",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "High fever with severe body aches, retro-orbital pain, and a rash following mosquito exposure during a local outbreak indicates dengue fever; needs monitoring for warning signs.",
+    "duration_options": ["3 days", "4 days"],
+    "exact_problem": "high fever with severe body aches and headache behind the eyes",
+    "pain_location": "behind the eyes, and generalized joint/muscle pain",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["high fever, comes and goes"],
+    "chief_complaint_templates": [
+      "high fever and body aches all over for {duration}",
+      "fever with terrible headache behind my eyes for {duration}, rash on my arms"
+    ],
+    "hpi_templates": [
+      "High fever for {duration} with severe muscle and joint pain, headache behind the eyes, and a faint rash on the arms. Several mosquito bites noted, neighborhood has had similar cases. Took {pharmacy_meds}.",
+      "Patient reports {duration} of fever with severe body aches, nausea, and mild gum bleeding while brushing teeth. Standing water near the house has been breeding mosquitoes. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 110], "systolic_bp": [100, 122], "diastolic_bp": [62, 80],
+      "respiratory_rate": [16, 20], "temperature_c": [38.6, 40.0], "spo2": [95, 99], "pain_score": [5, 8]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals, reduced appetite since illness", "sleep_routine": "disturbed by fever and body aches", "physical_activity": "none, feeling too weak", "last_meal_options": ["tea and toast this morning", "skipped breakfast, unwell"], "contributing_factors": ["standing water near the house breeding mosquitoes"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["papaya leaf juice", "plenty of fluids"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 5 hours ago"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_malaria_01",
+    "condition_family": "fever",
+    "department": "emergency",
+    "esi_levels": [3],
+    "age_range": [10, 55],
+    "probable_condition": "malaria",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Cyclical high fever with rigors, sweating, and headache in a patient from a malaria-endemic area with recent mosquito exposure suggests malaria; needs blood smear confirmation.",
+    "duration_options": ["3 days", "4 days", "5 days"],
+    "exact_problem": "fever that comes in cycles with chills and sweating",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["fever spikes with chills every couple of days, then sweats and breaks"],
+    "chief_complaint_templates": [
+      "fever comes and goes with chills and sweating, for {duration}",
+      "shaking with chills then burning up then sweating, {duration}"
+    ],
+    "hpi_templates": [
+      "Cyclical fever for {duration}, with shaking chills followed by high fever and then drenching sweats. Headache and body aches between episodes. Lives in an area with frequent mosquito exposure. Took {pharmacy_meds} without full relief.",
+      "Patient reports {duration} of recurring fever with rigors and sweating, occurring roughly every two days. No mosquito net used at home. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [95, 120], "systolic_bp": [100, 122], "diastolic_bp": [62, 80],
+      "respiratory_rate": [18, 24], "temperature_c": [38.5, 40.2], "spo2": [95, 99], "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals, reduced during fever episodes", "sleep_routine": "disturbed by fever cycles", "physical_activity": "reduced during illness", "last_meal_options": ["tea, 2 hours ago", "light meal, this morning"], "contributing_factors": ["no mosquito net used at home"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tepid sponging during fever spikes"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 4 hours ago, fever returns"}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "local clinic, fever medicine given, a few days ago"]
+  },
+  {
+    "blueprint_id": "em_copd_exacerbation_01",
+    "condition_family": "breathlessness",
+    "department": "emergency",
+    "esi_levels": [2, 3],
+    "age_range": [55, 80],
+    "probable_condition": "COPD exacerbation",
+    "contributing_factors": [],
+    "red_flags": ["increased breathlessness with increased sputum"],
+    "rationale": "Worsening breathlessness, increased cough and sputum production, and wheeze in a long-term smoker with known COPD indicates an acute exacerbation.",
+    "duration_options": ["3 days", "4 days", "2 days"],
+    "exact_problem": "increased breathlessness with more cough and thicker sputum",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null, "mild fever with the chest infection"],
+    "chief_complaint_templates": [
+      "more breathless than usual for {duration}, coughing up more phlegm",
+      "chest feels tight and breathless for {duration}, cough is worse"
+    ],
+    "hpi_templates": [
+      "Progressive breathlessness for {duration} beyond usual baseline, with increased cough and thicker, discolored sputum. Long history of smoking and known COPD. Using {last_medication} more frequently without relief.",
+      "Patient with COPD reports {duration} of worsening breathlessness, wheeze, and productive cough. Ran low on {pharmacy_meds}. History of {work_pattern} for many years."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [95, 118], "systolic_bp": [115, 145], "diastolic_bp": [70, 90],
+      "respiratory_rate": [24, 30], "temperature_c": [36.8, 37.8], "spo2": [86, 92], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["COPD", "smoker for 30 years"], "medications": ["salbutamol inhaler", "tiotropium inhaler"], "family_history": [], "contributing_factors": ["known COPD with long smoking history"]},
+      {"medical_history": ["COPD"], "medications": ["salbutamol inhaler"], "family_history": [], "contributing_factors": ["known COPD, inhaler running low"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed by breathlessness and cough", "physical_activity": "limited due to breathlessness; years of work in a dusty factory", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "work_pattern": "working in a dusty factory", "contributing_factors": ["years of factory dust exposure"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["steam inhalation"], "pharmacy_meds_taken": ["salbutamol inhaler, used more frequently"], "last_medication_taken": "salbutamol inhaler, 1 hour ago, minimal relief"}
+    ],
+    "prior_episodes_options": [1, 2, 3, 4],
+    "last_treated_options": ["pulmonology clinic, a few months ago", null]
+  },
+  {
+    "blueprint_id": "em_dvt_pulmonary_embolism_01",
+    "condition_family": "breathlessness",
+    "department": "resuscitation",
+    "esi_levels": [1, 2],
+    "age_range": [40, 75],
+    "probable_condition": "pulmonary embolism",
+    "contributing_factors": [],
+    "red_flags": ["sudden breathlessness with chest pain after immobility", "one leg more swollen than the other"],
+    "rationale": "Sudden breathlessness and pleuritic chest pain in a patient recently immobile after surgery, with one swollen leg, suggests deep vein thrombosis with pulmonary embolism; life-threatening.",
+    "duration_options": ["1 hour ago", "2 hours ago", "today"],
+    "exact_problem": "sudden breathlessness and chest pain, one leg swollen",
+    "pain_location": "chest, worse with breathing",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "suddenly cant breathe and chest hurts, {duration}, one leg is swollen",
+      "sharp chest pain and breathless {duration}, leg has been swollen for days"
+    ],
+    "hpi_templates": [
+      "Sudden onset breathlessness and pleuritic chest pain {duration}, worse with deep breaths. One leg swollen and painful for several days. Recent {recent_event}, prolonged immobility. No prior similar episodes.",
+      "Patient reports {duration} of acute breathlessness and chest pain, with a swollen, tender calf on one side noted over recent days. History of prolonged bed rest after {recent_event}. Feels lightheaded."
+    ],
+    "slots": {"recent_event": ["a long-haul flight", "hip surgery, 2 weeks ago", "a long hospital admission", "a long car journey"]},
+    "vitals_ranges": {
+      "heart_rate": [115, 145], "systolic_bp": [90, 112], "diastolic_bp": [55, 74],
+      "respiratory_rate": [26, 34], "temperature_c": [36.8, 37.6], "spo2": [86, 93], "pain_score": [5, 8]
+    },
+    "backgrounds": [
+      {"past_surgeries": ["hip replacement surgery, 2 weeks ago"], "family_history": [], "contributing_factors": ["recent hip replacement surgery with prolonged immobility"]},
+      {"family_history": ["mother: blood clot in the leg"], "contributing_factors": ["family history of blood clots"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "prolonged immobility, bed rest recently", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "contributing_factors": ["prolonged immobility and bed rest recently"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["elevated the leg"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_compound_fracture_rta_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [1, 2],
+    "age_range": [18, 50],
+    "probable_condition": "open (compound) fracture from a road traffic accident",
+    "contributing_factors": [],
+    "red_flags": ["visible bone through broken skin", "heavy bleeding at the fracture site"],
+    "rationale": "A road traffic accident with a visibly deformed limb, exposed bone, and active bleeding is an open fracture; urgent orthopedic and surgical management needed.",
+    "duration_options": ["20 minutes ago", "30 minutes ago", "1 hour ago"],
+    "exact_problem": "leg deformed with bone visible, bleeding, after a road accident",
+    "pain_location": "leg, at the fracture site",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "motorbike accident {duration}, leg is bent wrong and bleeding",
+      "hit by a vehicle {duration}, cant move my leg, bone is showing"
+    ],
+    "hpi_templates": [
+      "Patient involved in a road traffic accident {duration}, sustained an obviously deformed leg injury with visible bone and active bleeding. Brought in by {arrival_note}. Pain severe, unable to move the limb.",
+      "Reports being struck while riding a motorbike {duration}, resulting in an open leg fracture with heavy bleeding controlled partially with {home_remedies} at the scene. Alert but in severe pain."
+    ],
+    "slots": {"arrival_note": ["bystanders after the accident", "ambulance from the accident site", "family after the crash"]},
+    "vitals_ranges": {
+      "heart_rate": [105, 135], "systolic_bp": [95, 120], "diastolic_bp": [60, 80],
+      "respiratory_rate": [18, 26], "temperature_c": [36.5, 37.2], "spo2": [94, 98], "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "rides a motorbike for daily commute", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "contributing_factors": ["rides a motorbike for daily commute"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["cloth tied around the wound to control bleeding"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_burns_kitchen_01",
+    "condition_family": "trauma",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [20, 55],
+    "probable_condition": "partial-thickness burns from a kitchen accident",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Painful blistering burns from hot oil/steam covering a moderate body surface area need burn wound care and fluid assessment; urgent but not immediately life-threatening if airway uninvolved.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "20 minutes ago"],
+    "exact_problem": "burns on the arm and hand from hot oil, blistering and painful",
+    "pain_location": "arm and hand",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "spilled hot oil on my arm {duration}, its blistering and hurts a lot",
+      "burned my hand on the stove {duration}, skin is peeling"
+    ],
+    "hpi_templates": [
+      "Patient sustained burns to the arm and hand from hot cooking oil {duration}. Blistering noted over a moderate area, severe pain. Ran the area under cold water immediately, then applied {home_remedies}.",
+      "Reports a kitchen accident {duration} with hot oil spilling onto the hand and forearm, causing blistering and redness. Cooled the area with water, then tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [90, 112], "systolic_bp": [112, 132], "diastolic_bp": [70, 86],
+      "respiratory_rate": [16, 20], "temperature_c": [36.6, 37.2], "spo2": [96, 99], "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals, cooks at home daily", "sleep_routine": "6-7 hours", "physical_activity": "moderate, household work", "last_meal_options": ["was cooking dinner when it happened", "was frying snacks when it happened"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ran the area under cold water", "applied ice directly on the burn"], "pharmacy_meds_taken": ["burn ointment from home"], "last_medication_taken": "burn ointment, applied right after the accident", "contributing_factors": ["applied ice directly on the burn, which can worsen tissue injury"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_bells_palsy_01",
+    "condition_family": "facial_weakness",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [25, 55],
+    "probable_condition": "Bell's palsy (facial nerve palsy)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sudden one-sided facial droop with inability to close the eye, without limb weakness or slurred speech, and normal vitals, indicates Bell's palsy rather than stroke; low acuity but needs prompt steroids.",
+    "duration_options": ["this morning", "yesterday", "2 days ago"],
+    "exact_problem": "one side of the face drooping, cant close one eye properly",
+    "pain_location": "behind the ear on the affected side",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "one side of my face is drooping since {duration}, cant close my eye",
+      "mouth feels crooked and eye wont close, noticed {duration}"
+    ],
+    "hpi_templates": [
+      "Patient noticed sudden one-sided facial drooping {duration}, with difficulty closing the eye on that side and drooling from the mouth. No limb weakness, no slurred speech, no headache. Mild pain behind the ear preceded the drooping.",
+      "Reports facial asymmetry noticed {duration}, unable to raise the eyebrow or close the eye fully on one side. Speech clear, no arm or leg weakness. Recently had a cold, feels otherwise well."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [70, 90], "systolic_bp": [112, 132], "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"recent_infections": ["cold, about a week ago"], "family_history": [], "contributing_factors": ["recent cold before facial weakness began"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["warm compress on the face"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_meningitis_01",
+    "condition_family": "headache",
+    "department": "resuscitation",
+    "esi_levels": [1, 2],
+    "age_range": [15, 45],
+    "probable_condition": "bacterial meningitis",
+    "contributing_factors": [],
+    "red_flags": ["neck stiffness with high fever and headache", "photophobia", "altered mental status"],
+    "rationale": "High fever, severe headache, neck stiffness, and photophobia with rapid deterioration suggests bacterial meningitis; time-critical need for antibiotics.",
+    "duration_options": ["6 hours ago", "10 hours ago", "this morning"],
+    "exact_problem": "severe headache, stiff neck, and high fever, cant look at light",
+    "pain_location": "head and neck",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": ["high fever, came on quickly"],
+    "chief_complaint_templates": [
+      "terrible headache and stiff neck for {duration}, light hurts my eyes",
+      "high fever and cant move my neck, started {duration}, feeling confused"
+    ],
+    "hpi_templates": [
+      "Rapid onset high fever, severe headache, and neck stiffness for {duration}, with photophobia and increasing drowsiness. No rash noted. Family reports the patient seems confused.",
+      "Patient reports {duration} of worsening headache, fever, and neck stiffness, unable to tolerate bright light. Vomited once. Took {last_medication} without relief."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [105, 135], "systolic_bp": [95, 120], "diastolic_bp": [58, 78],
+      "respiratory_rate": [20, 28], "temperature_c": [39.0, 40.5], "spo2": [93, 98], "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed by headache and fever", "physical_activity": "unable to continue normal activity due to illness", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["cold compress on the forehead"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 3 hours ago, minimal relief"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_pid_01",
+    "condition_family": "pelvic_pain",
+    "department": "obgyn",
+    "esi_levels": [3],
+    "age_range": [18, 35],
+    "sex": "female",
+    "probable_condition": "pelvic inflammatory disease",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Lower abdominal pain with fever, abnormal vaginal discharge, and pain with movement in a sexually active woman suggests pelvic inflammatory disease.",
+    "duration_options": ["3 days", "4 days", "5 days"],
+    "exact_problem": "lower abdominal pain with abnormal discharge and fever",
+    "pain_location": "lower abdomen, both sides",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": ["low-grade fever, on and off"],
+    "chief_complaint_templates": [
+      "stomach pain low down for {duration}, with unusual discharge",
+      "pelvic pain and fever for {duration}, hurts to move"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of bilateral lower abdominal pain, low-grade fever, and abnormal vaginal discharge, worse with movement and intercourse. Sexually active, {contraception_note}. Took {pharmacy_meds} without relief.",
+      "{duration} of pelvic discomfort with foul-smelling discharge and mild fever. Recently had a new sexual partner. Tried {home_remedies}."
+    ],
+    "slots": {"contraception_note": ["not using barrier contraception", "inconsistent condom use", "no regular contraception use"]},
+    "vitals_ranges": {
+      "heart_rate": [88, 108], "systolic_bp": [105, 122], "diastolic_bp": [65, 82],
+      "respiratory_rate": [16, 20], "temperature_c": [37.5, 38.5], "spo2": [97, 100], "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"family_history": [], "contributing_factors": ["inconsistent barrier contraception use with a new partner"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag on the abdomen"], "pharmacy_meds_taken": ["ibuprofen"], "last_medication_taken": "ibuprofen, 6 hours ago, partial relief"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_inguinal_hernia_strangulated_01",
+    "condition_family": "groin_pain",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [40, 75],
+    "probable_condition": "strangulated inguinal hernia",
+    "contributing_factors": [],
+    "red_flags": ["irreducible groin lump with severe pain and vomiting"],
+    "rationale": "A previously reducible groin lump that has become irreducible, painful, with vomiting, indicates strangulation of an inguinal hernia; surgical emergency.",
+    "duration_options": ["3 hours ago", "4 hours ago", "this morning"],
+    "exact_problem": "groin lump, now hard and cant push it back in, severe pain",
+    "pain_location": "groin",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "groin lump wont go back in, hurts badly, since {duration}",
+      "swelling in the groin, cant push it back, vomiting, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient has a known groin lump, previously reducible, that became irreducible and increasingly painful {duration}, with associated nausea and vomiting. No flatus or bowel movement since onset.",
+      "Reports a bulge in the groin present for months, normally pushes back in, but became stuck and severely painful {duration}. Tried {home_remedies} without success."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [102, 128], "systolic_bp": [105, 130], "diastolic_bp": [65, 85],
+      "respiratory_rate": [18, 24], "temperature_c": [36.8, 37.6], "spo2": [95, 99], "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"medical_history": ["known inguinal hernia, previously reducible"], "family_history": [], "contributing_factors": ["known reducible hernia that became incarcerated"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "heavy lifting at work", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "contributing_factors": ["heavy lifting increasing intra-abdominal pressure"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tried pushing the lump back in manually"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_gad_anxiety_01",
+    "condition_family": "psychiatric",
+    "department": "psychiatry",
+    "esi_levels": [4, 5],
+    "age_range": [18, 45],
+    "probable_condition": "generalized anxiety disorder with panic-like symptoms",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Chronic excessive worry with physical symptoms of palpitations, restlessness, and sleep disturbance, without cardiac or other organic cause, in the context of ongoing stress, indicates generalized anxiety disorder.",
+    "duration_options": ["3 weeks", "1 month", "several weeks"],
+    "exact_problem": "constant worry, restlessness, and racing heart feeling, on and off",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "feeling anxious and on edge for {duration}, heart races sometimes",
+      "cant stop worrying for {duration}, trouble sleeping and concentrating"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of persistent excessive worry about multiple areas of life, accompanied by restlessness, muscle tension, and difficulty sleeping. Ongoing stress from {stressor}. No chest pain or true palpitation episodes confirmed on exam.",
+      "{duration} of feeling on edge, irritable, and fatigued, with occasional racing heart sensations and difficulty concentrating. Increased workload from {stressor}. Denies substance use."
+    ],
+    "slots": {"stressor": ["job insecurity", "financial pressures", "a family conflict", "upcoming exams"]},
+    "vitals_ranges": {
+      "heart_rate": [80, 98], "systolic_bp": [112, 130], "diastolic_bp": [70, 85],
+      "respiratory_rate": [16, 20], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": ["mother: anxiety disorder"], "contributing_factors": ["family history of anxiety"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular meals, skips meals when stressed", "sleep_routine": "5-6 hours, difficulty falling asleep", "physical_activity": "sedentary, little time to exercise", "last_meal_options": ["lunch, 3 hours ago", "skipped lunch today"], "contributing_factors": ["chronic stress with poor sleep and skipped meals"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["breathing exercises"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_gastroenteritis_dehydration_01",
+    "condition_family": "dehydration",
+    "department": "pediatrics",
+    "esi_levels": [2, 3],
+    "age_range": [1, 8],
+    "probable_condition": "acute gastroenteritis with moderate dehydration",
+    "contributing_factors": [],
+    "red_flags": ["reduced urine output with lethargy"],
+    "rationale": "Multiple episodes of vomiting and watery diarrhea over days with reduced urine output and lethargy in a young child indicates moderate dehydration from acute gastroenteritis.",
+    "duration_options": ["2 days", "3 days"],
+    "exact_problem": "vomiting and watery diarrhea, less urine and seems tired",
+    "pain_location": "abdomen, general",
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null, "mild fever on and off"],
+    "chief_complaint_templates": [
+      "child has been vomiting and having loose motions for {duration}, seems weak",
+      "diarrhea and throwing up for {duration}, not wetting diapers as much"
+    ],
+    "hpi_templates": [
+      "Child with {duration} of multiple episodes of watery diarrhea and vomiting, reduced oral intake, noticeably less urine output, and appears lethargic. Attends {care_setting}. Given {home_remedies} at home.",
+      "Parent reports {duration} of frequent loose stools and vomiting in the child, with dry lips and reduced activity. Other children at {care_setting} had similar symptoms recently."
+    ],
+    "slots": {"care_setting": ["daycare", "preschool", "a birthday party with shared food"]},
+    "vitals_ranges": {
+      "heart_rate": [115, 145], "systolic_bp": [85, 100], "diastolic_bp": [50, 65],
+      "respiratory_rate": [24, 32], "temperature_c": [36.8, 38.0], "spo2": [96, 99], "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"family_history": [], "contributing_factors": ["exposure to other children with similar illness at daycare/preschool"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "normal child diet, reduced intake since illness", "sleep_routine": "disturbed, waking to vomit", "physical_activity": "lethargic, less active than usual", "last_meal_options": ["small amount of rice, this morning", "refused food since yesterday"], "contributing_factors": ["reduced oral intake during illness"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["oral rehydration solution, tolerated poorly", "rice water"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_compartment_syndrome_01",
+    "condition_family": "limb_injury",
+    "department": "orthopedics",
+    "esi_levels": [1, 2],
+    "age_range": [15, 45],
+    "probable_condition": "acute compartment syndrome",
+    "contributing_factors": [],
+    "red_flags": ["severe pain out of proportion after cast placement", "tense swollen limb with numbness"],
+    "rationale": "Severe, worsening limb pain out of proportion to injury, with tense swelling, numbness, and pain on passive stretch after a recent fracture and cast placement, indicates acute compartment syndrome; limb-threatening emergency.",
+    "duration_options": ["3 hours ago", "4 hours ago", "since this morning"],
+    "exact_problem": "severe worsening leg pain under the cast, numbness and tightness",
+    "pain_location": "lower leg, under the cast",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "leg pain under my cast is much worse than before, since {duration}, feels numb",
+      "cast leg is really tight and painful, {duration}, toes feel numb"
+    ],
+    "hpi_templates": [
+      "Patient had a leg fracture casted 2 days ago, now with severe pain under the cast that started {duration}, out of proportion to the original injury, with numbness and tingling in the toes. Pain worsens with passive movement of the toes.",
+      "Reports increasing tightness and severe pain in the casted leg {duration}, pain not relieved by usual pain medication, with the foot feeling cold and numb. Tried {home_remedies} without relief."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [102, 125], "systolic_bp": [115, 140], "diastolic_bp": [70, 90],
+      "respiratory_rate": [18, 24], "temperature_c": [36.8, 37.4], "spo2": [95, 99], "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["leg fracture, casted 2 days ago"], "family_history": [], "contributing_factors": ["recent tight cast placement after fracture"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed by pain", "physical_activity": "immobilized in a cast", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["elevated the leg"], "pharmacy_meds_taken": ["prescribed painkillers, not helping"], "last_medication_taken": "prescribed painkiller, 2 hours ago, no relief", "contributing_factors": ["pain not relieved by usual painkillers, unlike typical fracture pain"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": ["orthopedic clinic, cast applied, 2 days ago"]
+  },
+  {
+    "blueprint_id": "card_infective_endocarditis_01",
+    "condition_family": "fever",
+    "department": "cardiology",
+    "esi_levels": [2, 3],
+    "age_range": [25, 60],
+    "probable_condition": "infective endocarditis",
+    "contributing_factors": [],
+    "red_flags": ["persistent fever with a new heart murmur", "IV drug use with fever"],
+    "rationale": "Persistent fever with malaise, a new heart murmur, and a history of IV drug use or recent dental work suggests infective endocarditis; needs blood cultures and echocardiogram.",
+    "duration_options": ["1 week", "10 days", "2 weeks"],
+    "exact_problem": "persistent fever with fatigue and night sweats",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["persistent low-grade fever with night sweats"],
+    "chief_complaint_templates": [
+      "fever that wont go away for {duration}, feeling very tired",
+      "ongoing fever and night sweats for {duration}, no energy"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of persistent fever, night sweats, fatigue, and mild joint aches. History of {risk_exposure}. Took {pharmacy_meds} without improvement.",
+      "{duration} of low-grade fever and malaise, with new onset shortness of breath on exertion. Recent {risk_exposure}. Noted small tender spots on the fingertips."
+    ],
+    "slots": {"risk_exposure": ["intravenous drug use", "a dental procedure without antibiotic cover", "a known heart valve problem"]},
+    "vitals_ranges": {
+      "heart_rate": [95, 118], "systolic_bp": [100, 122], "diastolic_bp": [62, 80],
+      "respiratory_rate": [18, 22], "temperature_c": [38.0, 39.2], "spo2": [94, 98], "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": ["known heart valve abnormality"], "family_history": [], "contributing_factors": ["known heart valve abnormality with recent bacteremia risk"]},
+      {"medical_history": ["history of intravenous drug use"], "family_history": [], "contributing_factors": ["intravenous drug use"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular meals since illness", "sleep_routine": "disturbed by night sweats", "physical_activity": "reduced due to fatigue", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 6 hours ago, fever returns"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
