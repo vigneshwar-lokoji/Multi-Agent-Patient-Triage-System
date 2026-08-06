@@ -1,0 +1,646 @@
+[
+  {
+    "blueprint_id": "card_pericarditis_viral_01",
+    "condition_family": "chest_pain",
+    "department": "cardiology",
+    "esi_levels": [3],
+    "age_range": [18, 45],
+    "probable_condition": "acute pericarditis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sharp pleuritic chest pain relieved by sitting forward, worse lying down, following a viral illness, suggests pericarditis rather than ischemia.",
+    "duration_options": ["2 days", "3 days"],
+    "exact_problem": "sharp chest pain, worse lying down, better sitting forward",
+    "pain_location": "central chest",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": ["low-grade fever since the flu-like illness"],
+    "chief_complaint_templates": [
+      "sharp chest pain for {duration}, worse when I lie down",
+      "chest pain gets better when I lean forward, started {duration}"
+    ],
+    "hpi_templates": [
+      "Sharp, pleuritic chest pain for {duration}, worse lying flat and with deep breaths, relieved by sitting forward. Had a flu-like illness with fever and body aches last week. Took {pharmacy_meds} without full relief.",
+      "Patient reports {duration} of central chest pain that eases when leaning forward, following a viral illness with fever and muscle aches. No exertional component. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 105], "systolic_bp": [110, 130], "diastolic_bp": [68, 84],
+      "respiratory_rate": [16, 20], "temperature_c": [37.3, 38.0], "spo2": [96, 99], "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"recent_infections": ["flu-like illness with fever and body aches, 1 week ago"], "family_history": [], "contributing_factors": ["recent flu-like illness with fever and body aches"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "moderate, resumed slowly after illness", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["sitting upright to ease pain"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 4 hours ago, partial relief"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "card_heart_failure_decompensated_01",
+    "condition_family": "breathlessness",
+    "department": "cardiology",
+    "esi_levels": [2, 3],
+    "age_range": [55, 85],
+    "probable_condition": "decompensated heart failure",
+    "contributing_factors": [],
+    "red_flags": ["difficulty breathing lying flat", "leg swelling with weight gain"],
+    "rationale": "Progressive breathlessness, orthopnea, and leg swelling in a known heart failure patient who missed diuretics and ate salty food indicates decompensation.",
+    "duration_options": ["3 days", "4 days", "5 days"],
+    "exact_problem": "breathlessness, worse lying flat, with leg swelling",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "cant breathe properly lying down for {duration}, legs are swollen",
+      "getting more breathless for {duration}, ankles puffed up"
+    ],
+    "hpi_templates": [
+      "Progressive breathlessness for {duration}, worse lying flat, sleeping propped up on pillows. Bilateral leg swelling and weight gain. Missed {last_medication} for several days. Ate salty food at a family function.",
+      "Patient with known heart failure reports {duration} of worsening breathlessness and leg swelling. Ran out of {pharmacy_meds} and did not refill. Reduced urine output, increasing fatigue."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [95, 120], "systolic_bp": [100, 150], "diastolic_bp": [65, 92],
+      "respiratory_rate": [24, 32], "temperature_c": [36.5, 37.1], "spo2": [88, 94], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["heart failure", "hypertension"], "medications": ["furosemide 40mg", "telmisartan 40mg"], "family_history": [], "contributing_factors": ["known heart failure, missed furosemide doses"]},
+      {"medical_history": ["heart failure", "prior heart attack"], "medications": ["furosemide 40mg"], "past_surgeries": ["coronary stent, 3 years ago"], "family_history": [], "contributing_factors": ["prior heart attack with stent, heart failure"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "ate salty food at a family function this week", "sleep_routine": "sleeping propped up on pillows, breathless lying flat", "physical_activity": "reduced due to breathlessness", "last_meal_options": ["festive meal, salty snacks, yesterday", "restaurant food, 2 days ago"], "contributing_factors": ["ate salty food at a family function this week"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "ran out of furosemide a few days ago"}
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": ["cardiology follow-up, 2 months ago", null]
+  },
+  {
+    "blueprint_id": "neuro_seizure_first_unprovoked_01",
+    "condition_family": "seizure",
+    "department": "neurology",
+    "esi_levels": [2],
+    "age_range": [18, 40],
+    "probable_condition": "first unprovoked seizure",
+    "contributing_factors": [],
+    "red_flags": ["witnessed convulsion with loss of consciousness"],
+    "rationale": "A witnessed generalized convulsion with post-ictal confusion in a sleep-deprived young adult, with no prior seizure history, is a first unprovoked seizure needing neurology workup.",
+    "duration_options": ["30 minutes ago", "1 hour ago"],
+    "exact_problem": "witnessed convulsion with loss of consciousness, now confused",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "had a fit/seizure {duration}, feels confused now",
+      "collapsed and shook all over {duration}, doesn't remember it"
+    ],
+    "hpi_templates": [
+      "Witnessed generalized convulsion with loss of consciousness {duration}, lasting about two minutes, followed by post-ictal confusion and drowsiness. Family reports severe sleep deprivation this week from exam preparation. Bit the tongue during the episode.",
+      "Patient found shaking and unresponsive {duration}, regained consciousness confused and tired. No prior seizures. Had been sleeping only 3-4 hours a night this week due to {work_pattern}. No alcohol involved."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 110], "systolic_bp": [115, 140], "diastolic_bp": [70, 90],
+      "respiratory_rate": [16, 22], "temperature_c": [36.8, 37.4], "spo2": [95, 99], "pain_score": [0, 3]
+    },
+    "backgrounds": [
+      {"family_history": ["father: epilepsy"], "contributing_factors": ["family history of epilepsy"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular meals this week", "sleep_routine": "3-4 hours a night this week from exam pressure", "physical_activity": "none, studying long hours", "last_meal_options": ["coffee only since morning", "skipped dinner, studying"], "work_pattern": "exam preparation", "contributing_factors": ["severe sleep deprivation from exam preparation"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_sciatica_disc_01",
+    "condition_family": "back_pain",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [30, 60],
+    "probable_condition": "lumbar disc herniation with sciatica",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Shooting leg pain following the sciatic distribution after lifting, worse with sitting and coughing, without bowel/bladder red flags, indicates sciatica from disc herniation; low acuity.",
+    "duration_options": ["1 week", "10 days", "2 weeks"],
+    "exact_problem": "shooting pain from lower back down the leg",
+    "pain_location": "lower back radiating down the back of the leg",
+    "pain_patterns": ["worsening", "intermittent"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "pain shoots from my back down my leg for {duration}",
+      "back pain going down the leg since {duration}, worse sitting"
+    ],
+    "hpi_templates": [
+      "Shooting pain from the lower back down the back of the leg for {duration}, worse with sitting, coughing, and bending. Began after lifting {heavy_object}. No leg weakness, no bowel or bladder changes. Tried {home_remedies}.",
+      "Patient reports {duration} of radiating leg pain following back strain from lifting {heavy_object}. Numbness in the foot occasionally. Took {last_medication} with partial relief."
+    ],
+    "slots": {"heavy_object": ["a heavy suitcase", "boxes while shifting house", "a sack of rice", "gym weights"]},
+    "vitals_ranges": {
+      "heart_rate": [70, 90], "systolic_bp": [112, 132], "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [5, 8]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed by leg pain at night", "physical_activity": "desk job, long hours sitting", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "contributing_factors": ["desk job with long hours sitting"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag", "stretching exercises"], "pharmacy_meds_taken": ["pain relief gel"], "last_medication_taken": "ibuprofen 400mg, 6 hours ago, partial relief"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "physiotherapy, a few months ago"]
+  },
+  {
+    "blueprint_id": "em_heat_stroke_labor_01",
+    "condition_family": "heat_illness",
+    "department": "emergency",
+    "esi_levels": [1, 2],
+    "age_range": [20, 55],
+    "probable_condition": "heat stroke",
+    "contributing_factors": [],
+    "red_flags": ["altered mental status with high body temperature", "hot dry skin, not sweating"],
+    "rationale": "Confusion, very high temperature, and hot dry skin in an outdoor laborer working in extreme heat without adequate hydration is heat stroke; a medical emergency.",
+    "duration_options": ["30 minutes ago", "1 hour ago"],
+    "exact_problem": "confusion and collapse after working in extreme heat",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["very high body temperature, came on quickly"],
+    "chief_complaint_templates": [
+      "coworker collapsed and confused after working in the heat, {duration}",
+      "feeling extremely hot and dizzy, collapsed {duration}"
+    ],
+    "hpi_templates": [
+      "Patient collapsed at {work_pattern} {duration} after working outdoors in extreme heat for hours. Confused and disoriented, skin hot and dry, minimal sweating. Poor water intake through the shift.",
+      "Found confused and unsteady {duration} while doing outdoor construction work in peak afternoon heat. Coworkers report little water intake and no shade breaks. Skin hot to touch."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [125, 155], "systolic_bp": [85, 105], "diastolic_bp": [50, 68],
+      "respiratory_rate": [24, 32], "temperature_c": [40.0, 41.5], "spo2": [92, 97], "pain_score": [0, 3]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {"diet_routine": "irregular meals during work shifts", "sleep_routine": "6 hours", "physical_activity": "heavy outdoor manual labor", "last_meal_options": ["quick breakfast before shift", "no lunch, working through the day"], "work_pattern": "an outdoor construction site", "contributing_factors": ["heavy outdoor manual labor in extreme heat"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["poured water on the head"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["poor water intake through the work shift"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_carbon_monoxide_01",
+    "condition_family": "poisoning",
+    "department": "emergency",
+    "esi_levels": [2],
+    "age_range": [18, 60],
+    "probable_condition": "carbon monoxide poisoning",
+    "contributing_factors": [],
+    "red_flags": ["multiple household members with headache and confusion"],
+    "rationale": "Headache, nausea, and confusion in multiple household members after using a generator/heater in a closed room points to carbon monoxide poisoning.",
+    "duration_options": ["1 hour ago", "2 hours ago"],
+    "exact_problem": "headache, nausea, and dizziness, several family members affected",
+    "pain_location": "generalized headache",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "bad headache and dizziness for {duration}, my family feels it too",
+      "feeling confused and sick for {duration}, was running a generator indoors"
+    ],
+    "hpi_templates": [
+      "Headache, nausea, and dizziness for {duration}, with similar symptoms in other household members. Had been running a generator in a closed room during a power cut. No open windows.",
+      "Patient reports {duration} of headache and confusion after using a room heater in a sealed bedroom overnight. Family members report similar symptoms. No known gas leak checked."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [95, 120], "systolic_bp": [105, 130], "diastolic_bp": [65, 84],
+      "respiratory_rate": [18, 24], "temperature_c": [36.6, 37.2], "spo2": [90, 96], "pain_score": [4, 7]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "slept in a closed room overnight", "physical_activity": "normal", "last_meal_options": ["dinner, 3 hours ago", "breakfast, 2 hours ago"], "contributing_factors": ["slept in a closed room with a running generator/heater"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["opened windows once symptoms started"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_testicular_torsion_01",
+    "condition_family": "groin_pain",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [12, 25],
+    "sex": "male",
+    "probable_condition": "testicular torsion",
+    "contributing_factors": [],
+    "red_flags": ["sudden severe scrotal pain", "high-riding, swollen testicle"],
+    "rationale": "Sudden severe unilateral scrotal pain with swelling and nausea in an adolescent is testicular torsion until proven otherwise; time-critical surgical emergency.",
+    "duration_options": ["1 hour ago", "2 hours ago", "3 hours ago"],
+    "exact_problem": "sudden severe pain and swelling in the scrotum",
+    "pain_location": "scrotum, one side",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden bad pain down there {duration}, one side is swollen",
+      "severe groin pain started {duration}, feeling sick"
+    ],
+    "hpi_templates": [
+      "Sudden onset severe unilateral scrotal pain {duration}, associated with nausea and one episode of vomiting. No trauma reported. Pain woke the patient from sleep. Swelling and tenderness on exam.",
+      "Patient reports {duration} of acute scrotal pain and swelling, came on suddenly without injury. Associated nausea. Tried {home_remedies} without relief."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [102, 125], "systolic_bp": [110, 135], "diastolic_bp": [68, 86],
+      "respiratory_rate": [16, 22], "temperature_c": [36.6, 37.2], "spo2": [97, 100], "pain_score": [8, 10]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "7-8 hours, woke up with pain", "physical_activity": "normal, plays sports occasionally", "last_meal_options": ["dinner, 4 hours ago", "breakfast, 3 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tried lying still", "supportive underwear"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_perforated_ulcer_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [35, 70],
+    "probable_condition": "perforated peptic ulcer",
+    "contributing_factors": [],
+    "red_flags": ["sudden severe abdominal pain", "rigid, board-like abdomen"],
+    "rationale": "Sudden severe abdominal pain with a rigid abdomen in a patient with a peptic ulcer history and regular NSAID use suggests perforation; surgical emergency.",
+    "duration_options": ["1 hour ago", "2 hours ago"],
+    "exact_problem": "sudden severe abdominal pain, whole stomach area",
+    "pain_location": "entire abdomen, started upper abdomen",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden terrible stomach pain {duration}, whole belly hurts",
+      "stomach pain came on suddenly and its severe, {duration}"
+    ],
+    "hpi_templates": [
+      "Sudden onset severe abdominal pain {duration}, now diffuse across the entire abdomen, worse with any movement. Known peptic ulcer disease, regularly taking {last_medication}. Abdomen rigid on exam, lying very still.",
+      "Patient reports {duration} of abrupt, severe abdominal pain starting in the upper abdomen and spreading. History of ulcer disease and frequent {pharmacy_meds} use. Nausea present, unable to find a comfortable position."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [110, 135], "systolic_bp": [95, 115], "diastolic_bp": [58, 76],
+      "respiratory_rate": [22, 28], "temperature_c": [37.2, 38.2], "spo2": [94, 98], "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["peptic ulcer disease"], "medications": ["diclofenac occasionally"], "family_history": [], "contributing_factors": ["known peptic ulcer disease with diclofenac use"]},
+      {"medical_history": ["chronic joint pain", "peptic ulcer disease"], "medications": ["ibuprofen 400mg regularly"], "family_history": [], "contributing_factors": ["regular ibuprofen use with prior ulcer disease"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular meals, frequent spicy food", "sleep_routine": "6-7 hours", "physical_activity": "sedentary", "last_meal_options": ["lunch, 3 hours ago", "spicy snack, 2 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": ["antacid tablets"], "last_medication_taken": "diclofenac, this morning", "contributing_factors": ["diclofenac taken despite known ulcer history"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "gastroenterology clinic for ulcer, months ago"]
+  },
+  {
+    "blueprint_id": "surg_bowel_obstruction_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [45, 80],
+    "probable_condition": "small bowel obstruction",
+    "contributing_factors": [],
+    "red_flags": ["distended abdomen with no bowel movement", "persistent vomiting"],
+    "rationale": "Abdominal distension, vomiting, and absence of bowel movement or gas in a patient with prior abdominal surgery suggests adhesion-related bowel obstruction.",
+    "duration_options": ["1 day", "2 days"],
+    "exact_problem": "abdominal bloating, vomiting, and no bowel movement or gas",
+    "pain_location": "generalized abdomen, crampy",
+    "pain_patterns": ["intermittent", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "stomach is bloated and vomiting for {duration}, no motion or gas passed",
+      "belly pain and swelling for {duration}, cant pass gas or stool"
+    ],
+    "hpi_templates": [
+      "Progressive abdominal distension and crampy pain for {duration}, with repeated vomiting and no passage of stool or gas. Prior abdominal surgery with adhesions suspected. Abdomen visibly distended.",
+      "Patient reports {duration} of bloating, colicky abdominal pain, and vomiting, unable to pass gas or stool. History of past abdominal surgery with adhesions suspected. Tried {home_remedies} without relief."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [95, 118], "systolic_bp": [100, 125], "diastolic_bp": [62, 82],
+      "respiratory_rate": [18, 24], "temperature_c": [36.8, 37.6], "spo2": [95, 99], "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {"past_surgeries": ["appendectomy, 10 years ago"], "family_history": [], "contributing_factors": ["prior appendectomy with adhesions suspected"]},
+      {"past_surgeries": ["hysterectomy, 8 years ago"], "family_history": [], "contributing_factors": ["prior abdominal surgery with adhesions suspected"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "reduced intake since symptoms began", "sleep_routine": "disturbed by pain and vomiting", "physical_activity": "limited due to discomfort", "last_meal_options": ["only sips of water, vomited after", "refused food since yesterday"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag on the abdomen"], "pharmacy_meds_taken": ["antacid tablets"], "last_medication_taken": "antacid, 6 hours ago, no relief"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_febrile_seizure_01",
+    "condition_family": "seizure",
+    "department": "pediatrics",
+    "esi_levels": [2, 3],
+    "age_range": [1, 5],
+    "probable_condition": "simple febrile seizure",
+    "contributing_factors": [],
+    "red_flags": ["seizure with high fever in a young child"],
+    "rationale": "A brief generalized seizure during rapid fever rise in a toddler with no prior neurological history is a simple febrile seizure; needs evaluation but generally benign.",
+    "duration_options": ["20 minutes ago", "30 minutes ago", "1 hour ago"],
+    "exact_problem": "brief seizure/shaking episode during a high fever",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["fever spiked suddenly, over 102F"],
+    "chief_complaint_templates": [
+      "my child had a fit during a fever, {duration}",
+      "child started shaking with high fever {duration}, very scared"
+    ],
+    "hpi_templates": [
+      "Child developed high fever with a brief generalized shaking episode lasting under two minutes, {duration}. Fully alert now but tired. Fever had spiked rapidly at home. Given {last_medication}.",
+      "Parents report a fever that came on quickly followed by shaking and eye-rolling {duration}, lasting about a minute, self-resolved. Child now drowsy but responsive. No prior seizures."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [120, 150], "systolic_bp": [85, 100], "diastolic_bp": [55, 70],
+      "respiratory_rate": [22, 30], "temperature_c": [39.0, 40.2], "spo2": [96, 99], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": ["sibling: febrile seizures as a toddler"], "contributing_factors": ["family history of febrile seizures"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular toddler meals, reduced appetite today", "sleep_routine": "napping more than usual, unwell today", "physical_activity": "attends daycare on weekdays", "last_meal_options": ["milk, 2 hours ago", "few bites of food, refused rest"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tepid sponging to reduce fever"], "pharmacy_meds_taken": ["paracetamol syrup"], "last_medication_taken": "paracetamol syrup, 3 hours ago"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_croup_01",
+    "condition_family": "breathing_difficulty",
+    "department": "pediatrics",
+    "esi_levels": [3],
+    "age_range": [1, 6],
+    "probable_condition": "croup (laryngotracheobronchitis)",
+    "contributing_factors": [],
+    "red_flags": ["stridor at rest", "barking cough"],
+    "rationale": "A barking cough with stridor and hoarse voice, worse at night, in a toddler with a preceding cold is classic croup.",
+    "duration_options": ["1 day", "2 days"],
+    "exact_problem": "barking cough with noisy breathing, worse at night",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["mild fever, low-grade"],
+    "chief_complaint_templates": [
+      "child has a barking cough and noisy breathing for {duration}",
+      "coughing like a seal and breathing loud, since {duration}"
+    ],
+    "hpi_templates": [
+      "Child developed a barking, seal-like cough and hoarse voice for {duration}, worse at night with noisy breathing (stridor) at rest tonight. Preceded by a runny nose and mild cold. Given {last_medication}.",
+      "Parents report {duration} of harsh barking cough and noisy inspiratory breathing, worsening after being put to bed. Mild fever and cold symptoms preceded this. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [115, 140], "systolic_bp": [85, 100], "diastolic_bp": [55, 70],
+      "respiratory_rate": [26, 36], "temperature_c": [37.5, 38.3], "spo2": [93, 97], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"recent_infections": ["cold with runny nose, 2 days ago"], "family_history": [], "contributing_factors": ["recent cold with runny nose"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular toddler meals, reduced today", "sleep_routine": "woke up at night with cough and noisy breathing", "physical_activity": "attends daycare on weekdays", "last_meal_options": ["milk, 2 hours ago", "few bites of dinner"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["steam in the bathroom", "cool night air by an open window"], "pharmacy_meds_taken": ["paracetamol syrup"], "last_medication_taken": "paracetamol syrup, 4 hours ago"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_mdd_suicidal_ideation_01",
+    "condition_family": "mood_disorder",
+    "department": "psychiatry",
+    "esi_levels": [2],
+    "age_range": [18, 45],
+    "probable_condition": "major depressive episode with suicidal ideation",
+    "contributing_factors": [],
+    "red_flags": ["expressed suicidal ideation with a plan"],
+    "rationale": "Persistent low mood, hopelessness, and suicidal ideation with a specific plan following major life stressors requires urgent psychiatric evaluation for safety.",
+    "duration_options": ["2 weeks", "1 month", "3 weeks"],
+    "exact_problem": "persistent low mood, hopelessness, and thoughts of suicide",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "been feeling hopeless and thinking about ending things for {duration}",
+      "cant stop feeling sad and worthless, having thoughts of suicide, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of persistent low mood, loss of interest in activities, poor sleep, and feelings of worthlessness, following {life_stressor}. Endorses suicidal ideation with a specific plan, no attempt yet. Poor appetite, significant weight loss.",
+      "{duration} of depressed mood and hopelessness after {life_stressor}. Reports passive and now active thoughts of self-harm, has thought about how. Withdrawing from friends and family, poor sleep and concentration."
+    ],
+    "slots": {"life_stressor": ["a recent job loss", "a difficult breakup", "a family bereavement", "ongoing financial stress"]},
+    "vitals_ranges": {
+      "heart_rate": [70, 95], "systolic_bp": [105, 130], "diastolic_bp": [65, 84],
+      "respiratory_rate": [14, 18], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": ["mother: depression"], "contributing_factors": ["family history of depression"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "poor appetite, skipping meals for weeks", "sleep_routine": "insomnia or oversleeping, disrupted for weeks", "physical_activity": "withdrawn, stopped usual activities", "last_meal_options": ["barely ate today", "skipped breakfast and lunch"], "contributing_factors": ["poor appetite and skipping meals for weeks"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "counseling sessions, a few months ago"]
+  },
+  {
+    "blueprint_id": "psych_acute_psychosis_01",
+    "condition_family": "psychosis",
+    "department": "psychiatry",
+    "esi_levels": [2],
+    "age_range": [18, 35],
+    "probable_condition": "acute psychotic episode",
+    "contributing_factors": [],
+    "red_flags": ["disorganized behavior with paranoid delusions", "auditory hallucinations"],
+    "rationale": "New-onset auditory hallucinations, paranoid delusions, and disorganized behavior following medication non-compliance in a patient with a psychiatric history indicates acute psychosis.",
+    "duration_options": ["3 days", "1 week"],
+    "exact_problem": "hearing voices and believing people are watching or plotting",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "brought in by family, talking about voices and people watching, {duration}",
+      "hearing things that arent there and acting strange, {duration}"
+    ],
+    "hpi_templates": [
+      "Family reports {duration} of increasingly disorganized behavior, expressing paranoid beliefs that neighbors are plotting against them, and responding to auditory hallucinations. Known psychiatric history, stopped {last_medication} recently. Poor sleep, not eating regularly.",
+      "Patient brought by family after {duration} of bizarre behavior, suspiciousness, and talking to unseen people. History of a psychiatric condition, non-compliant with {pharmacy_meds} for several weeks. Agitated but not violent."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [85, 110], "systolic_bp": [115, 140], "diastolic_bp": [70, 90],
+      "respiratory_rate": [16, 22], "temperature_c": [36.6, 37.2], "spo2": [96, 99], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["schizophrenia"], "medications": ["risperidone 2mg"], "family_history": ["mother: schizophrenia"], "contributing_factors": ["known schizophrenia, stopped risperidone"]},
+      {"medical_history": ["schizoaffective disorder"], "medications": ["olanzapine 10mg"], "family_history": [], "contributing_factors": ["known schizoaffective disorder, non-compliant with olanzapine"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "not eating regularly for days", "sleep_routine": "barely sleeping for several nights", "physical_activity": "agitated, pacing at home", "last_meal_options": ["hasnt eaten today", "only a few bites yesterday"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "stopped antipsychotic medication a few weeks ago"}
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": ["psychiatry clinic, a few months ago", null]
+  },
+  {
+    "blueprint_id": "obgyn_ectopic_pregnancy_01",
+    "condition_family": "pelvic_pain",
+    "department": "obgyn",
+    "esi_levels": [2],
+    "age_range": [18, 40],
+    "sex": "female",
+    "probable_condition": "ectopic pregnancy",
+    "contributing_factors": [],
+    "red_flags": ["abdominal pain with a positive pregnancy test and missed period", "vaginal bleeding with dizziness"],
+    "rationale": "Lower abdominal pain, a missed period, a positive home pregnancy test, and light vaginal bleeding raises concern for ectopic pregnancy; needs urgent ultrasound.",
+    "duration_options": ["today", "since this morning", "last few hours"],
+    "exact_problem": "lower abdominal pain with a missed period and light bleeding",
+    "pain_location": "lower abdomen, one side",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "bad stomach pain low down for {duration}, missed my period",
+      "pain on one side low belly, some spotting, {duration}, pregnancy test positive"
+    ],
+    "hpi_templates": [
+      "Sharp lower abdominal pain on one side for {duration}, with a missed period of about {duration_2} weeks and a positive home pregnancy test. Light vaginal spotting noted. Feels lightheaded.",
+      "Patient reports {duration} of one-sided lower abdominal pain with light vaginal bleeding, missed period, and a positive pregnancy test taken at home. Some dizziness on standing."
+    ],
+    "slots": {"duration_2": ["6", "7", "8"]},
+    "vitals_ranges": {
+      "heart_rate": [100, 125], "systolic_bp": [90, 112], "diastolic_bp": [58, 76],
+      "respiratory_rate": [16, 22], "temperature_c": [36.6, 37.1], "spo2": [96, 99], "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {"past_surgeries": ["pelvic infection treated, a year ago"], "family_history": [], "contributing_factors": ["prior pelvic infection increasing ectopic risk"]},
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "normal daily activity", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_preeclampsia_01",
+    "condition_family": "pregnancy_complication",
+    "department": "obgyn",
+    "esi_levels": [2],
+    "age_range": [20, 40],
+    "sex": "female",
+    "probable_condition": "preeclampsia",
+    "contributing_factors": [],
+    "red_flags": ["high blood pressure in pregnancy with headache", "swelling of the face and hands"],
+    "rationale": "New headache, visual disturbance, and swelling with elevated blood pressure in a pregnant patient beyond 20 weeks indicates preeclampsia; needs urgent obstetric evaluation.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "severe headache with swelling of the face and hands, pregnant",
+    "pain_location": "head, generalized",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "bad headache and swelling for {duration}, im pregnant",
+      "face and hands swollen for {duration}, headache wont go away, im {duration_2} weeks pregnant"
+    ],
+    "hpi_templates": [
+      "Pregnant patient, approximately {duration_2} weeks, reports {duration} of severe headache unresponsive to usual measures, with swelling of the face and hands. Some blurred vision noted. Blood pressure has been rising at home checks.",
+      "{duration} of persistent headache and new swelling in a pregnant patient (~{duration_2} weeks). Mild upper abdominal discomfort, occasional visual spots. Took {last_medication} for the headache without relief."
+    ],
+    "slots": {"duration_2": ["28", "30", "32", "34"]},
+    "vitals_ranges": {
+      "heart_rate": [85, 105], "systolic_bp": [150, 175], "diastolic_bp": [95, 112],
+      "respiratory_rate": [16, 20], "temperature_c": [36.6, 37.1], "spo2": [96, 99], "pain_score": [5, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["first pregnancy"], "family_history": ["mother: preeclampsia during pregnancy"], "contributing_factors": ["family history of preeclampsia"]},
+      {"medical_history": ["chronic hypertension before pregnancy"], "medications": ["labetalol 100mg"], "family_history": [], "contributing_factors": ["pre-existing hypertension before pregnancy"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular pregnancy diet", "sleep_routine": "6-7 hours, more tired lately", "physical_activity": "reduced due to pregnancy", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["rested in a dark room"], "pharmacy_meds_taken": ["paracetamol for headache"], "last_medication_taken": "paracetamol, 3 hours ago, no relief"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": ["antenatal checkup, 1 week ago", null]
+  },
+  {
+    "blueprint_id": "em_snake_bite_01",
+    "condition_family": "envenomation",
+    "department": "emergency",
+    "esi_levels": [1, 2],
+    "age_range": [15, 60],
+    "probable_condition": "snake envenomation",
+    "contributing_factors": [],
+    "red_flags": ["fang marks with progressive swelling", "difficulty breathing or drooping eyelids"],
+    "rationale": "A witnessed snake bite with progressive local swelling and early neurological signs (drooping eyelids, difficulty swallowing) indicates venomous snake envenomation; time-critical antivenom candidate.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "45 minutes ago"],
+    "exact_problem": "snake bite on the leg with swelling and pain",
+    "pain_location": "leg, at the bite site",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "snake bit me on the leg {duration}, its swelling up",
+      "bitten by a snake while working in the field, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient bitten by a snake on the leg while working in {work_pattern} {duration}. Progressive swelling and pain spreading from the bite site. Two fang marks visible. Mild drooping of the eyelids noted.",
+      "Reports a snake bite {duration}, witnessed by coworkers. Local swelling and pain worsening, some difficulty swallowing since. Applied {home_remedies} en route to the hospital."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [100, 130], "systolic_bp": [95, 120], "diastolic_bp": [58, 78],
+      "respiratory_rate": [18, 26], "temperature_c": [36.6, 37.2], "spo2": [92, 97], "pain_score": [6, 9]
+    },
+    "backgrounds": [{"family_history": []}],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "outdoor agricultural work", "last_meal_options": ["lunch in the field, 2 hours ago", "breakfast, 4 hours ago"], "work_pattern": "a farm field", "contributing_factors": ["outdoor agricultural work in snake-prone fields"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tied a cloth above the bite", "tried to suck out the venom"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["delayed transport while attempting remedies at the bite site"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
