@@ -1,0 +1,644 @@
+[
+  {
+    "blueprint_id": "ortho_shoulder_dislocation_01",
+    "condition_family": "limb_injury",
+    "department": "orthopedics",
+    "esi_levels": [3],
+    "age_range": [16, 40],
+    "probable_condition": "anterior shoulder dislocation",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Shoulder deformity with inability to move the arm after a fall onto an outstretched hand or during contact sports indicates anterior shoulder dislocation.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "45 minutes ago"],
+    "exact_problem": "shoulder looks deformed and cant move the arm, after a fall",
+    "pain_location": "shoulder",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell on my arm {duration}, shoulder looks out of place and hurts",
+      "shoulder popped out during a game {duration}, cant move it"
+    ],
+    "hpi_templates": [
+      "Patient fell onto an outstretched hand {duration} during {activity}, now with visible shoulder deformity, holding the arm close to the body, unable to move it. Severe pain.",
+      "Reports shoulder dislocation {duration} while playing {activity}, arm held in fixed position, significant pain and swelling."
+    ],
+    "slots": {"activity": ["a football match", "a gym workout", "a cricket match", "a bicycle fall"]},
+    "vitals_ranges": {
+      "heart_rate": [85, 105], "systolic_bp": [115, 135], "diastolic_bp": [70, 88],
+      "respiratory_rate": [16, 20], "temperature_c": [36.6, 37.2], "spo2": [96, 99], "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "plays contact sports regularly", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"], "contributing_factors": ["plays contact sports regularly, prior minor shoulder injuries"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice pack on the shoulder"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_cervical_whiplash_rta_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [3, 4],
+    "age_range": [20, 55],
+    "probable_condition": "cervical whiplash injury",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Neck pain and stiffness developing after a rear-end vehicle collision, without neurological deficit, indicates whiplash-type cervical strain.",
+    "duration_options": ["yesterday", "2 days ago", "this morning"],
+    "exact_problem": "neck pain and stiffness after a car accident, worse today",
+    "pain_location": "neck, both sides",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "car accident {duration}, neck really stiff and painful now",
+      "rear-ended {duration}, neck pain got worse overnight"
+    ],
+    "hpi_templates": [
+      "Patient was in a rear-end car collision {duration}, developed gradually worsening neck pain and stiffness, worse with movement. No numbness or weakness in arms. Wearing seatbelt at the time.",
+      "Reports being struck from behind while stopped in traffic {duration}, initially mild, now stiff and painful neck with headache. Tried {home_remedies}."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [75, 95], "systolic_bp": [115, 135], "diastolic_bp": [72, 88],
+      "respiratory_rate": [14, 18], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [4, 6]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed by neck pain", "physical_activity": "drives daily for commute", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag on the neck"], "pharmacy_meds_taken": ["ibuprofen"], "last_medication_taken": "ibuprofen, 6 hours ago, partial relief"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "urgent care, checked after the accident, 1 day ago"]
+  },
+  {
+    "blueprint_id": "obgyn_postpartum_hemorrhage_01",
+    "condition_family": "bleeding",
+    "department": "obgyn",
+    "esi_levels": [1],
+    "age_range": [18, 40],
+    "sex": "female",
+    "probable_condition": "postpartum hemorrhage",
+    "contributing_factors": [],
+    "red_flags": ["heavy vaginal bleeding after delivery", "dizziness and rapid heart rate postpartum"],
+    "rationale": "Heavy vaginal bleeding with dizziness and tachycardia within days of delivery indicates postpartum hemorrhage; life-threatening obstetric emergency.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "2 hours ago"],
+    "exact_problem": "heavy vaginal bleeding, soaking pads quickly, feeling dizzy",
+    "pain_location": "lower abdomen",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "bleeding heavily since {duration}, feel dizzy and weak",
+      "soaking through pads every few minutes since {duration}, delivered {postpartum_timing}"
+    ],
+    "hpi_templates": [
+      "Patient delivered {postpartum_timing} and now reports heavy vaginal bleeding, soaking pads within minutes, since {duration}. Associated dizziness, rapid heartbeat, and weakness.",
+      "{duration} of heavy postpartum bleeding with passage of clots, delivered {postpartum_timing}. Feels faint on standing."
+    ],
+    "slots": {"postpartum_timing": ["6 hours ago", "1 day ago", "3 days ago"]},
+    "vitals_ranges": {
+      "heart_rate": [115, 140], "systolic_bp": [80, 100], "diastolic_bp": [50, 68],
+      "respiratory_rate": [20, 26], "temperature_c": [36.8, 37.6], "spo2": [94, 98], "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "disturbed, newborn care", "physical_activity": "resting after delivery", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["lying down and elevating legs"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": ["maternity ward, delivered there, discharged recently"]
+  },
+  {
+    "blueprint_id": "obgyn_ovarian_torsion_01",
+    "condition_family": "pelvic_pain",
+    "department": "obgyn",
+    "esi_levels": [2],
+    "age_range": [15, 40],
+    "sex": "female",
+    "probable_condition": "ovarian torsion",
+    "contributing_factors": [],
+    "red_flags": ["sudden severe unilateral pelvic pain with vomiting"],
+    "rationale": "Sudden onset severe unilateral pelvic pain with nausea and vomiting, often with a known ovarian cyst, suggests ovarian torsion; time-critical to preserve the ovary.",
+    "duration_options": ["1 hour ago", "2 hours ago", "30 minutes ago"],
+    "exact_problem": "sudden severe pain on one side of the pelvis, with vomiting",
+    "pain_location": "one side of the lower pelvis",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden sharp pain on one side low down {duration}, threw up",
+      "severe one-sided pelvic pain since {duration}, feels sick"
+    ],
+    "hpi_templates": [
+      "Sudden onset severe unilateral pelvic pain {duration}, associated with nausea and vomiting. Known ovarian cyst on prior ultrasound. No fever.",
+      "Patient reports {duration} of sharp, severe one-sided lower abdominal pain with vomiting, came on suddenly during {activity}. History of an ovarian cyst."
+    ],
+    "slots": {"activity": ["exercise", "a dance class", "normal daily activity"]},
+    "vitals_ranges": {
+      "heart_rate": [100, 122], "systolic_bp": [105, 125], "diastolic_bp": [65, 82],
+      "respiratory_rate": [18, 22], "temperature_c": [36.6, 37.2], "spo2": [96, 99], "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["known ovarian cyst"], "family_history": [], "contributing_factors": ["known ovarian cyst predisposing to torsion"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag on the abdomen"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_acute_mania_bipolar_01",
+    "condition_family": "psychiatric",
+    "department": "psychiatry",
+    "esi_levels": [2, 3],
+    "age_range": [20, 45],
+    "probable_condition": "acute manic episode (bipolar disorder)",
+    "contributing_factors": [],
+    "red_flags": ["significantly reduced need for sleep with grandiosity and risky behavior"],
+    "rationale": "Days of markedly decreased need for sleep, grandiosity, rapid speech, and risky spending or behavior indicates an acute manic episode.",
+    "duration_options": ["4 days", "5 days", "1 week"],
+    "exact_problem": "barely sleeping, talking very fast, spending money recklessly",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "family brought me in, havent slept much for {duration}, feel amazing",
+      "not sleeping for {duration}, big plans, spending a lot of money"
+    ],
+    "hpi_templates": [
+      "Family reports {duration} of markedly decreased sleep (2-3 hours/night) without fatigue, rapid pressured speech, grandiose plans, and impulsive spending. Known history of {history_note}.",
+      "Patient brought in by family after {duration} of unusually elevated mood, talkativeness, and risky decisions including {risky_behavior}. Denies needing sleep."
+    ],
+    "slots": {"history_note": ["bipolar disorder, previously stable on medication", "a similar episode two years ago"], "risky_behavior": ["large unplanned purchases", "quitting a job abruptly", "reckless driving"]},
+    "vitals_ranges": {
+      "heart_rate": [85, 105], "systolic_bp": [115, 135], "diastolic_bp": [72, 88],
+      "respiratory_rate": [16, 20], "temperature_c": [36.6, 37.1], "spo2": [97, 100], "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["bipolar disorder"], "medications": ["lithium, stopped recently"], "family_history": ["father: bipolar disorder"], "contributing_factors": ["known bipolar disorder with recent medication non-adherence"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "eating very little, too busy", "sleep_routine": "2-3 hours per night for the past week", "physical_activity": "unusually high energy, constant activity", "last_meal_options": ["skipped meals, not hungry", "small snack, hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "stopped lithium about 2 weeks ago"}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": ["psychiatry clinic, medication adjusted, months ago", null]
+  },
+  {
+    "blueprint_id": "psych_ptsd_acute_stress_01",
+    "condition_family": "psychiatric",
+    "department": "psychiatry",
+    "esi_levels": [3, 4],
+    "age_range": [18, 50],
+    "probable_condition": "acute stress reaction / PTSD symptoms",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Intrusive memories, hypervigilance, and sleep disturbance following a recent traumatic event indicate an acute stress reaction with possible evolving PTSD.",
+    "duration_options": ["1 week", "2 weeks", "10 days"],
+    "exact_problem": "nightmares and feeling on edge since a traumatic event",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "cant stop thinking about {trauma_event}, {duration} now",
+      "nightmares and jumpy since {trauma_event}, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of intrusive memories, nightmares, and hypervigilance following {trauma_event}. Avoiding reminders of the event, difficulty sleeping and concentrating.",
+      "{duration} since {trauma_event}, with recurrent distressing memories, exaggerated startle response, and emotional numbness. Not sleeping well."
+    ],
+    "slots": {"trauma_event": ["a road traffic accident", "a violent robbery", "witnessing a serious accident"]},
+    "vitals_ranges": {
+      "heart_rate": [85, 105], "systolic_bp": [115, 132], "diastolic_bp": [72, 86],
+      "respiratory_rate": [16, 20], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular meals since the event", "sleep_routine": "disturbed by nightmares, 3-4 hours", "physical_activity": "avoids leaving the house", "last_meal_options": ["lunch, 3 hours ago", "skipped breakfast"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["breathing exercises"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_septic_shock_01",
+    "condition_family": "fever",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [50, 85],
+    "probable_condition": "septic shock (urinary source)",
+    "contributing_factors": [],
+    "red_flags": ["fever with hypotension and confusion", "rapid heart rate with low blood pressure"],
+    "rationale": "Fever, hypotension, tachycardia, and new confusion in an elderly patient with a preceding urinary infection indicates septic shock; immediate resuscitation needed.",
+    "duration_options": ["today", "a few hours ago", "this morning"],
+    "exact_problem": "high fever, feeling very weak and confused, low blood pressure",
+    "pain_location": "lower back and abdomen",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["high fever with shaking chills"],
+    "chief_complaint_templates": [
+      "brought in confused and weak {duration}, has had a fever",
+      "family says fever and confusion started {duration}, hard to wake"
+    ],
+    "hpi_templates": [
+      "Elderly patient brought in {duration} with high fever, shaking chills, confusion, and low blood pressure. Several days of burning urination and back pain preceding this. Family reports the patient became increasingly drowsy.",
+      "Patient found unwell {duration}, febrile, confused, and hypotensive. Recent history of urinary symptoms treated with {last_medication}. Appears acutely unwell."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [115, 140], "systolic_bp": [75, 95], "diastolic_bp": [45, 62],
+      "respiratory_rate": [24, 30], "temperature_c": [38.8, 40.0], "spo2": [90, 95], "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"medical_history": ["recent urinary tract infection"], "family_history": [], "contributing_factors": ["untreated urinary infection progressing to sepsis"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "reduced intake since illness", "sleep_routine": "disturbed by fever", "physical_activity": "increasingly weak and lethargic", "last_meal_options": ["small meal, yesterday", "refused food today"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["fluids at home"], "pharmacy_meds_taken": ["over-the-counter urinary alkalizer"], "last_medication_taken": "urinary alkalizer sachet, 2 days ago"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "local clinic, antibiotics prescribed, 4 days ago"]
+  },
+  {
+    "blueprint_id": "resus_tension_pneumothorax_01",
+    "condition_family": "trauma",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [18, 55],
+    "probable_condition": "tension pneumothorax",
+    "contributing_factors": [],
+    "red_flags": ["severe respiratory distress with absent breath sounds one side", "tracheal deviation"],
+    "rationale": "Sudden severe breathlessness and chest pain after chest trauma, with absent breath sounds on one side and low blood pressure, indicates tension pneumothorax; immediately life-threatening.",
+    "duration_options": ["10 minutes ago", "20 minutes ago", "just now"],
+    "exact_problem": "sudden severe breathlessness and chest pain after a chest injury",
+    "pain_location": "chest, one side",
+    "pain_patterns": ["worsening", "constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "hit in the chest {duration}, cant breathe properly, severe pain",
+      "fell hard on my chest {duration}, gasping for air"
+    ],
+    "hpi_templates": [
+      "Patient sustained blunt chest trauma {duration} during {trauma_cause}, now with severe breathlessness, one-sided chest pain, and low blood pressure. Increasing distress.",
+      "Reports a chest injury {duration} from {trauma_cause}, followed by rapidly worsening breathlessness and chest pain on one side. Appears anxious and short of breath."
+    ],
+    "slots": {"trauma_cause": ["a motorbike accident", "a fall from a height", "being struck by a heavy object"]},
+    "vitals_ranges": {
+      "heart_rate": [120, 145], "systolic_bp": [80, 100], "diastolic_bp": [50, 68],
+      "respiratory_rate": [28, 36], "temperature_c": [36.5, 37.2], "spo2": [84, 91], "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "card_aortic_dissection_01",
+    "condition_family": "chest_pain",
+    "department": "cardiology",
+    "esi_levels": [1],
+    "age_range": [45, 75],
+    "probable_condition": "acute aortic dissection",
+    "contributing_factors": [],
+    "red_flags": ["sudden tearing chest pain radiating to the back", "unequal blood pressure between arms"],
+    "rationale": "Sudden severe tearing chest pain radiating to the back, in a patient with poorly controlled hypertension, suggests acute aortic dissection; catastrophic if missed.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "20 minutes ago"],
+    "exact_problem": "sudden tearing chest pain radiating to the back",
+    "pain_location": "chest, radiating to the back between the shoulder blades",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden ripping pain in my chest going to my back, {duration}",
+      "worst chest pain of my life, tearing feeling, radiates to back, {duration}"
+    ],
+    "hpi_templates": [
+      "Sudden onset severe tearing chest pain radiating to the back {duration}, maximal at onset. History of poorly controlled hypertension, {medication_note}. Appears pale and diaphoretic.",
+      "Patient reports {duration} of abrupt, severe tearing chest and back pain, described as the worst pain ever experienced. Longstanding high blood pressure, often {medication_note}."
+    ],
+    "slots": {"medication_note": ["missing blood pressure medication doses", "not taking blood pressure medication regularly"]},
+    "vitals_ranges": {
+      "heart_rate": [95, 120], "systolic_bp": [165, 195], "diastolic_bp": [95, 115],
+      "respiratory_rate": [20, 26], "temperature_c": [36.5, 37.0], "spo2": [93, 97], "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["hypertension, poorly controlled"], "medications": ["amlodipine, taken inconsistently"], "family_history": [], "contributing_factors": ["poorly controlled hypertension with inconsistent medication use"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "high salt diet", "sleep_routine": "6-7 hours", "physical_activity": "sedentary", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "amlodipine, missed for several days"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "general clinic, blood pressure medication prescribed, months ago"]
+  },
+  {
+    "blueprint_id": "card_svt_palpitations_01",
+    "condition_family": "palpitations",
+    "department": "cardiology",
+    "esi_levels": [3],
+    "age_range": [18, 45],
+    "probable_condition": "supraventricular tachycardia (SVT)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sudden onset rapid regular palpitations with lightheadedness, resolving or persisting, in a young patient without structural heart disease, suggests paroxysmal SVT.",
+    "duration_options": ["20 minutes ago", "30 minutes ago", "1 hour ago"],
+    "exact_problem": "sudden rapid heart racing, feels like it wont slow down",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "heart suddenly started racing {duration}, feel lightheaded",
+      "heart racing really fast since {duration}, wont stop"
+    ],
+    "hpi_templates": [
+      "Sudden onset rapid, regular palpitations {duration}, associated with mild lightheadedness. Occurred while {trigger}. No chest pain. Similar episodes in the past that resolved on their own.",
+      "Patient reports {duration} of a rapid racing heart sensation that started abruptly during {trigger}, ongoing at time of arrival. Tried {home_remedies}."
+    ],
+    "slots": {"trigger": ["drinking coffee", "standing up quickly", "normal activity", "after a stressful phone call"]},
+    "vitals_ranges": {
+      "heart_rate": [155, 190], "systolic_bp": [100, 125], "diastolic_bp": [65, 82],
+      "respiratory_rate": [18, 22], "temperature_c": [36.5, 37.0], "spo2": [97, 100], "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals, frequent caffeine intake", "sleep_routine": "6-7 hours", "physical_activity": "normal", "last_meal_options": ["coffee, 1 hour ago", "lunch, 3 hours ago"], "contributing_factors": ["frequent caffeine intake"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tried holding breath and bearing down"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": [null, "cardiology clinic, monitored, months ago"]
+  },
+  {
+    "blueprint_id": "peds_intussusception_01",
+    "condition_family": "abdominal_pain",
+    "department": "pediatrics",
+    "esi_levels": [2],
+    "age_range": [0, 3],
+    "probable_condition": "intussusception",
+    "contributing_factors": [],
+    "red_flags": ["episodic severe abdominal pain with drawing up of legs", "red currant jelly stools"],
+    "rationale": "Episodic severe abdominal pain with the child drawing up the legs, vomiting, and red currant jelly stools in an infant/toddler indicates intussusception; needs urgent reduction.",
+    "duration_options": ["6 hours ago", "this morning", "4 hours ago"],
+    "exact_problem": "episodes of severe abdominal pain, drawing legs up, vomiting",
+    "pain_location": "abdomen, comes and goes",
+    "pain_patterns": ["intermittent", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "baby screaming and pulling legs up in pain, {duration}, vomiting",
+      "sudden crying spells with belly pain since {duration}, red stool"
+    ],
+    "hpi_templates": [
+      "Infant with {duration} of episodic severe abdominal pain, crying and drawing the legs up toward the chest, followed by periods of appearing well. Vomiting and one episode of red, jelly-like stool noted.",
+      "Parent reports {duration} of intermittent severe crying episodes with the child pulling up the knees, lethargy between episodes, and vomiting. Noted unusual reddish stool this morning."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [125, 155], "systolic_bp": [85, 100], "diastolic_bp": [52, 66],
+      "respiratory_rate": [26, 34], "temperature_c": [36.8, 37.6], "spo2": [96, 99], "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "normal infant diet", "sleep_routine": "disturbed by pain episodes", "physical_activity": "lethargic between pain episodes", "last_meal_options": ["milk feed, 2 hours ago", "small meal, this morning"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tried to soothe with feeding"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_kawasaki_disease_01",
+    "condition_family": "pediatric_fever",
+    "department": "pediatrics",
+    "esi_levels": [2, 3],
+    "age_range": [1, 6],
+    "probable_condition": "Kawasaki disease",
+    "contributing_factors": [],
+    "red_flags": ["fever for 5+ days with rash, red eyes, and swollen hands"],
+    "rationale": "Persistent high fever for five or more days with conjunctival redness, rash, red cracked lips, and swollen hands/feet in a young child indicates Kawasaki disease; needs prompt treatment to prevent coronary artery complications.",
+    "duration_options": ["5 days", "6 days"],
+    "exact_problem": "persistent high fever with rash, red eyes, and swollen hands",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["persistent high fever, not responding well to fever medicine"],
+    "chief_complaint_templates": [
+      "fever for {duration} that wont go away, rash and red eyes",
+      "high fever for {duration}, lips are cracked and hands are swollen"
+    ],
+    "hpi_templates": [
+      "Child with persistent high fever for {duration}, unresponsive to usual fever medicine, with a diffuse rash, red conjunctivae without discharge, cracked red lips, and swollen hands and feet. Irritable throughout.",
+      "Parent reports {duration} of continuous fever, now with peeling skin on the fingertips, red eyes, strawberry-appearing tongue, and swelling of the hands and feet."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [130, 155], "systolic_bp": [85, 102], "diastolic_bp": [52, 66],
+      "respiratory_rate": [22, 28], "temperature_c": [39.0, 40.2], "spo2": [96, 99], "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "normal child diet, reduced during fever", "sleep_routine": "disturbed by fever and irritability", "physical_activity": "lethargic, irritable", "last_meal_options": ["small meal, this morning", "refused food, unwell"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["tepid sponging"], "pharmacy_meds_taken": ["paracetamol"], "last_medication_taken": "paracetamol, 4 hours ago, fever persists"}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null, "pediatric clinic, fever medicine given, 2 days ago"]
+  },
+  {
+    "blueprint_id": "neuro_tia_01",
+    "condition_family": "stroke",
+    "department": "neurology",
+    "esi_levels": [2],
+    "age_range": [55, 80],
+    "probable_condition": "transient ischemic attack (TIA)",
+    "contributing_factors": [],
+    "red_flags": ["transient one-sided weakness that has now resolved", "transient slurred speech"],
+    "rationale": "Sudden one-sided weakness and slurred speech that fully resolved within an hour, in a patient with vascular risk factors, indicates a transient ischemic attack; needs urgent workup to prevent stroke.",
+    "duration_options": ["2 hours ago", "1 hour ago", "3 hours ago"],
+    "exact_problem": "one-sided weakness and slurred speech that lasted about 20 minutes and resolved",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "arm went weak and speech was slurred {duration}, back to normal now",
+      "couldnt speak right and one side felt weak {duration}, resolved quickly"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of sudden onset right-sided weakness and slurred speech lasting approximately 20 minutes, now completely resolved. History of {risk_factor}.",
+      "{duration} of transient left-sided facial droop and arm weakness with difficulty finding words, fully resolved within the hour. Known {risk_factor}."
+    ],
+    "slots": {"risk_factor": ["hypertension and high cholesterol", "atrial fibrillation", "diabetes and hypertension"]},
+    "vitals_ranges": {
+      "heart_rate": [75, 98], "systolic_bp": [145, 175], "diastolic_bp": [85, 102],
+      "respiratory_rate": [16, 20], "temperature_c": [36.5, 37.0], "spo2": [95, 99], "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["hypertension", "high cholesterol"], "medications": ["amlodipine", "atorvastatin"], "family_history": ["father: stroke"], "contributing_factors": ["longstanding hypertension and high cholesterol"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "high fat diet", "sleep_routine": "6-7 hours", "physical_activity": "sedentary", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "amlodipine, this morning"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_guillain_barre_01",
+    "condition_family": "limb_injury",
+    "department": "neurology",
+    "esi_levels": [2],
+    "age_range": [20, 55],
+    "probable_condition": "Guillain-Barre syndrome",
+    "contributing_factors": [],
+    "red_flags": ["progressive ascending weakness in both legs", "difficulty breathing with limb weakness"],
+    "rationale": "Progressive ascending symmetric weakness starting in the legs, following a recent diarrheal or respiratory illness, with reduced reflexes, indicates Guillain-Barre syndrome; needs monitoring for respiratory compromise.",
+    "duration_options": ["3 days", "4 days", "5 days"],
+    "exact_problem": "weakness in both legs that is spreading upward, tingling",
+    "pain_location": "legs, and lower back",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "legs getting weaker over {duration}, now hard to walk",
+      "weakness spreading from my legs upward, {duration}, tingling feet"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of progressive, symmetric weakness starting in the legs and ascending upward, with tingling in the feet and hands. Recent {preceding_illness}. Increasing difficulty walking.",
+      "{duration} of worsening bilateral leg weakness with reduced sensation, now affecting the ability to climb stairs. History of {preceding_illness} about two weeks ago."
+    ],
+    "slots": {"preceding_illness": ["diarrheal illness", "a flu-like respiratory infection", "a stomach bug"]},
+    "vitals_ranges": {
+      "heart_rate": [85, 108], "systolic_bp": [105, 128], "diastolic_bp": [65, 84],
+      "respiratory_rate": [18, 24], "temperature_c": [36.6, 37.2], "spo2": [93, 98], "pain_score": [3, 5]
+    },
+    "backgrounds": [
+      {"recent_infections": ["diarrheal illness, about 2 weeks ago"], "family_history": [], "contributing_factors": ["recent diarrheal illness preceding the weakness"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular meals", "sleep_routine": "6-7 hours", "physical_activity": "increasingly limited due to weakness", "last_meal_options": ["lunch, 3 hours ago", "breakfast, 4 hours ago"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["rest"], "pharmacy_meds_taken": [], "last_medication_taken": null}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_acute_pancreatitis_01",
+    "condition_family": "abdominal_pain",
+    "department": "surgery",
+    "esi_levels": [2, 3],
+    "age_range": [30, 65],
+    "probable_condition": "acute pancreatitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Severe, constant epigastric pain radiating to the back, worse after a heavy fatty meal or alcohol intake, with nausea and vomiting, suggests acute pancreatitis.",
+    "duration_options": ["10 hours ago", "1 day ago", "12 hours ago"],
+    "exact_problem": "severe constant pain in the upper stomach radiating to the back",
+    "pain_location": "upper abdomen, radiating to the back",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null, "mild fever"],
+    "chief_complaint_templates": [
+      "bad stomach pain going to my back since {duration}, vomiting",
+      "severe upper belly pain for {duration}, cant find a comfortable position"
+    ],
+    "hpi_templates": [
+      "Patient reports {duration} of severe, constant epigastric pain radiating to the back, worse lying flat and better leaning forward, with repeated vomiting. Heavy alcohol intake / large fatty meal the night before.",
+      "{duration} of severe upper abdominal pain radiating to the back with nausea and vomiting, following {trigger_meal}. Pain unrelieved by usual antacids."
+    ],
+    "slots": {"trigger_meal": ["a large fatty meal and alcohol the night before", "heavy alcohol consumption at a party", "a very oily festive meal"]},
+    "vitals_ranges": {
+      "heart_rate": [100, 122], "systolic_bp": [100, 122], "diastolic_bp": [62, 80],
+      "respiratory_rate": [20, 26], "temperature_c": [37.2, 38.2], "spo2": [94, 98], "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"family_history": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "frequent fatty and fried foods", "recent_diet_change": "large fatty meal with alcohol the night before symptoms", "sleep_routine": "6-7 hours", "physical_activity": "sedentary", "last_meal_options": ["heavy fatty meal with alcohol, last night", "fried food and drinks at a party, last night"], "contributing_factors": ["heavy alcohol intake and a fatty meal preceding symptom onset"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["hot water bag on the stomach"], "pharmacy_meds_taken": ["antacid tablets"], "last_medication_taken": "antacid, this morning, no relief"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_opioid_overdose_01",
+    "condition_family": "poisoning",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [20, 50],
+    "probable_condition": "opioid overdose",
+    "contributing_factors": [],
+    "red_flags": ["pinpoint pupils with severely reduced breathing", "unresponsive with slow shallow breathing"],
+    "rationale": "Severely reduced respiratory rate, pinpoint pupils, and depressed consciousness following opioid use indicates opioid overdose; immediately life-threatening, needs naloxone.",
+    "duration_options": ["15 minutes ago", "20 minutes ago", "just found"],
+    "exact_problem": "found unresponsive with very slow breathing, pinpoint pupils",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "found not breathing right {duration}, barely responsive",
+      "family found unconscious {duration}, breathing very slow"
+    ],
+    "hpi_templates": [
+      "Patient found unresponsive {duration} with markedly slow, shallow breathing and pinpoint pupils. Known history of {substance_history}. Empty medication packaging found nearby.",
+      "Brought in {duration} after being found minimally responsive with slow breathing, following known {substance_history}. Track marks noted on the arms."
+    ],
+    "slots": {"substance_history": ["opioid pain medication use", "prescription opioid misuse", "heroin use"]},
+    "vitals_ranges": {
+      "heart_rate": [55, 75], "systolic_bp": [85, 105], "diastolic_bp": [50, 66],
+      "respiratory_rate": [6, 10], "temperature_c": [35.8, 36.6], "spo2": [80, 88], "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["chronic pain, prescribed opioids"], "medications": ["prescribed opioid pain medication"], "family_history": [], "contributing_factors": ["prescribed opioid pain medication with apparent overuse"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "irregular", "physical_activity": "reduced", "last_meal_options": ["unknown, family unsure", "unknown"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "opioid pain medication, timing unknown"}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  }
+]

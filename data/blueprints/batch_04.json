@@ -630,7 +630,7 @@
     ],
     "slots": {},
     "vitals_ranges": {
-      "heart_rate": [100, 130], "systolic_bp": [95, 120], "diastolic_bp": [58, 78],
+      "heart_rate": [102, 130], "systolic_bp": [95, 120], "diastolic_bp": [58, 78],
       "respiratory_rate": [18, 26], "temperature_c": [36.6, 37.2], "spo2": [92, 97], "pain_score": [6, 9]
     },
     "backgrounds": [{"family_history": []}],
