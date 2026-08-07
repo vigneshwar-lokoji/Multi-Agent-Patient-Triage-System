@@ -1,0 +1,758 @@
+[
+  {
+    "blueprint_id": "gm_peripheral_neuropathy_01",
+    "condition_family": "diabetic complication",
+    "department": "general_medicine",
+    "esi_levels": [4, 5],
+    "age_range": [45, 75],
+    "probable_condition": "painful diabetic peripheral neuropathy",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Burning, tingling pain in a stocking-glove distribution in the feet, worse at night, in a patient with long-standing poorly controlled diabetes, is characteristic of diabetic peripheral neuropathy.",
+    "duration_options": ["several months", "for the past few weeks", "gradually over months"],
+    "exact_problem": "burning and tingling pain in both feet, worse at night",
+    "pain_location": "both feet",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "burning pain in my feet for {duration}, worse at night",
+      "feet feel like theyre on fire and tingling, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports burning, tingling pain in both feet in a stocking-glove pattern for {duration}, worse at night, with known {diabetes_history}.",
+      "Progressive bilateral foot pain and numbness for {duration}, associated with {diabetes_history}, significantly affecting sleep."
+    ],
+    "slots": {
+      "diabetes_history": ["poorly controlled diabetes for over ten years", "diabetes with inconsistent blood sugar control"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [70, 94],
+      "systolic_bp": [118, 142],
+      "diastolic_bp": [74, 90],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.0],
+      "spo2": [96, 99],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": ["poorly controlled diabetes for over ten years"], "medications": ["diabetes medication, inconsistently taken"], "family_history": [], "contributing_factors": ["poorly controlled diabetes for over ten years, the underlying cause of the nerve damage"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular, high in sugar", "sleep_routine": "disrupted by the pain at night", "physical_activity": "sedentary", "last_meal_options": ["dinner last night", "lunch today"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["foot soaks"], "pharmacy_meds_taken": ["over-the-counter pain reliever, minimal relief"], "last_medication_taken": "pain reliever, earlier today", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_costochondritis_01",
+    "condition_family": "musculoskeletal chest wall",
+    "department": "general_medicine",
+    "esi_levels": [4, 5],
+    "age_range": [18, 45],
+    "probable_condition": "costochondritis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sharp chest wall pain reproducible by pressing on the costosternal joints, worse with movement and deep breathing, after unusually strenuous upper body activity, is characteristic of costochondritis.",
+    "duration_options": ["2 days", "3 days", "1 week"],
+    "exact_problem": "sharp chest pain that gets worse when pressing on the chest or twisting",
+    "pain_location": "chest wall, front, tender to touch",
+    "pain_patterns": ["intermittent", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sharp chest pain when I press on it for {duration}",
+      "chest hurts when I move or breathe deep, {duration}, worse when I touch it"
+    ],
+    "hpi_templates": [
+      "Patient reports sharp, localized chest wall pain for {duration}, reproducible by palpation and worse with movement, following {activity_history}. No shortness of breath.",
+      "Chest wall tenderness and pain for {duration} that worsens with deep breathing and twisting, after {activity_history}."
+    ],
+    "slots": {
+      "activity_history": ["an unusually intense upper body workout", "a weekend of heavy lifting while moving furniture", "a new push-up routine"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [68, 92],
+      "systolic_bp": [112, 134],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [4, 6]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "an unusually intense upper body workout this week", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": ["an unusually intense upper body workout this week, straining the chest wall muscles"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["heating pad on the chest"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_pleural_effusion_01",
+    "condition_family": "respiratory",
+    "department": "general_medicine",
+    "esi_levels": [3, 4],
+    "age_range": [50, 80],
+    "probable_condition": "pleural effusion",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Gradually worsening shortness of breath with dullness to percussion at one lung base, in a patient with underlying heart failure, suggests a pleural effusion.",
+    "duration_options": ["1 week", "several days", "2 weeks"],
+    "exact_problem": "gradually worsening shortness of breath, worse lying flat",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "getting more short of breath over {duration}, worse lying down",
+      "breathless for {duration}, cant lie flat comfortably"
+    ],
+    "hpi_templates": [
+      "Patient reports progressively worsening shortness of breath over {duration}, worse when lying flat, with known {heart_history}. Reduced breath sounds at one lung base.",
+      "Gradual dyspnea on exertion over {duration}, associated with {heart_history} and mild ankle swelling."
+    ],
+    "slots": {
+      "heart_history": ["heart failure, not always taking medications consistently", "a weak heart diagnosed a few years ago"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [86, 108],
+      "systolic_bp": [110, 138],
+      "diastolic_bp": [68, 86],
+      "respiratory_rate": [20, 26],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [90, 95],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["heart failure, not always taking medications consistently"], "medications": ["heart failure medication, inconsistently taken"], "family_history": [], "contributing_factors": ["heart failure with inconsistent medication use, fluid building up around the lung"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "high in salt", "sleep_routine": "disrupted, needs extra pillows to breathe", "physical_activity": "reduced due to breathlessness", "last_meal_options": ["a salty dinner last night", "takeout food yesterday"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["sleeping propped up on pillows"], "pharmacy_meds_taken": [], "last_medication_taken": "heart failure medication, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "treated for fluid buildup before"]
+  },
+  {
+    "blueprint_id": "gm_otitis_externa_01",
+    "condition_family": "ear infection",
+    "department": "general_medicine",
+    "esi_levels": [5],
+    "age_range": [15, 55],
+    "probable_condition": "acute otitis externa (swimmer's ear)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Ear pain worsened by pulling on the earlobe, itching, and discharge following recent swimming or water exposure is characteristic of otitis externa.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "ear pain and itching, worse when touching the ear, some discharge",
+    "pain_location": "ear canal",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "ear hurts and itches for {duration}, been swimming a lot",
+      "painful ear with some discharge, {duration}, worse when I touch it"
+    ],
+    "hpi_templates": [
+      "Patient reports ear pain, itching, and discharge for {duration}, worsened by touching or pulling on the ear, following {water_exposure}.",
+      "{duration} of ear canal pain and a feeling of fullness, after {water_exposure}. No fever, no hearing loss."
+    ],
+    "slots": {
+      "water_exposure": ["frequent swimming this past week", "water getting trapped in the ear after a shower"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [64, 88],
+      "systolic_bp": [108, 128],
+      "diastolic_bp": [68, 82],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.0],
+      "spo2": [98, 100],
+      "pain_score": [3, 5]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["frequent swimming this past week, water trapped in the ear canal"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "frequent swimming this past week", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["drying the ear with a towel", "tilting the head to drain water"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_frostbite_01",
+    "condition_family": "environmental cold injury",
+    "department": "emergency",
+    "esi_levels": [3, 4],
+    "age_range": [20, 60],
+    "probable_condition": "frostbite",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Numb, pale, hard skin on the fingers or toes after prolonged cold exposure without adequate protective clothing is characteristic of frostbite.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this morning"],
+    "exact_problem": "fingers are numb, pale, and hard after being out in the cold",
+    "pain_location": "fingers/toes",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fingers are numb and white after being outside in the cold, {duration}",
+      "toes feel hard and numb, {duration}, was out in freezing weather"
+    ],
+    "hpi_templates": [
+      "Patient reports numbness and pale, hardened skin of the fingers {duration}, after {cold_exposure}. Sensation is markedly reduced in the affected areas.",
+      "White, waxy, numb skin on the toes {duration} following {cold_exposure} without adequate protective footwear."
+    ],
+    "slots": {
+      "cold_exposure": ["several hours outdoors in freezing temperatures without proper gloves", "being stranded outside in a snowstorm without adequate winter clothing"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [72, 96],
+      "systolic_bp": [112, 134],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [35.6, 36.6],
+      "spo2": [95, 99],
+      "pain_score": [2, 5]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "several hours outdoors in freezing temperatures without proper gloves", "last_meal_options": ["breakfast this morning", "hasnt eaten since being outside"], "contributing_factors": ["several hours outdoors in freezing temperatures without proper gloves"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["rubbing the hands together", "running warm water over the fingers"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried rubbing the hands together for warmth without much improvement"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_electrical_injury_01",
+    "condition_family": "trauma / electrical",
+    "department": "emergency",
+    "esi_levels": [2, 3],
+    "age_range": [20, 55],
+    "probable_condition": "electrical injury/burn",
+    "contributing_factors": [],
+    "red_flags": ["electrical contact with loss of consciousness"],
+    "rationale": "Entry and exit burn marks with muscle pain and an irregular heartbeat following contact with a live electrical source at work indicates an electrical injury requiring cardiac monitoring.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "since this morning"],
+    "exact_problem": "burn marks on the hand and arm with muscle pain, felt a shock",
+    "pain_location": "hand and arm, at the burn sites",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "got an electric shock at work, {duration}, have burn marks",
+      "touched a live wire {duration}, hand and arm hurt, feel shaky"
+    ],
+    "hpi_templates": [
+      "Patient reports accidental contact with a live electrical source {duration}, during {work_context}, with visible entry and exit burns and associated muscle pain and palpitations.",
+      "Electrical contact injury {duration} while {work_context}, with burn marks on the hand and a brief loss of consciousness reported by a coworker."
+    ],
+    "slots": {
+      "work_context": ["repairing household wiring without turning off the power", "working with electrical equipment on a construction site"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [95, 122],
+      "systolic_bp": [108, 132],
+      "diastolic_bp": [68, 86],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [95, 99],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ran cool water over the burn"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["ran cool water over the burn site for relief"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_hyperkalemia_01",
+    "condition_family": "metabolic emergency",
+    "department": "resuscitation",
+    "esi_levels": [1, 2],
+    "age_range": [55, 85],
+    "probable_condition": "severe hyperkalemia",
+    "contributing_factors": [],
+    "red_flags": ["muscle weakness with a very slow irregular heartbeat in a dialysis patient"],
+    "rationale": "Progressive weakness and a dangerously slow, irregular heartbeat in a patient with kidney failure who missed a dialysis session indicates life-threatening hyperkalemia.",
+    "duration_options": ["over the past day", "since yesterday", "over the past two days"],
+    "exact_problem": "feeling very weak all over with a slow, irregular heartbeat, missed dialysis",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "feeling extremely weak, {duration}, missed my dialysis session",
+      "heart feels slow and irregular, {duration}, havent had dialysis"
+    ],
+    "hpi_templates": [
+      "Patient with end-stage kidney disease reports progressive generalized weakness {duration}, after {dialysis_history}, with associated palpitations and a slow, irregular pulse.",
+      "Worsening muscle weakness and lightheadedness {duration} in a dialysis-dependent patient, following {dialysis_history}."
+    ],
+    "slots": {
+      "dialysis_history": ["missing the last scheduled dialysis session", "missing two dialysis sessions in a row due to transportation issues"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [32, 52],
+      "systolic_bp": [95, 118],
+      "diastolic_bp": [56, 72],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.4, 37.0],
+      "spo2": [93, 97],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["end-stage kidney disease, on dialysis"], "medications": [], "family_history": [], "contributing_factors": ["missing the last scheduled dialysis session, causing dangerous potassium buildup"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "high in potassium-rich foods", "sleep_routine": "regular", "physical_activity": "reduced due to weakness", "last_meal_options": ["a banana and orange juice this morning", "a potassium-rich meal yesterday"], "contributing_factors": ["a diet high in potassium-rich foods while missing dialysis"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "treated for high potassium once before"]
+  },
+  {
+    "blueprint_id": "resus_benzodiazepine_overdose_01",
+    "condition_family": "poisoning",
+    "department": "resuscitation",
+    "esi_levels": [2, 3],
+    "age_range": [20, 55],
+    "probable_condition": "benzodiazepine overdose",
+    "contributing_factors": [],
+    "red_flags": ["severely reduced consciousness after taking sedative pills"],
+    "rationale": "Marked drowsiness, slurred speech, and unsteady gait after taking a large number of sedative pills, with slow shallow breathing, indicates benzodiazepine overdose.",
+    "duration_options": ["1 hour ago", "2 hours ago", "found 30 minutes ago"],
+    "exact_problem": "very drowsy and hard to wake up after taking a lot of sedative pills",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "took a lot of sleeping pills {duration}, hard to wake up",
+      "found very drowsy and slurring words, {duration}, empty pill bottle nearby"
+    ],
+    "hpi_templates": [
+      "Patient found markedly drowsy and difficult to arouse {duration}, after taking a large quantity of {medication_history}, with slurred speech and unsteady gait.",
+      "Family reports patient took a large number of {medication_history} {duration}, following {stressor_context}, now minimally responsive with slow breathing."
+    ],
+    "slots": {
+      "medication_history": ["prescribed sleeping pills", "anti-anxiety medication"],
+      "stressor_context": ["a stressful argument earlier in the day", "a period of overwhelming anxiety"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [58, 82],
+      "systolic_bp": [92, 112],
+      "diastolic_bp": [56, 72],
+      "respiratory_rate": [8, 12],
+      "temperature_c": [35.9, 36.5],
+      "spo2": [89, 94],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["anxiety, prescribed sedative medication"], "medications": ["prescribed sedative medication"], "family_history": [], "contributing_factors": ["prescribed sedative medication taken in a much larger quantity than usual"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "irregular", "physical_activity": "reduced", "last_meal_options": ["unknown, family unsure", "skipped dinner"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "sedative medication, taken in excess", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_meniscus_tear_01",
+    "condition_family": "knee injury",
+    "department": "orthopedics",
+    "esi_levels": [4, 5],
+    "age_range": [18, 45],
+    "probable_condition": "meniscus tear (knee)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Knee pain with a twisting injury, joint line tenderness, swelling, and the knee catching or locking, after a sudden pivoting movement during sport, is characteristic of a meniscus tear.",
+    "duration_options": ["1 hour ago", "since this afternoon", "yesterday"],
+    "exact_problem": "knee pain and swelling after a twisting injury, knee catches when moving",
+    "pain_location": "knee, joint line",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "twisted my knee playing sports, {duration}, now it catches and hurts",
+      "knee is swollen and locks up sometimes, {duration}, twisted it earlier"
+    ],
+    "hpi_templates": [
+      "Patient reports a twisting knee injury {duration} during {sport_context}, with subsequent swelling, joint line tenderness, and a catching sensation with movement.",
+      "Knee pain and swelling {duration} following a pivoting injury during {sport_context}, with intermittent locking of the joint."
+    ],
+    "slots": {
+      "sport_context": ["a recreational soccer game", "a pickup basketball game", "a sudden pivot while playing tennis"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [74, 98],
+      "systolic_bp": [114, 136],
+      "diastolic_bp": [72, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "a recreational soccer game this week", "last_meal_options": ["lunch earlier", "breakfast this morning"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice and elevation", "knee brace from home"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": ["tried ice and elevation with some improvement"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_clavicle_fracture_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [4],
+    "age_range": [10, 40],
+    "probable_condition": "clavicle fracture",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A fall directly onto the shoulder or an outstretched arm resulting in immediate collarbone pain, swelling, and a visible bump is characteristic of a clavicle fracture.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "this afternoon"],
+    "exact_problem": "collarbone pain and a visible bump after falling on the shoulder",
+    "pain_location": "collarbone",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell on my shoulder {duration}, collarbone hurts and theres a bump",
+      "collarbone pain after a fall, {duration}, cant lift my arm"
+    ],
+    "hpi_templates": [
+      "Patient reports a fall directly onto the shoulder {duration} during {fall_context}, with immediate collarbone pain, swelling, and a visible deformity.",
+      "Sharp collarbone pain and swelling following a fall {duration}, during {fall_context}. Arm is held close to the body."
+    ],
+    "slots": {
+      "fall_context": ["a bicycle accident", "a fall while skateboarding", "a fall during a soccer match"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 102],
+      "systolic_bp": [110, 134],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "a bicycle accident this afternoon", "last_meal_options": ["lunch earlier", "breakfast this morning"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice pack", "arm sling improvised from a shirt"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_scaphoid_fracture_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [4, 5],
+    "age_range": [18, 40],
+    "probable_condition": "scaphoid fracture",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Wrist pain and tenderness in the anatomical snuffbox after falling onto an outstretched hand, without obvious deformity, is characteristic of a scaphoid fracture, often subtle on initial exam.",
+    "duration_options": ["1 hour ago", "this morning", "2 hours ago"],
+    "exact_problem": "wrist pain near the base of the thumb after falling on an outstretched hand",
+    "pain_location": "wrist, base of thumb",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell on my hand {duration}, wrist hurts near the thumb side",
+      "wrist pain after a fall, {duration}, hurts to grip anything"
+    ],
+    "hpi_templates": [
+      "Patient reports a fall onto an outstretched hand {duration} during {fall_context}, with pain localized to the thumb side of the wrist, worse with gripping.",
+      "Wrist pain following a fall on the outstretched hand {duration}, during {fall_context}. No obvious deformity but tender in the snuffbox area."
+    ],
+    "slots": {
+      "fall_context": ["a skateboarding fall", "tripping while running", "a fall during a basketball game"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [72, 96],
+      "systolic_bp": [112, 134],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [4, 6]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "a skateboarding fall this morning", "last_meal_options": ["breakfast this morning", "hasnt eaten yet"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice pack on the wrist"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_placental_abruption_01",
+    "condition_family": "obstetric emergency",
+    "department": "obgyn",
+    "esi_levels": [1, 2],
+    "age_range": [20, 40],
+    "sex": "female",
+    "probable_condition": "placental abruption",
+    "contributing_factors": [],
+    "red_flags": ["sudden severe abdominal pain with vaginal bleeding late in pregnancy", "rigid tender abdomen in pregnancy"],
+    "rationale": "Sudden severe abdominal pain with dark vaginal bleeding and a rigid, tender uterus late in pregnancy, especially after trauma or in a patient with high blood pressure, indicates placental abruption.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "since this morning"],
+    "exact_problem": "sudden severe abdominal pain with vaginal bleeding, late in pregnancy",
+    "pain_location": "abdomen, constant and severe",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden severe belly pain and bleeding, {duration}, im {gest_age} weeks pregnant",
+      "abdomen is rock hard and painful with bleeding, {duration}, {gest_age} weeks along"
+    ],
+    "hpi_templates": [
+      "Patient at approximately {gest_age} weeks gestation reports sudden onset severe abdominal pain and dark vaginal bleeding {duration}, with known {risk_history}. Uterus is rigid and tender.",
+      "Sudden severe abdominal pain with vaginal bleeding {duration} in a pregnancy at {gest_age} weeks, associated with {risk_history}."
+    ],
+    "slots": {
+      "gest_age": ["32", "34", "36"],
+      "risk_history": ["poorly controlled high blood pressure during this pregnancy", "a minor car accident earlier today"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [110, 140],
+      "systolic_bp": [85, 108],
+      "diastolic_bp": [52, 68],
+      "respiratory_rate": [20, 26],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [93, 97],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["poorly controlled high blood pressure during this pregnancy"], "medications": [], "family_history": [], "contributing_factors": ["poorly controlled high blood pressure during this pregnancy, a known risk factor"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_ovarian_cyst_rupture_01",
+    "condition_family": "gynecologic",
+    "department": "obgyn",
+    "esi_levels": [3, 4],
+    "age_range": [18, 40],
+    "sex": "female",
+    "probable_condition": "ruptured ovarian cyst",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sudden onset one-sided pelvic pain occurring around mid-cycle or after intercourse, with mild vaginal spotting and a known ovarian cyst, indicates a ruptured ovarian cyst.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this morning"],
+    "exact_problem": "sudden sharp one-sided pelvic pain",
+    "pain_location": "pelvis, one side",
+    "pain_patterns": ["constant", "improving"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden sharp pain on one side of my pelvis, {duration}",
+      "sharp one-sided lower belly pain, {duration}, started suddenly"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden onset sharp, one-sided pelvic pain {duration}, occurring during {cycle_context}, with known {cyst_history}. Mild vaginal spotting noted.",
+      "Acute unilateral pelvic pain {duration}, associated with {cycle_context}, with a history of {cyst_history}."
+    ],
+    "slots": {
+      "cycle_context": ["roughly the middle of the menstrual cycle", "shortly after intercourse"],
+      "cyst_history": ["a known ovarian cyst being monitored by ultrasound", "an ovarian cyst found on a scan a few months ago"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [82, 106],
+      "systolic_bp": [104, 126],
+      "diastolic_bp": [64, 80],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [97, 100],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["a known ovarian cyst being monitored by ultrasound"], "medications": [], "family_history": [], "contributing_factors": ["a known ovarian cyst being monitored by ultrasound, which has now ruptured"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["heating pad on the abdomen"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_pyloric_stenosis_01",
+    "condition_family": "pediatric gastrointestinal",
+    "department": "pediatrics",
+    "esi_levels": [3, 4],
+    "age_range": [0, 1],
+    "probable_condition": "pyloric stenosis",
+    "contributing_factors": [],
+    "red_flags": ["forceful projectile vomiting after every feed in a young infant"],
+    "rationale": "Forceful, projectile, non-bilious vomiting immediately after every feed in a young infant who remains hungry afterward is characteristic of hypertrophic pyloric stenosis.",
+    "duration_options": ["1 week", "5 days", "since last week"],
+    "exact_problem": "forceful projectile vomiting after every feed, still seems hungry afterward",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "baby vomits forcefully after every feed for {duration}",
+      "projectile vomiting after feeding, {duration}, still hungry right after"
+    ],
+    "hpi_templates": [
+      "Infant with {duration} of increasingly forceful, projectile vomiting immediately after feeds, remaining hungry afterward, with {weight_history}.",
+      "Parents report {duration} of worsening projectile vomiting after every feed in this young infant, with {weight_history}. No bile in the vomit."
+    ],
+    "slots": {
+      "weight_history": ["poor weight gain over the past week", "noticeably fewer wet diapers than usual"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [130, 160],
+      "systolic_bp": [78, 92],
+      "diastolic_bp": [48, 58],
+      "respiratory_rate": [30, 42],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [96, 99],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": ["a parent who had pyloric stenosis as an infant"], "contributing_factors": ["a parent who had pyloric stenosis as an infant, a known risk factor"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "bottle/breast feeding, vomiting immediately after each feed", "sleep_routine": "disrupted, hungry and fussy", "physical_activity": "normal for age between feeds", "last_meal_options": ["vomited forcefully right after the last feed", "vomited immediately after feeding"], "contributing_factors": ["vomiting immediately after each feed, unable to keep any feed down"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["smaller, more frequent feeds"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried smaller, more frequent feeds without improvement"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_neonatal_fever_01",
+    "condition_family": "neonatal emergency",
+    "department": "pediatrics",
+    "esi_levels": [1, 2],
+    "age_range": [0, 0],
+    "probable_condition": "neonatal fever (possible sepsis)",
+    "contributing_factors": [],
+    "red_flags": ["fever in an infant under 28 days old", "lethargy and poor feeding in a newborn with fever"],
+    "rationale": "Any fever in an infant younger than 28 days old, especially with lethargy and poor feeding, is treated as a possible serious bacterial infection until proven otherwise and is a pediatric emergency.",
+    "duration_options": ["a few hours ago", "since this morning", "1 hour ago"],
+    "exact_problem": "newborn feels warm, feeding poorly, and more sleepy than usual",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["developed suddenly, measured at home"],
+    "chief_complaint_templates": [
+      "newborn feels warm and wont feed, {duration}",
+      "baby has a fever and is very sleepy, {duration}, only {age_days} days old"
+    ],
+    "hpi_templates": [
+      "Parents report a {age_days}-day-old infant with fever measured at home {duration}, associated with decreased feeding and increased sleepiness.",
+      "{duration} of fever in a {age_days}-day-old newborn, with poor feeding and reduced activity noted by parents."
+    ],
+    "slots": {
+      "age_days": ["12", "18", "22"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [165, 195],
+      "systolic_bp": [65, 80],
+      "diastolic_bp": [38, 50],
+      "respiratory_rate": [50, 60],
+      "temperature_c": [38.2, 39.4],
+      "spo2": [93, 97],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "breast/bottle feeding, markedly decreased intake today", "sleep_routine": "unusually sleepy, hard to wake for feeds", "physical_activity": "reduced, lethargic", "last_meal_options": ["fed very little this morning", "refused the last feed"], "contributing_factors": ["markedly decreased feeding today along with unusual sleepiness"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_anorexia_medical_complication_01",
+    "condition_family": "eating disorder medical complication",
+    "department": "psychiatry",
+    "esi_levels": [2, 3],
+    "age_range": [15, 30],
+    "sex": "female",
+    "probable_condition": "anorexia nervosa with medical complications",
+    "contributing_factors": [],
+    "red_flags": ["very low heart rate with severe dietary restriction"],
+    "rationale": "Severe dietary restriction over months leading to significant weight loss, a dangerously low heart rate, and dizziness on standing indicates medical complications of anorexia nervosa requiring urgent evaluation.",
+    "duration_options": ["over several months", "over the past few months", "gradually over six months"],
+    "exact_problem": "feeling dizzy and weak, heart feels very slow, has been eating very little",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "feeling dizzy and weak, {duration} of eating very little",
+      "heart feels really slow and I get dizzy standing up, {duration} of restricting food"
+    ],
+    "hpi_templates": [
+      "Patient reports severe dietary restriction over {duration}, with significant weight loss, dizziness on standing, and a very slow heart rate noted on exam.",
+      "{duration} of progressively restricting food intake, with associated fatigue, lightheadedness, and cold intolerance, brought in by family concerned about weight loss."
+    ],
+    "slots": {},
+    "vitals_ranges": {
+      "heart_rate": [36, 52],
+      "systolic_bp": [82, 100],
+      "diastolic_bp": [50, 64],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [35.2, 36.2],
+      "spo2": [95, 99],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["restrictive eating pattern over several months"], "medications": [], "family_history": [], "contributing_factors": ["restrictive eating pattern over several months leading to these dangerous vital sign changes"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "severely restricted, eating very little", "recent_diet_change": "progressively eating less over several months", "sleep_routine": "disrupted", "physical_activity": "excessive exercise despite low intake", "last_meal_options": ["ate very little today", "skipped meals today"], "contributing_factors": ["progressively eating less over several months with excessive exercise"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
