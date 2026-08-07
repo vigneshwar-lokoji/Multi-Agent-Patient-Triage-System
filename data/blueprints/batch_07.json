@@ -1,0 +1,758 @@
+[
+  {
+    "blueprint_id": "gm_acute_bronchitis_01",
+    "condition_family": "respiratory infection",
+    "department": "general_medicine",
+    "esi_levels": [4, 5],
+    "age_range": [18, 65],
+    "probable_condition": "acute bronchitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Persistent productive cough after a viral cold, no fever spikes or focal chest findings, points to acute bronchitis rather than pneumonia.",
+    "duration_options": ["5 days", "1 week", "10 days"],
+    "exact_problem": "persistent cough bringing up phlegm, chest feels sore from coughing",
+    "pain_location": "chest, from coughing",
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null, "low-grade, on and off"],
+    "chief_complaint_templates": [
+      "cough with phlegm for {duration}, wont go away",
+      "coughing a lot for {duration}, chest feels raw"
+    ],
+    "hpi_templates": [
+      "Patient reports a productive cough for {duration}, following a cold with {cold_history}. No high fever. Denies shortness of breath at rest.",
+      "Persistent cough for {duration} with {cold_history} preceding it. Mild chest soreness from repeated coughing, no breathlessness."
+    ],
+    "slots": {
+      "cold_history": ["a runny nose and sore throat about two weeks ago", "a viral cold that seemed to improve then the cough lingered"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [70, 95],
+      "systolic_bp": [110, 130],
+      "diastolic_bp": [70, 85],
+      "respiratory_rate": [14, 20],
+      "temperature_c": [36.7, 37.6],
+      "spo2": [96, 99],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by coughing", "physical_activity": "reduced", "last_meal_options": ["breakfast a few hours ago", "lunch earlier"], "contributing_factors": ["sleep disrupted by coughing"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["honey and warm water", "steam inhalation"], "pharmacy_meds_taken": ["over-the-counter cough syrup"], "last_medication_taken": "cough syrup, this morning", "contributing_factors": ["tried honey and warm water for the cough with little relief"]}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_herpes_zoster_01",
+    "condition_family": "viral reactivation",
+    "department": "general_medicine",
+    "esi_levels": [3, 4],
+    "age_range": [50, 85],
+    "probable_condition": "herpes zoster (shingles)",
+    "contributing_factors": [],
+    "red_flags": ["rash near the eye"],
+    "rationale": "Painful unilateral vesicular rash in a band-like pattern following a nerve distribution, in an older adult, is characteristic of shingles.",
+    "duration_options": ["2 days", "3 days", "4 days"],
+    "exact_problem": "burning pain on one side of the torso with a blistering rash in a stripe pattern",
+    "pain_location": "one side of the torso, band-like",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "burning rash on one side of my body for {duration}",
+      "painful blisters in a band on my side, started {duration} ago"
+    ],
+    "hpi_templates": [
+      "Patient reports burning, stinging pain for {duration} followed by a blistering rash in a band-like pattern on one side, associated with {stress_context}. No prior similar episodes.",
+      "Unilateral band-like vesicular rash with severe burning pain for {duration}, occurring during {stress_context}."
+    ],
+    "slots": {
+      "stress_context": ["a period of high stress at work", "recent illness that weakened the immune system", "a stressful family situation"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [72, 96],
+      "systolic_bp": [115, 140],
+      "diastolic_bp": [72, 88],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.8, 37.8],
+      "spo2": [96, 99],
+      "pain_score": [5, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["chickenpox as a child"], "medications": [], "family_history": [], "contributing_factors": ["history of chickenpox as a child, virus reactivating now"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by pain", "physical_activity": "reduced", "last_meal_options": ["dinner last night", "lunch today"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["calamine lotion", "cold compress"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_gerd_flare_01",
+    "condition_family": "gastrointestinal",
+    "department": "general_medicine",
+    "esi_levels": [4, 5],
+    "age_range": [25, 65],
+    "probable_condition": "gastroesophageal reflux disease (GERD) flare",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Burning retrosternal discomfort after fatty or spicy meals, worse lying down, relieved by antacids, is classic reflux rather than cardiac chest pain.",
+    "duration_options": ["3 days", "1 week", "2 weeks"],
+    "exact_problem": "burning sensation in the chest and throat, worse after eating and lying down",
+    "pain_location": "chest, behind the breastbone",
+    "pain_patterns": ["intermittent", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "burning in my chest after meals for {duration}",
+      "heartburn thats been getting worse for {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports burning retrosternal discomfort for {duration}, worse after {diet_trigger} and when lying flat. Some relief with antacids.",
+      "Recurrent heartburn for {duration}, aggravated by {diet_trigger} and lying down after meals. No exertional component."
+    ],
+    "slots": {
+      "diet_trigger": ["spicy and fatty meals", "large late-night meals", "coffee and fried food"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [68, 92],
+      "systolic_bp": [112, 135],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [12, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [3, 6]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular, heavy on spicy and fatty food", "recent_diet_change": "eating out more often", "sleep_routine": "lying down soon after eating", "physical_activity": "sedentary", "last_meal_options": ["a large spicy dinner last night", "fried food a few hours ago"], "contributing_factors": ["irregular diet heavy on spicy and fatty food"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["drinking milk", "baking soda in water"], "pharmacy_meds_taken": ["over-the-counter antacid"], "last_medication_taken": "antacid tablet, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "antacids from the pharmacy previously"]
+  },
+  {
+    "blueprint_id": "em_gout_flare_01",
+    "condition_family": "musculoskeletal inflammatory",
+    "department": "emergency",
+    "esi_levels": [4],
+    "age_range": [35, 70],
+    "sex": "male",
+    "probable_condition": "acute gouty arthritis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sudden severe pain, redness and swelling of the big toe joint after a heavy meat and alcohol intake is a classic gout flare.",
+    "duration_options": ["overnight", "since this morning", "since last night"],
+    "exact_problem": "sudden severe pain, redness and swelling in the big toe",
+    "pain_location": "big toe joint",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "my big toe is red, swollen and extremely painful, started {duration}",
+      "cant even put a bedsheet on my toe, it hurts so much, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden onset severe pain, redness, and swelling of the big toe joint {duration}, after {diet_trigger}. No trauma.",
+      "Acute severe monoarticular pain in the big toe {duration}, following {diet_trigger}. Joint is hot, red, and exquisitely tender."
+    ],
+    "slots": {
+      "diet_trigger": ["a heavy meat and alcohol meal at a party", "a weekend of red meat and beer", "a rich meal with seafood and wine"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [76, 98],
+      "systolic_bp": [118, 142],
+      "diastolic_bp": [76, 90],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.9, 37.7],
+      "spo2": [97, 100],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"medical_history": ["prior gout flare"], "medications": [], "family_history": ["father with gout"], "contributing_factors": ["prior gout flare"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "heavy on red meat, seafood, and alcohol", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["red meat and beer last night", "a seafood platter with wine"], "contributing_factors": ["diet heavy on red meat, seafood, and alcohol"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice on the toe"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1, 2],
+    "last_treated_options": [null, "anti-inflammatory medication for a past flare"]
+  },
+  {
+    "blueprint_id": "em_acute_limb_ischemia_01",
+    "condition_family": "vascular emergency",
+    "department": "emergency",
+    "esi_levels": [1, 2],
+    "age_range": [55, 85],
+    "probable_condition": "acute limb ischemia",
+    "contributing_factors": [],
+    "red_flags": ["cold pulseless leg", "sudden severe leg pain with pallor"],
+    "rationale": "Sudden onset of a cold, pale, pulseless, painful leg in a patient with atrial fibrillation suggests embolic acute limb ischemia, a vascular emergency.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this morning"],
+    "exact_problem": "sudden severe pain in the leg, which now feels cold and looks pale",
+    "pain_location": "leg, below the knee",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "my leg suddenly went cold, pale and painful, {duration}",
+      "sudden severe leg pain, leg looks white and feels cold, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden onset severe leg pain {duration}, with the limb now cold, pale, and pulseless. Known history of {heart_history}.",
+      "Acute severe leg pain and numbness {duration} in a patient with {heart_history}; limb is cool and mottled with weak pulses."
+    ],
+    "slots": {
+      "heart_history": ["irregular heartbeat (atrial fibrillation)", "an irregular heart rhythm not always taking medication for it"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [104, 138],
+      "systolic_bp": [100, 150],
+      "diastolic_bp": [60, 92],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [36.4, 37.2],
+      "spo2": [93, 98],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["atrial fibrillation"], "medications": ["blood thinner, not always taken as prescribed"], "family_history": [], "contributing_factors": ["history of atrial fibrillation with inconsistent blood thinner use"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["breakfast this morning", "dinner last night"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_subarachnoid_hemorrhage_01",
+    "condition_family": "neurological emergency",
+    "department": "neurology",
+    "esi_levels": [1, 2],
+    "age_range": [35, 65],
+    "probable_condition": "subarachnoid hemorrhage",
+    "contributing_factors": [],
+    "red_flags": ["worst headache of life", "sudden thunderclap headache"],
+    "rationale": "Sudden-onset, severe 'thunderclap' headache described as the worst of the patient's life, with neck stiffness and vomiting, is classic for subarachnoid hemorrhage.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "45 minutes ago"],
+    "exact_problem": "sudden, extremely severe headache, worst headache ever, with neck stiffness",
+    "pain_location": "head, sudden and severe",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "worst headache of my life, hit suddenly {duration}",
+      "sudden severe headache like being struck, {duration}, neck feels stiff"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden, thunderclap-onset severe headache {duration}, described as the worst of their life, with associated {assoc_symptom}. No prior similar headaches.",
+      "Sudden severe headache {duration} reaching maximum intensity within seconds, with {assoc_symptom} and neck stiffness."
+    ],
+    "slots": {
+      "assoc_symptom": ["vomiting and neck stiffness", "brief loss of consciousness and vomiting", "sensitivity to light and neck stiffness"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [102, 130],
+      "systolic_bp": [150, 190],
+      "diastolic_bp": [92, 115],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.7, 37.5],
+      "spo2": [94, 98],
+      "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["high blood pressure, poorly controlled"], "medications": ["blood pressure medication"], "family_history": ["family history of brain aneurysm"], "contributing_factors": ["poorly controlled high blood pressure"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["lunch earlier", "breakfast this morning"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_cluster_headache_01",
+    "condition_family": "primary headache",
+    "department": "neurology",
+    "esi_levels": [3, 4],
+    "age_range": [25, 50],
+    "sex": "male",
+    "probable_condition": "cluster headache",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Severe unilateral periorbital pain with tearing, nasal congestion, and restlessness, occurring in a cluster pattern, is characteristic of cluster headache.",
+    "duration_options": ["45 minutes", "1 hour", "for the past several nights"],
+    "exact_problem": "severe pain around one eye with tearing and a stuffy nose on that side",
+    "pain_location": "around and behind one eye",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "excruciating pain around one eye for {duration}, eye is watering",
+      "severe one-sided eye pain, happens most nights, tonight for {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports severe unilateral periorbital pain for {duration}, with associated {assoc_symptom}. Pain has occurred nightly for the past week at a similar time.",
+      "Recurrent severe one-sided eye pain, current episode {duration}, with {assoc_symptom}. Patient is restless and pacing during attacks."
+    ],
+    "slots": {
+      "assoc_symptom": ["tearing and a stuffy nose on the same side", "eyelid drooping and redness of the eye", "nasal congestion and facial sweating on one side"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 102],
+      "systolic_bp": [118, 140],
+      "diastolic_bp": [75, 90],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.7, 37.2],
+      "spo2": [97, 100],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["prior cluster headache episodes"], "medications": [], "family_history": [], "contributing_factors": ["prior cluster headache episodes in a similar pattern"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted, headaches wake the patient at night", "physical_activity": "regular", "last_meal_options": ["dinner earlier", "lunch today"], "contributing_factors": ["sleep disrupted, headaches wake the patient at night"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["pressing on the eye", "sitting in a dark room"], "pharmacy_meds_taken": ["over-the-counter pain reliever, minimal relief"], "last_medication_taken": "pain reliever, earlier tonight", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": [null, "seen previously for similar headaches"]
+  },
+  {
+    "blueprint_id": "neuro_cauda_equina_01",
+    "condition_family": "spinal emergency",
+    "department": "neurology",
+    "esi_levels": [2],
+    "age_range": [30, 65],
+    "probable_condition": "cauda equina syndrome",
+    "contributing_factors": [],
+    "red_flags": ["saddle numbness", "new bladder or bowel incontinence with back pain"],
+    "rationale": "Severe low back pain with saddle-area numbness and new loss of bladder control indicates cauda equina syndrome, a surgical spinal emergency.",
+    "duration_options": ["since this morning", "over the past day", "since last night"],
+    "exact_problem": "severe low back pain with numbness between the legs and difficulty controlling the bladder",
+    "pain_location": "low back, radiating to both legs",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "severe back pain and now cant feel between my legs, {duration}",
+      "back pain with numbness down there and trouble peeing, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports severe low back pain {duration} with new numbness in the saddle area and difficulty {bladder_symptom}. Denies trauma.",
+      "Worsening low back pain {duration}, radiating to both legs, with saddle anesthesia and {bladder_symptom}."
+    ],
+    "slots": {
+      "bladder_symptom": ["controlling the bladder, with some leakage", "starting to urinate", "knowing when the bladder is full"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [74, 98],
+      "systolic_bp": [116, 140],
+      "diastolic_bp": [74, 88],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [97, 100],
+      "pain_score": [8, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["chronic low back pain", "known disc disease"], "medications": [], "family_history": [], "contributing_factors": ["known disc disease with chronic low back pain now acutely worse"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by pain", "physical_activity": "reduced due to back pain", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["heating pad"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "physical therapy for chronic back pain"]
+  },
+  {
+    "blueprint_id": "ortho_rib_fracture_fall_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [3, 4],
+    "age_range": [40, 80],
+    "probable_condition": "rib fracture",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Localized chest wall pain, worse with breathing and coughing, following a fall onto the side, is consistent with a rib fracture.",
+    "duration_options": ["1 hour ago", "this morning", "2 hours ago"],
+    "exact_problem": "sharp chest wall pain after a fall, worse with breathing and coughing",
+    "pain_location": "side of the chest wall",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell {duration} and now my side hurts every time I breathe",
+      "sharp rib pain after falling, {duration}, hurts to cough"
+    ],
+    "hpi_templates": [
+      "Patient reports a fall {duration}, landing on the side, with localized chest wall pain worse on {aggravating_factor}. No shortness of breath at rest.",
+      "Sharp, localized rib pain following a fall {duration}, aggravated by {aggravating_factor}. Bruising noted over the area."
+    ],
+    "slots": {
+      "aggravating_factor": ["deep breathing and coughing", "twisting the torso and coughing", "taking a deep breath"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [76, 100],
+      "systolic_bp": [115, 138],
+      "diastolic_bp": [72, 88],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [95, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["lunch earlier", "breakfast this morning"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice pack on the side"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a couple hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_radial_nerve_palsy_01",
+    "condition_family": "peripheral nerve injury",
+    "department": "orthopedics",
+    "esi_levels": [4],
+    "age_range": [25, 60],
+    "probable_condition": "radial nerve palsy (wrist drop)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Wrist drop and inability to extend the fingers after prolonged compression of the upper arm, such as falling asleep with the arm draped over a chair, points to radial nerve palsy.",
+    "duration_options": ["since waking up this morning", "since last night", "since a few hours ago"],
+    "exact_problem": "cannot lift the wrist or straighten the fingers on one hand",
+    "pain_location": "outer forearm, mild",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "woke up and cant lift my wrist, {duration}",
+      "hand just hangs, cant straighten fingers, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports weakness lifting the wrist and extending the fingers {duration}, after {compression_cause}. Mild numbness over the back of the hand.",
+      "New wrist drop {duration}, following {compression_cause}. No significant pain, mainly weakness and numbness."
+    ],
+    "slots": {
+      "compression_cause": ["falling asleep with the arm draped over a chair back", "sleeping with the head resting on the arm all night", "leaning on the arm for a long period while intoxicated"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [68, 90],
+      "systolic_bp": [110, 130],
+      "diastolic_bp": [70, 84],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "fell into a very deep sleep, did not shift position", "physical_activity": "sedentary", "last_meal_options": ["dinner last night", "a few drinks last night"], "contributing_factors": ["fell into a very deep sleep and did not shift position, compressing the arm"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["massaging the arm"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_diverticulitis_01",
+    "condition_family": "abdominal infection",
+    "department": "surgery",
+    "esi_levels": [3],
+    "age_range": [50, 75],
+    "probable_condition": "acute diverticulitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Left lower quadrant pain with fever and altered bowel habits in an older adult with a low-fiber diet is characteristic of acute diverticulitis.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "steady left lower abdominal pain with fever and altered bowel habits",
+    "pain_location": "left lower abdomen",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["low-grade, steady", "mild fever for two days"],
+    "chief_complaint_templates": [
+      "left-side belly pain and fever for {duration}",
+      "constant pain in my lower left belly, feverish, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports steady left lower quadrant abdominal pain for {duration}, with low-grade fever and {bowel_symptom}. Diet has been {diet_context}.",
+      "Left-sided abdominal pain and fever for {duration}, with {bowel_symptom}. Reports a diet that has been {diet_context}."
+    ],
+    "slots": {
+      "bowel_symptom": ["alternating constipation and loose stools", "constipation for several days", "some mucus in the stool"],
+      "diet_context": ["low in fiber, mostly processed food", "low in fiber for a long time"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [84, 106],
+      "systolic_bp": [115, 138],
+      "diastolic_bp": [72, 88],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [37.6, 38.6],
+      "spo2": [96, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["known diverticulosis"], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "low in fiber, mostly processed food", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["fast food yesterday", "a low-fiber meal last night"], "contributing_factors": ["diet low in fiber, mostly processed food"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["heating pad on the abdomen"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "treated for a similar episode of diverticulitis before"]
+  },
+  {
+    "blueprint_id": "surg_perianal_abscess_01",
+    "condition_family": "anorectal infection",
+    "department": "surgery",
+    "esi_levels": [4],
+    "age_range": [25, 60],
+    "probable_condition": "perianal abscess",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A painful, swollen, fluctuant lump near the anus with worsening pain sitting down and low-grade fever indicates a perianal abscess needing drainage.",
+    "duration_options": ["3 days", "4 days", "2 days"],
+    "exact_problem": "painful swollen lump near the anus, worse sitting down",
+    "pain_location": "perianal area",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "painful lump near my bottom for {duration}, getting worse",
+      "swollen, throbbing spot near the anus, {duration}, hard to sit"
+    ],
+    "hpi_templates": [
+      "Patient reports a painful, swollen lump near the anus for {duration}, worsening with sitting, associated with {assoc_history}. Mild fever.",
+      "Progressively painful perianal swelling for {duration}, with {assoc_history}. Pain worse with bowel movements and sitting."
+    ],
+    "slots": {
+      "assoc_history": ["a small amount of pus noticed on underwear", "increasing redness and warmth over the area", "difficulty sitting comfortably for two days"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [80, 102],
+      "systolic_bp": [114, 136],
+      "diastolic_bp": [72, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [37.3, 38.2],
+      "spo2": [97, 100],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "low in fiber", "sleep_routine": "disrupted, cant lie comfortably", "physical_activity": "sedentary, desk job", "last_meal_options": ["dinner last night", "lunch today"], "contributing_factors": ["sedentary desk job, prolonged sitting"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["warm sitz baths"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": ["tried warm sitz baths for relief"]}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_epididymitis_01",
+    "condition_family": "genitourinary infection",
+    "department": "surgery",
+    "esi_levels": [3, 4],
+    "age_range": [20, 55],
+    "sex": "male",
+    "probable_condition": "acute epididymitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Gradual-onset unilateral scrotal pain and swelling with dysuria and a positive Prehn's sign favors epididymitis over the sudden onset of torsion.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "gradually worsening pain and swelling on one side of the scrotum",
+    "pain_location": "scrotum, one side",
+    "pain_patterns": ["worsening"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "one side of my scrotum has been getting more painful and swollen for {duration}",
+      "gradual scrotal pain and swelling, {duration}, burns when I pee"
+    ],
+    "hpi_templates": [
+      "Patient reports gradually worsening unilateral scrotal pain and swelling over {duration}, with {urinary_symptom}. Pain improves somewhat with elevation of the scrotum.",
+      "Progressive one-sided testicular pain for {duration} associated with {urinary_symptom}. No sudden onset, no nausea or vomiting."
+    ],
+    "slots": {
+      "urinary_symptom": ["burning with urination", "increased urinary frequency", "mild urethral discharge"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 100],
+      "systolic_bp": [114, 136],
+      "diastolic_bp": [72, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [37.2, 38.0],
+      "spo2": [97, 100],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["scrotal support/elevation"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": ["tried scrotal support for relief, which helped somewhat"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_bronchiolitis_rsv_01",
+    "condition_family": "pediatric respiratory infection",
+    "department": "pediatrics",
+    "esi_levels": [2, 3],
+    "age_range": [0, 2],
+    "probable_condition": "bronchiolitis (RSV)",
+    "contributing_factors": [],
+    "red_flags": ["nasal flaring and grunting in an infant"],
+    "rationale": "An infant with a preceding cold, wheeze, and increased work of breathing after exposure to a sibling with a cold is characteristic of viral bronchiolitis, commonly RSV.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "wheezy, working hard to breathe, feeding poorly",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "baby is wheezy and breathing fast for {duration}",
+      "infant working hard to breathe and not feeding well, {duration}"
+    ],
+    "hpi_templates": [
+      "Infant with {duration} of worsening cough, wheeze, and increased work of breathing, following {exposure_history}. Feeding has decreased.",
+      "Parents report {duration} of noisy, fast breathing and poor feeding in the infant, after {exposure_history}. No high fever."
+    ],
+    "slots": {
+      "exposure_history": ["an older sibling with a cold at home", "exposure to other children at daycare with colds"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [140, 175],
+      "systolic_bp": [80, 95],
+      "diastolic_bp": [50, 62],
+      "respiratory_rate": [50, 60],
+      "temperature_c": [37.0, 38.0],
+      "spo2": [90, 95],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["older sibling at home with a cold, likely source of exposure"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "breast/bottle feeding, reduced intake recently", "sleep_routine": "disrupted by coughing", "physical_activity": "normal for age", "last_meal_options": ["partial feed a couple hours ago", "refused last feed"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["saline nasal drops", "nasal suctioning"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried saline nasal drops and suctioning at home"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_hand_foot_mouth_01",
+    "condition_family": "pediatric viral exanthem",
+    "department": "pediatrics",
+    "esi_levels": [4, 5],
+    "age_range": [1, 6],
+    "probable_condition": "hand-foot-mouth disease",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Fever with painful mouth sores and a rash on the hands and feet in a young child with daycare exposure is characteristic of hand-foot-mouth disease.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "mouth sores, fever, and small spots on the hands and feet",
+    "pain_location": "mouth",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["mild, on and off", "low-grade for two days"],
+    "chief_complaint_templates": [
+      "child has mouth sores, fever and spots on hands and feet, {duration}",
+      "fever with a rash on hands and feet, wont eat because of mouth pain, {duration}"
+    ],
+    "hpi_templates": [
+      "Child with {duration} of fever, painful mouth ulcers, and a vesicular rash on the hands and feet, following {exposure_history}. Reduced oral intake due to mouth pain.",
+      "{duration} of low-grade fever with mouth sores and small blisters on the hands and feet in a child, after {exposure_history}."
+    ],
+    "slots": {
+      "exposure_history": ["known cases of hand-foot-mouth disease at daycare", "several classmates with a similar rash and fever"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [100, 130],
+      "systolic_bp": [88, 104],
+      "diastolic_bp": [55, 68],
+      "respiratory_rate": [20, 28],
+      "temperature_c": [37.3, 38.3],
+      "spo2": [97, 100],
+      "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["known cases of hand-foot-mouth disease at daycare recently"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "reduced intake due to mouth pain", "sleep_routine": "disrupted by discomfort", "physical_activity": "reduced, tired", "last_meal_options": ["ate very little at last meal", "refused solid food, took some liquids"], "contributing_factors": ["reduced intake due to mouth pain"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["cold fluids to soothe the mouth"], "pharmacy_meds_taken": ["children's fever reducer"], "last_medication_taken": "fever reducer, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_serotonin_syndrome_01",
+    "condition_family": "medication toxicity",
+    "department": "resuscitation",
+    "esi_levels": [1, 2],
+    "age_range": [20, 60],
+    "probable_condition": "serotonin syndrome",
+    "contributing_factors": [],
+    "red_flags": ["confusion with muscle rigidity and high fever", "tremor and clonus after starting new medication"],
+    "rationale": "Agitation, tremor, hyperreflexia, and fever shortly after starting or combining serotonergic medications indicates serotonin syndrome, a medication-induced emergency.",
+    "duration_options": ["2 hours ago", "since this morning", "3 hours ago"],
+    "exact_problem": "agitated and confused with shaking and a racing heart after starting new medication",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["high, developed suddenly"],
+    "chief_complaint_templates": [
+      "agitated, shaking, and confused {duration} after a medication change",
+      "restless and twitching with a fast heartbeat, {duration}, recently started new medication"
+    ],
+    "hpi_templates": [
+      "Patient reports agitation, tremor, and confusion beginning {duration}, after {medication_history}. Family notes muscle twitching and sweating.",
+      "Acute onset of restlessness, shivering, and rapid heartbeat {duration}, following {medication_history}. Exam notable for tremor and overactive reflexes."
+    ],
+    "slots": {
+      "medication_history": ["recently starting a new antidepressant", "combining an antidepressant with an over-the-counter cough medicine", "increasing the dose of an antidepressant a few days ago"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [112, 145],
+      "systolic_bp": [140, 175],
+      "diastolic_bp": [90, 110],
+      "respiratory_rate": [20, 26],
+      "temperature_c": [38.5, 40.0],
+      "spo2": [94, 98],
+      "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"medical_history": ["depression, on antidepressant medication"], "medications": ["antidepressant medication, recently changed"], "family_history": [], "contributing_factors": ["recently changed antidepressant medication regimen"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "disrupted, agitated", "physical_activity": "reduced", "last_meal_options": ["breakfast this morning", "unknown, family unsure"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": ["over-the-counter cough medicine"], "last_medication_taken": "antidepressant medication, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
