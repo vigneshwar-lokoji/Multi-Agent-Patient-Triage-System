@@ -1,0 +1,758 @@
+[
+  {
+    "blueprint_id": "peds_chickenpox_01",
+    "condition_family": "pediatric viral exanthem",
+    "department": "pediatrics",
+    "esi_levels": [4, 5],
+    "age_range": [1, 10],
+    "probable_condition": "chickenpox (varicella)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "An itchy, blistering rash appearing in crops at different stages, with fever, in an unvaccinated child with known exposure, is characteristic of chickenpox.",
+    "duration_options": ["1 day", "2 days", "since this morning"],
+    "exact_problem": "itchy blistering rash all over the body with fever",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": ["mild, low-grade", "low-grade for a day"],
+    "chief_complaint_templates": [
+      "itchy spots and blisters all over, {duration}, and a fever",
+      "child broke out in an itchy rash with fever, {duration}"
+    ],
+    "hpi_templates": [
+      "Child presents with {duration} of an itchy vesicular rash appearing in crops at different stages, with low-grade fever, following {exposure_history}.",
+      "{duration} of fever and a spreading itchy blistering rash starting on the trunk, after {exposure_history}."
+    ],
+    "slots": {
+      "exposure_history": ["known exposure to a classmate with chickenpox two weeks ago", "an unvaccinated sibling recently diagnosed with chickenpox"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [100, 128],
+      "systolic_bp": [88, 104],
+      "diastolic_bp": [54, 66],
+      "respiratory_rate": [18, 26],
+      "temperature_c": [37.3, 38.2],
+      "spo2": [97, 100],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["known exposure to a classmate with chickenpox two weeks ago"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "slightly reduced due to feeling unwell", "sleep_routine": "disrupted by itching", "physical_activity": "reduced, tired", "last_meal_options": ["ate less than usual", "light snack earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["calamine lotion", "oatmeal bath"], "pharmacy_meds_taken": ["children's fever reducer"], "last_medication_taken": "fever reducer, a few hours ago", "contributing_factors": ["tried calamine lotion and an oatmeal bath for the itching"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_epiglottitis_01",
+    "condition_family": "pediatric airway emergency",
+    "department": "pediatrics",
+    "esi_levels": [1, 2],
+    "age_range": [2, 7],
+    "probable_condition": "epiglottitis",
+    "contributing_factors": [],
+    "red_flags": ["drooling with muffled voice and tripod positioning", "sudden high fever with difficulty swallowing and stridor"],
+    "rationale": "Rapid onset of high fever, drooling, muffled voice, and a preference for sitting forward (tripod position) in an under-vaccinated child indicates epiglottitis, an airway emergency.",
+    "duration_options": ["a few hours ago", "since this afternoon", "2 hours ago"],
+    "exact_problem": "high fever, drooling, muffled voice, sitting forward and leaning to breathe",
+    "pain_location": "throat",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["high, developed suddenly"],
+    "chief_complaint_templates": [
+      "sudden high fever and drooling, wont lie down, {duration}",
+      "child cant swallow, drooling and voice sounds muffled, {duration}"
+    ],
+    "hpi_templates": [
+      "Child with {duration} of rapidly progressive high fever, drooling, and muffled voice, sitting forward and leaning on hands to breathe, with {vaccination_history}.",
+      "Sudden onset sore throat, high fever, and refusal to lie flat {duration}, with audible stridor, in a child with {vaccination_history}."
+    ],
+    "slots": {
+      "vaccination_history": ["vaccinations not fully up to date", "an incomplete vaccination schedule"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [130, 165],
+      "systolic_bp": [85, 100],
+      "diastolic_bp": [52, 64],
+      "respiratory_rate": [32, 44],
+      "temperature_c": [39.0, 40.2],
+      "spo2": [88, 94],
+      "pain_score": [6, 9]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["vaccinations not fully up to date"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "refusing all food and drink", "sleep_routine": "unable to lie down comfortably", "physical_activity": "sitting forward, unwilling to move", "last_meal_options": ["refused last meal entirely", "refused water"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_foreign_body_airway_01",
+    "condition_family": "pediatric airway emergency",
+    "department": "pediatrics",
+    "esi_levels": [1],
+    "age_range": [1, 4],
+    "probable_condition": "foreign body airway obstruction",
+    "contributing_factors": [],
+    "red_flags": ["sudden choking while eating small food", "witnessed choking with inability to cry or cough"],
+    "rationale": "Sudden onset of choking, coughing, and difficulty breathing while eating small hard food, witnessed by a caregiver, indicates foreign body airway obstruction.",
+    "duration_options": ["just now", "5 minutes ago", "10 minutes ago"],
+    "exact_problem": "started choking suddenly while eating, now struggling to breathe",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "child suddenly started choking while eating, {duration}",
+      "was eating and suddenly couldnt breathe right, {duration}"
+    ],
+    "hpi_templates": [
+      "Child witnessed to suddenly choke {duration} while eating {food_item}, with subsequent coughing and difficulty breathing.",
+      "Sudden onset choking and gagging {duration} during a meal involving {food_item}, caregiver performed back blows with partial relief."
+    ],
+    "slots": {
+      "food_item": ["a whole grape", "a piece of hard candy", "a small nut"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [125, 160],
+      "systolic_bp": [82, 98],
+      "diastolic_bp": [50, 62],
+      "respiratory_rate": [30, 42],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [85, 92],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "eating small hard foods not yet age-appropriate", "sleep_routine": "regular", "physical_activity": "normal for age", "last_meal_options": ["a whole grape given as a snack", "hard candy given a few minutes ago"], "contributing_factors": ["eating small hard foods not yet age-appropriate for choking risk"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["back blows performed by caregiver"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["caregiver performed back blows with partial relief"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_nursemaids_elbow_01",
+    "condition_family": "pediatric orthopedic",
+    "department": "pediatrics",
+    "esi_levels": [4, 5],
+    "age_range": [1, 4],
+    "probable_condition": "radial head subluxation (nursemaid's elbow)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A young child refusing to use one arm, holding it slightly bent at the side, after being pulled up by the hand, is classic for radial head subluxation.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "since this afternoon"],
+    "exact_problem": "wont use one arm, holding it still at the side",
+    "pain_location": "elbow",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "wont move one arm since {duration}, after being pulled up by the hand",
+      "arm just hangs limp, {duration}, holds it against the body"
+    ],
+    "hpi_templates": [
+      "Child refuses to use one arm {duration}, holding it slightly flexed against the body, after being {pull_mechanism}. No swelling or deformity noted.",
+      "Sudden refusal to move one arm {duration} following {pull_mechanism}. Child otherwise well and not distressed unless the arm is touched."
+    ],
+    "slots": {
+      "pull_mechanism": ["pulled up by the hand to avoid a fall", "swung by the arms during play", "yanked by the hand while crossing the street"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [98, 126],
+      "systolic_bp": [86, 102],
+      "diastolic_bp": [54, 66],
+      "respiratory_rate": [18, 26],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "normal for age, active play", "last_meal_options": ["lunch earlier", "a snack this afternoon"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "had a similar episode before that resolved with a doctor's maneuver"]
+  },
+  {
+    "blueprint_id": "surg_necrotizing_fasciitis_01",
+    "condition_family": "severe soft tissue infection",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [40, 75],
+    "probable_condition": "necrotizing fasciitis",
+    "contributing_factors": [],
+    "red_flags": ["pain out of proportion to exam findings", "rapidly spreading skin discoloration with severe pain"],
+    "rationale": "Rapidly spreading skin redness with severe pain out of proportion to visible findings, skin discoloration, and systemic illness in a diabetic patient suggests necrotizing fasciitis, a surgical emergency.",
+    "duration_options": ["since yesterday", "1 day ago", "since this morning"],
+    "exact_problem": "rapidly spreading painful skin redness with severe pain, feeling very unwell",
+    "pain_location": "leg, spreading",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["high, developed rapidly"],
+    "chief_complaint_templates": [
+      "leg redness spreading fast and pain is unbearable, {duration}",
+      "skin is turning dark and pain is way worse than it looks, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports rapidly spreading skin redness and severe pain, out of proportion to exam, {duration}, with known {risk_history}. Now feels systemically unwell with fever.",
+      "Progressive skin discoloration and excruciating pain over {duration} in a patient with {risk_history}, associated with high fever and confusion."
+    ],
+    "slots": {
+      "risk_history": ["poorly controlled diabetes", "a minor skin scrape a few days ago that seemed to worsen quickly"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [115, 145],
+      "systolic_bp": [85, 105],
+      "diastolic_bp": [50, 66],
+      "respiratory_rate": [22, 30],
+      "temperature_c": [38.8, 40.0],
+      "spo2": [92, 97],
+      "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["poorly controlled diabetes"], "medications": [], "family_history": [], "contributing_factors": ["poorly controlled diabetes, a major risk factor for this rapidly spreading infection"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "disrupted by pain", "physical_activity": "reduced", "last_meal_options": ["breakfast this morning", "unable to eat, feeling too unwell"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["antiseptic cream on the area"], "pharmacy_meds_taken": ["over-the-counter pain reliever, not helping"], "last_medication_taken": "pain reliever, a couple hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_mesenteric_ischemia_01",
+    "condition_family": "vascular abdominal emergency",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [65, 88],
+    "probable_condition": "acute mesenteric ischemia",
+    "contributing_factors": [],
+    "red_flags": ["severe abdominal pain out of proportion to exam"],
+    "rationale": "Sudden severe abdominal pain out of proportion to a relatively benign exam, in an elderly patient with atrial fibrillation, suggests acute mesenteric ischemia from embolic occlusion.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this morning"],
+    "exact_problem": "sudden severe abdominal pain, much worse than the exam suggests",
+    "pain_location": "abdomen, diffuse",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden terrible belly pain, {duration}, feels much worse than it looks",
+      "severe abdominal pain out of nowhere, {duration}, also feel nauseous"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden severe, diffuse abdominal pain {duration}, out of proportion to physical exam, with known history of {heart_history}. Associated nausea and one episode of loose stool.",
+      "Acute severe abdominal pain {duration} in a patient with {heart_history}, with pain disproportionate to a soft, only mildly tender abdomen on exam."
+    ],
+    "slots": {
+      "heart_history": ["atrial fibrillation, not always compliant with blood thinners", "an irregular heartbeat known for several years"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [110, 138],
+      "systolic_bp": [95, 118],
+      "diastolic_bp": [58, 76],
+      "respiratory_rate": [20, 26],
+      "temperature_c": [37.0, 37.8],
+      "spo2": [94, 98],
+      "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["atrial fibrillation"], "medications": ["blood thinner, not always compliant"], "family_history": [], "contributing_factors": ["atrial fibrillation with inconsistent blood thinner compliance, risk for embolic events"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_ludwigs_angina_01",
+    "condition_family": "deep neck infection",
+    "department": "surgery",
+    "esi_levels": [1, 2],
+    "age_range": [25, 60],
+    "probable_condition": "Ludwig's angina",
+    "contributing_factors": [],
+    "red_flags": ["rapidly swelling floor of mouth with difficulty breathing"],
+    "rationale": "Rapidly progressive swelling of the floor of the mouth and neck following a dental infection, with drooling and difficulty swallowing, indicates Ludwig's angina, an airway-threatening deep neck infection.",
+    "duration_options": ["since yesterday", "1 day ago", "2 days ago"],
+    "exact_problem": "swelling under the jaw and floor of the mouth, difficulty swallowing and breathing",
+    "pain_location": "floor of the mouth and neck",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["high, developed over a day"],
+    "chief_complaint_templates": [
+      "swelling under my jaw is spreading fast, {duration}, hard to swallow",
+      "neck and mouth swelling getting worse, {duration}, trouble breathing"
+    ],
+    "hpi_templates": [
+      "Patient reports rapidly progressive swelling of the floor of the mouth and submandibular area {duration}, following {dental_history}, with drooling and difficulty swallowing.",
+      "Worsening neck swelling and difficulty breathing {duration} after {dental_history}. Tongue feels pushed up, voice sounds muffled."
+    ],
+    "slots": {
+      "dental_history": ["an untreated dental abscess for the past week", "a bad tooth infection that was never treated"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [112, 140],
+      "systolic_bp": [100, 128],
+      "diastolic_bp": [64, 82],
+      "respiratory_rate": [24, 32],
+      "temperature_c": [38.6, 39.8],
+      "spo2": [90, 95],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "recent_infections": ["an untreated dental abscess for the past week"], "contributing_factors": ["an untreated dental abscess for the past week, the likely source of this spreading infection"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "unable to eat due to swelling and pain", "sleep_routine": "disrupted, cant lie flat comfortably", "physical_activity": "reduced", "last_meal_options": ["unable to eat solid food for a day", "only managed sips of water"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["warm salt water rinse"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_meniere_disease_01",
+    "condition_family": "peripheral vestibular",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [35, 65],
+    "probable_condition": "Meniere's disease",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Recurrent episodes of vertigo with fluctuating hearing loss, tinnitus, and a sensation of ear fullness, lasting hours, is characteristic of Meniere's disease.",
+    "duration_options": ["3 hours", "4 hours", "since this morning"],
+    "exact_problem": "spinning vertigo with ringing in one ear and a feeling of fullness",
+    "pain_location": null,
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "room spinning with ringing in my ear, {duration}",
+      "vertigo attack with my ear feeling full and ringing, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports a {duration} episode of vertigo with fluctuating hearing loss, tinnitus, and fullness in one ear, similar to {prior_episode_history}.",
+      "Recurrent vertigo attack lasting {duration}, with one-sided tinnitus and ear fullness, occurring in the context of {prior_episode_history}."
+    ],
+    "slots": {
+      "prior_episode_history": ["several similar episodes over the past year", "a pattern of these attacks roughly once a month"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [76, 98],
+      "systolic_bp": [114, 136],
+      "diastolic_bp": [72, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["recurrent vertigo episodes"], "medications": [], "family_history": [], "contributing_factors": ["recurrent vertigo episodes over the past year in a similar pattern"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "reduced during attacks", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["lying still"], "pharmacy_meds_taken": ["over-the-counter motion sickness tablet"], "last_medication_taken": "motion sickness tablet, earlier today", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [1, 2, 3],
+    "last_treated_options": [null, "seen before for similar vertigo episodes"]
+  },
+  {
+    "blueprint_id": "neuro_wernicke_encephalopathy_01",
+    "condition_family": "nutritional/toxic-metabolic",
+    "department": "neurology",
+    "esi_levels": [2, 3],
+    "age_range": [35, 65],
+    "probable_condition": "Wernicke's encephalopathy",
+    "contributing_factors": [],
+    "red_flags": ["confusion with unsteady gait and abnormal eye movements"],
+    "rationale": "Confusion, unsteady gait, and abnormal eye movements in a patient with a long history of heavy alcohol use and poor nutrition points to thiamine-deficiency Wernicke's encephalopathy.",
+    "duration_options": ["2 days", "3 days", "since yesterday"],
+    "exact_problem": "confused, unsteady on feet, and eyes moving strangely",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "family says hes been confused and unsteady for {duration}",
+      "cant walk straight and seems confused, {duration}, eyes look off"
+    ],
+    "hpi_templates": [
+      "Patient brought in by family with {duration} of confusion, unsteady gait, and abnormal eye movements, with known {alcohol_history} and poor recent oral intake.",
+      "Family reports {duration} of worsening confusion and difficulty walking straight, in the setting of {alcohol_history} and very little food intake recently."
+    ],
+    "slots": {
+      "alcohol_history": ["long-term heavy alcohol use", "years of heavy drinking with poor diet"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [88, 112],
+      "systolic_bp": [100, 124],
+      "diastolic_bp": [62, 80],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [36.4, 37.2],
+      "spo2": [95, 99],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["long-term heavy alcohol use"], "medications": [], "family_history": [], "contributing_factors": ["long-term heavy alcohol use with poor nutritional intake"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "very poor, minimal food intake for days", "recent_diet_change": "barely eating for the past several days", "sleep_routine": "irregular", "physical_activity": "reduced, unsteady", "last_meal_options": ["barely ate anything in days", "mostly drinking, little food"], "contributing_factors": ["barely eating for the past several days, leading to severe nutritional deficiency"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_acute_sinusitis_01",
+    "condition_family": "respiratory infection",
+    "department": "general_medicine",
+    "esi_levels": [4, 5],
+    "age_range": [20, 60],
+    "probable_condition": "acute bacterial sinusitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Facial pain and pressure with thick nasal discharge persisting beyond 10 days after a cold, worsening rather than improving, suggests acute bacterial sinusitis.",
+    "duration_options": ["10 days", "12 days", "2 weeks"],
+    "exact_problem": "facial pain and pressure with thick nasal discharge, worse than a normal cold",
+    "pain_location": "face, around the sinuses",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "face pain and thick nasal discharge for {duration}, not getting better",
+      "sinus pressure and pain for {duration}, started as a cold but got worse"
+    ],
+    "hpi_templates": [
+      "Patient reports facial pain and pressure with thick, discolored nasal discharge for {duration}, beginning as {cold_history} that worsened rather than improved after the first week.",
+      "Persistent sinus pain and congestion for {duration}, following {cold_history}, with a 'double worsening' pattern noted."
+    ],
+    "slots": {
+      "cold_history": ["a common cold that seemed to be improving then got worse again", "a viral upper respiratory infection two weeks ago"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [70, 94],
+      "systolic_bp": [112, 132],
+      "diastolic_bp": [70, 84],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.8, 37.6],
+      "spo2": [97, 100],
+      "pain_score": [3, 5]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by facial pressure", "physical_activity": "reduced", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["steam inhalation", "saline nasal rinse"], "pharmacy_meds_taken": ["over-the-counter decongestant"], "last_medication_taken": "decongestant, this morning", "contributing_factors": ["tried steam inhalation and saline rinse with only brief relief"]}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "gm_bacterial_conjunctivitis_01",
+    "condition_family": "eye infection",
+    "department": "general_medicine",
+    "esi_levels": [5],
+    "age_range": [5, 60],
+    "probable_condition": "bacterial conjunctivitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Redness of one or both eyes with thick, yellow discharge and eyelids stuck together on waking, without significant pain or vision change, is characteristic of bacterial conjunctivitis.",
+    "duration_options": ["2 days", "1 day", "3 days"],
+    "exact_problem": "red eye with thick yellow discharge, eyelids stuck together in the morning",
+    "pain_location": "eye, mild irritation",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "eye is red and gunky for {duration}, stuck shut this morning",
+      "red eye with yellow discharge, {duration}, no real pain"
+    ],
+    "hpi_templates": [
+      "Patient reports redness and thick yellow discharge from one eye for {duration}, with eyelids crusted shut on waking, following {exposure_history}. No vision changes or significant pain.",
+      "Eye redness and discharge for {duration}, spreading to the other eye, after {exposure_history}. Mild irritation only."
+    ],
+    "slots": {
+      "exposure_history": ["close contact with a family member who had a similar eye infection", "sharing a towel with someone who had pink eye"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [66, 90],
+      "systolic_bp": [108, 128],
+      "diastolic_bp": [68, 82],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.0],
+      "spo2": [98, 100],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["recent close contact with a family member who had a similar eye infection"], "medications": [], "family_history": [], "contributing_factors": ["close contact with a family member who had a similar eye infection"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["warm compress", "wiping the eye with a clean cloth"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried a warm compress for relief"]}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_preterm_labor_01",
+    "condition_family": "obstetric",
+    "department": "obgyn",
+    "esi_levels": [2, 3],
+    "age_range": [18, 38],
+    "sex": "female",
+    "probable_condition": "preterm labor",
+    "contributing_factors": [],
+    "red_flags": ["regular contractions before 37 weeks"],
+    "rationale": "Regular, painful contractions with lower back pain and pelvic pressure before 37 weeks gestation indicates preterm labor requiring urgent evaluation.",
+    "duration_options": ["2 hours", "3 hours", "since this afternoon"],
+    "exact_problem": "regular painful contractions and pelvic pressure, pregnancy not yet full term",
+    "pain_location": "lower abdomen and back",
+    "pain_patterns": ["intermittent", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "having regular contractions, {duration}, im only {gest_age} weeks",
+      "belly tightening every few minutes for {duration}, {gest_age} weeks pregnant"
+    ],
+    "hpi_templates": [
+      "Patient at approximately {gest_age} weeks gestation reports regular, painful contractions for {duration}, with lower back pain and pelvic pressure, associated with {risk_context}.",
+      "{duration} of regular uterine tightening and cramping in a pregnancy at {gest_age} weeks, with {risk_context}."
+    ],
+    "slots": {
+      "gest_age": ["30", "32", "34"],
+      "risk_context": ["a busy work schedule with a lot of standing", "a recent bout of a urinary infection"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [92, 116],
+      "systolic_bp": [104, 126],
+      "diastolic_bp": [64, 80],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [36.7, 37.3],
+      "spo2": [96, 99],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": ["pregnancy, currently preterm"], "medications": [], "family_history": [], "recent_infections": ["a recent bout of a urinary infection"], "contributing_factors": ["a recent bout of a urinary infection, a known trigger for preterm labor"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by contractions", "physical_activity": "a busy work schedule with a lot of standing", "last_meal_options": ["dinner earlier", "lunch today"], "contributing_factors": ["a busy work schedule with a lot of standing recently"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["lying down on the left side", "drinking water"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried lying down and drinking water without relief of the contractions"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "obgyn_mastitis_01",
+    "condition_family": "postpartum infection",
+    "department": "obgyn",
+    "esi_levels": [4],
+    "age_range": [20, 40],
+    "sex": "female",
+    "probable_condition": "mastitis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A red, hot, tender area of one breast with fever in a breastfeeding mother, often following a missed feed or cracked nipple, is characteristic of mastitis.",
+    "duration_options": ["1 day", "2 days", "since this morning"],
+    "exact_problem": "red, hot, painful area on one breast with fever, currently breastfeeding",
+    "pain_location": "breast, one side",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": ["mild, developed suddenly", "low-grade for a day"],
+    "chief_complaint_templates": [
+      "breast is red, hot and painful, {duration}, and I have a fever, im breastfeeding",
+      "one breast really hurts and feels hot, {duration}, feverish, still nursing"
+    ],
+    "hpi_templates": [
+      "Breastfeeding patient reports a red, hot, tender area on one breast for {duration}, with fever and chills, following {feeding_history}.",
+      "{duration} of localized breast redness and pain with fever in a nursing mother, after {feeding_history}."
+    ],
+    "slots": {
+      "feeding_history": ["a missed feeding session due to a busy day", "a cracked, sore nipple from breastfeeding"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [84, 108],
+      "systolic_bp": [108, 128],
+      "diastolic_bp": [68, 82],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [37.8, 38.8],
+      "spo2": [97, 100],
+      "pain_score": [5, 7]
+    },
+    "backgrounds": [
+      {"medical_history": ["recently postpartum, breastfeeding"], "medications": [], "family_history": [], "contributing_factors": ["a cracked, sore nipple from breastfeeding, a common entry point for this infection"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by newborn care and pain", "physical_activity": "reduced, caring for a newborn", "last_meal_options": ["breakfast this morning", "a quick snack between feeds"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["warm compress before nursing", "continuing to breastfeed on the affected side"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": ["tried warm compresses and continued nursing on the affected side"]}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_cocaine_chest_pain_01",
+    "condition_family": "toxicology / cardiac",
+    "department": "resuscitation",
+    "esi_levels": [2],
+    "age_range": [20, 45],
+    "probable_condition": "cocaine-induced chest pain",
+    "contributing_factors": [],
+    "red_flags": ["chest pain shortly after stimulant use"],
+    "rationale": "Chest pain, agitation, and markedly elevated heart rate and blood pressure shortly after cocaine use raises concern for cocaine-induced coronary vasospasm and acute coronary syndrome.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "45 minutes ago"],
+    "exact_problem": "chest pain and a racing heart after using cocaine",
+    "pain_location": "chest, central",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "chest pain and my heart is racing, {duration}, used cocaine before this started",
+      "sudden chest pain after using cocaine, {duration}, feel very anxious and sweaty"
+    ],
+    "hpi_templates": [
+      "Patient reports chest pain and palpitations beginning {duration}, shortly after {substance_context}. Associated agitation, sweating, and dilated pupils.",
+      "Acute chest pain and marked anxiety {duration} following {substance_context}, with significantly elevated heart rate and blood pressure on assessment."
+    ],
+    "slots": {
+      "substance_context": ["using cocaine at a party a short while ago", "cocaine use earlier this evening"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [125, 155],
+      "systolic_bp": [165, 195],
+      "diastolic_bp": [98, 118],
+      "respiratory_rate": [22, 28],
+      "temperature_c": [37.4, 38.4],
+      "spo2": [95, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "irregular", "physical_activity": "sedentary", "last_meal_options": ["hasnt eaten much tonight", "a few drinks earlier, no food"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["cocaine use earlier this evening, the likely trigger for the chest pain"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "card_acute_myocarditis_01",
+    "condition_family": "cardiac inflammatory",
+    "department": "cardiology",
+    "esi_levels": [2, 3],
+    "age_range": [18, 40],
+    "probable_condition": "acute myocarditis",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Chest pain and shortness of breath with a recent viral illness, in a young adult without cardiac risk factors, raises concern for acute myocarditis.",
+    "duration_options": ["2 days", "3 days", "since yesterday"],
+    "exact_problem": "chest pain and shortness of breath, feeling unusually tired, following a recent cold",
+    "pain_location": "chest, central",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "chest pain and short of breath for {duration}, had a cold last week",
+      "unusually tired with chest discomfort, {duration}, after being sick recently"
+    ],
+    "hpi_templates": [
+      "Young patient reports chest pain and exertional shortness of breath for {duration}, following {viral_history} about a week ago, with associated fatigue and occasional palpitations.",
+      "{duration} of chest discomfort and unusual fatigue in a patient with {viral_history}, no significant past cardiac history."
+    ],
+    "slots": {
+      "viral_history": ["a viral upper respiratory infection", "a flu-like illness with fever and body aches"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [96, 120],
+      "systolic_bp": [98, 120],
+      "diastolic_bp": [62, 78],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [37.0, 37.8],
+      "spo2": [94, 98],
+      "pain_score": [4, 6]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "recent_infections": ["a viral upper respiratory infection about a week ago"], "contributing_factors": ["a viral upper respiratory infection about a week ago, the likely trigger for this heart inflammation"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "disrupted by fatigue", "physical_activity": "reduced due to breathlessness on exertion", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": ["reduced physical activity due to unusual breathlessness on exertion"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["rest"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_postpartum_psychosis_01",
+    "condition_family": "postpartum psychiatric emergency",
+    "department": "psychiatry",
+    "esi_levels": [2, 3],
+    "age_range": [20, 40],
+    "sex": "female",
+    "probable_condition": "postpartum psychosis",
+    "contributing_factors": [],
+    "red_flags": ["new confusion or paranoia within weeks of childbirth"],
+    "rationale": "New onset confusion, paranoid thoughts, and severe insomnia within a few weeks of childbirth, without prior psychiatric history, indicates postpartum psychosis, requiring urgent psychiatric evaluation for safety.",
+    "duration_options": ["3 days", "since this week", "5 days"],
+    "exact_problem": "confused, suspicious of family, and not sleeping since having the baby",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "family says shes been acting strange and not sleeping, {duration}, had a baby recently",
+      "confused and paranoid, {duration}, hasnt slept since the delivery a few weeks ago"
+    ],
+    "hpi_templates": [
+      "Patient is {postpartum_timing} postpartum, brought in by family with {duration} of confusion, paranoid thinking, and near-total insomnia, with no prior psychiatric history.",
+      "Family reports {duration} of increasingly disorganized thinking and suspiciousness toward loved ones in a patient who is {postpartum_timing} postpartum."
+    ],
+    "slots": {
+      "postpartum_timing": ["two weeks", "three weeks", "about a month"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [90, 114],
+      "systolic_bp": [108, 132],
+      "diastolic_bp": [68, 84],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [96, 99],
+      "pain_score": [0, 1]
+    },
+    "backgrounds": [
+      {"medical_history": ["recently postpartum"], "medications": [], "family_history": ["family history of bipolar disorder"], "contributing_factors": ["family history of bipolar disorder, a known risk factor for postpartum psychosis"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular, minimal eating", "sleep_routine": "near-total insomnia since delivery", "physical_activity": "agitated, restless", "last_meal_options": ["family unsure when she last ate", "barely eating for days"], "contributing_factors": ["near-total insomnia since delivery, worsening the confusion"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
