@@ -1,0 +1,761 @@
+[
+  {
+    "blueprint_id": "gm_pulmonary_tb_01",
+    "condition_family": "chronic infection",
+    "department": "general_medicine",
+    "esi_levels": [3, 4],
+    "age_range": [25, 65],
+    "probable_condition": "pulmonary tuberculosis",
+    "contributing_factors": [],
+    "red_flags": ["coughing up blood"],
+    "rationale": "Chronic cough with blood-streaked sputum, night sweats, and unintentional weight loss over weeks in someone with close contact exposure points to pulmonary tuberculosis.",
+    "duration_options": ["3 weeks", "1 month", "6 weeks"],
+    "exact_problem": "cough for weeks, night sweats, and unintentional weight loss",
+    "pain_location": "chest, mild",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": ["low-grade, worse at night"],
+    "chief_complaint_templates": [
+      "cough for {duration}, losing weight, sweating at night",
+      "cant shake this cough for {duration}, also lost weight"
+    ],
+    "hpi_templates": [
+      "Patient reports a persistent cough for {duration}, with drenching night sweats and unintentional weight loss, following {exposure_history}. Occasional blood-streaked sputum.",
+      "Chronic cough for {duration} with associated night sweats and weight loss, after {exposure_history}. No improvement with usual cold remedies."
+    ],
+    "slots": {
+      "exposure_history": ["close contact with a family member who had a chronic cough", "living in crowded housing with a relative recently diagnosed with TB"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [82, 104],
+      "systolic_bp": [104, 128],
+      "diastolic_bp": [66, 84],
+      "respiratory_rate": [16, 22],
+      "temperature_c": [37.4, 38.2],
+      "spo2": [93, 98],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "recent_infections": [], "contributing_factors": ["close contact with a family member who had a chronic cough"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "poor, reduced appetite", "recent_diet_change": "eating much less recently", "sleep_routine": "disrupted by night sweats", "physical_activity": "reduced due to fatigue", "last_meal_options": ["ate very little at last meal", "skipped a meal, no appetite"], "contributing_factors": ["reduced appetite and eating much less recently, contributing to weight loss"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["honey and ginger tea"], "pharmacy_meds_taken": ["over-the-counter cough syrup, no relief"], "last_medication_taken": "cough syrup, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_rhabdomyolysis_01",
+    "condition_family": "muscle injury/toxic",
+    "department": "emergency",
+    "esi_levels": [2, 3],
+    "age_range": [18, 45],
+    "probable_condition": "exertional rhabdomyolysis",
+    "contributing_factors": [],
+    "red_flags": ["dark cola-colored urine"],
+    "rationale": "Severe muscle pain and swelling with dark cola-colored urine after an unusually intense workout indicates exertional rhabdomyolysis with muscle breakdown.",
+    "duration_options": ["since yesterday", "since this morning", "2 days ago"],
+    "exact_problem": "severe muscle soreness and swelling with dark urine after intense exercise",
+    "pain_location": "thighs and calves",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "muscles are extremely sore and swollen, urine looks dark, {duration}",
+      "worked out really hard {duration}, now my legs are swollen and urine is cola-colored"
+    ],
+    "hpi_templates": [
+      "Patient reports severe muscle pain and swelling {duration}, after {exertion_history}, with dark cola-colored urine noted since this morning.",
+      "Marked muscle soreness and weakness {duration} following {exertion_history}, associated with dark urine and difficulty walking."
+    ],
+    "slots": {
+      "exertion_history": ["an unusually intense new workout program", "a strenuous outdoor labor shift in the heat", "a first CrossFit-style class pushed to exhaustion"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [88, 112],
+      "systolic_bp": [108, 132],
+      "diastolic_bp": [68, 86],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [37.0, 37.8],
+      "spo2": [96, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "unusually intense new workout program", "last_meal_options": ["breakfast this morning", "a protein shake before the workout"], "contributing_factors": ["unusually intense new workout program pushed well past normal limits"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["drinking extra water", "resting the legs"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_heat_exhaustion_01",
+    "condition_family": "environmental",
+    "department": "emergency",
+    "esi_levels": [3, 4],
+    "age_range": [20, 65],
+    "probable_condition": "heat exhaustion",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Heavy sweating, weakness, dizziness, and nausea after prolonged heat exposure with normal mentation and only mildly elevated temperature is consistent with heat exhaustion, distinct from heat stroke.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this afternoon"],
+    "exact_problem": "heavy sweating, dizziness, and weakness after being out in the heat",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "felt dizzy and weak after being out in the heat, {duration}",
+      "sweating heavily and lightheaded, {duration}, was outside in the sun"
+    ],
+    "hpi_templates": [
+      "Patient reports weakness, heavy sweating, and dizziness {duration}, after {heat_exposure}. Mentation remains clear throughout.",
+      "Nausea and lightheadedness {duration} following {heat_exposure}, with profuse sweating. No confusion."
+    ],
+    "slots": {
+      "heat_exposure": ["several hours working outdoors in high heat without enough water breaks", "a long outdoor event in direct sun with little shade", "a hike in hot weather without enough water"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [96, 122],
+      "systolic_bp": [95, 115],
+      "diastolic_bp": [58, 74],
+      "respiratory_rate": [18, 24],
+      "temperature_c": [37.5, 38.8],
+      "spo2": [96, 99],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "several hours working outdoors in high heat without enough water breaks", "last_meal_options": ["light breakfast", "skipped lunch"], "contributing_factors": ["several hours working outdoors in high heat without enough water breaks"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["moved to shade and drank water"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["moved to shade and drank water with some improvement"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "em_spontaneous_pneumothorax_01",
+    "condition_family": "respiratory emergency",
+    "department": "emergency",
+    "esi_levels": [2, 3],
+    "age_range": [18, 40],
+    "probable_condition": "spontaneous pneumothorax",
+    "contributing_factors": [],
+    "red_flags": ["sudden sharp chest pain with shortness of breath in a tall thin patient"],
+    "rationale": "Sudden onset of sharp, one-sided chest pain and shortness of breath in a tall, thin young adult, without trauma, is characteristic of primary spontaneous pneumothorax.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "since this morning"],
+    "exact_problem": "sudden sharp one-sided chest pain and shortness of breath",
+    "pain_location": "one side of the chest",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden sharp chest pain and trouble breathing, {duration}",
+      "one side of my chest suddenly hurt and now im short of breath, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden onset sharp, pleuritic chest pain {duration}, with associated shortness of breath. No trauma. Build is {body_build}.",
+      "Acute unilateral chest pain and dyspnea {duration}, occurring at rest. Patient has a {body_build}, no significant past medical history."
+    ],
+    "slots": {
+      "body_build": ["tall, thin build", "lean athletic build"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [90, 115],
+      "systolic_bp": [108, 130],
+      "diastolic_bp": [68, 84],
+      "respiratory_rate": [20, 26],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [92, 97],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_ruptured_aaa_01",
+    "condition_family": "vascular emergency",
+    "department": "resuscitation",
+    "esi_levels": [1],
+    "age_range": [60, 85],
+    "sex": "male",
+    "probable_condition": "ruptured abdominal aortic aneurysm",
+    "contributing_factors": [],
+    "red_flags": ["sudden severe back or abdominal pain with a pulsatile abdominal mass", "collapse with severe abdominal pain"],
+    "rationale": "Sudden severe abdominal or back pain with hypotension and a pulsatile abdominal mass in an older patient with known vascular disease is classic for ruptured AAA, immediately life-threatening.",
+    "duration_options": ["20 minutes ago", "30 minutes ago", "just now"],
+    "exact_problem": "sudden severe tearing abdominal and back pain, then felt faint",
+    "pain_location": "abdomen and back",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden severe belly and back pain, feel like passing out, {duration}",
+      "collapsed with terrible abdominal pain, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden, severe tearing abdominal and back pain {duration}, with associated lightheadedness and near-syncope, known history of {vascular_history}.",
+      "Sudden collapse with severe abdominal pain {duration} in a patient with {vascular_history}; appears pale and diaphoretic."
+    ],
+    "slots": {
+      "vascular_history": ["a known abdominal aortic aneurysm being monitored", "long-standing high blood pressure and smoking history"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [112, 145],
+      "systolic_bp": [70, 95],
+      "diastolic_bp": [40, 58],
+      "respiratory_rate": [22, 30],
+      "temperature_c": [35.8, 36.6],
+      "spo2": [90, 96],
+      "pain_score": [9, 10]
+    },
+    "backgrounds": [
+      {"medical_history": ["known abdominal aortic aneurysm, being monitored"], "medications": [], "family_history": [], "contributing_factors": ["known abdominal aortic aneurysm being monitored, now ruptured"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "resus_acetaminophen_overdose_01",
+    "condition_family": "poisoning",
+    "department": "resuscitation",
+    "esi_levels": [2, 3],
+    "age_range": [16, 40],
+    "probable_condition": "acetaminophen overdose",
+    "contributing_factors": [],
+    "red_flags": ["large intentional acetaminophen ingestion"],
+    "rationale": "Reported large intentional ingestion of acetaminophen tablets, currently with nausea and vomiting but otherwise stable vitals, requires urgent workup for hepatotoxicity risk.",
+    "duration_options": ["1 hour ago", "2 hours ago", "3 hours ago"],
+    "exact_problem": "took a large number of pain reliever tablets on purpose, now nauseous and vomiting",
+    "pain_location": "upper abdomen, mild",
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "took a bunch of pain reliever pills {duration}, feeling sick now",
+      "swallowed a lot of tablets {duration}, nauseous and vomiting"
+    ],
+    "hpi_templates": [
+      "Patient reports ingesting a large quantity of acetaminophen tablets {duration}, during {stressor_context}. Now nauseous with several episodes of vomiting.",
+      "Intentional overdose of acetaminophen tablets {duration}, following {stressor_context}. Patient is alert, reports abdominal discomfort and nausea."
+    ],
+    "slots": {
+      "stressor_context": ["an argument with a partner", "a period of overwhelming stress and low mood", "a breakup"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [84, 108],
+      "systolic_bp": [108, 130],
+      "diastolic_bp": [68, 84],
+      "respiratory_rate": [14, 20],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [97, 100],
+      "pain_score": [2, 4]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "irregular", "sleep_routine": "disrupted, poor sleep recently", "physical_activity": "reduced", "last_meal_options": ["skipped last meal", "ate very little today"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": ["large quantity of acetaminophen tablets"], "last_medication_taken": "acetaminophen tablets, taken all at once", "contributing_factors": ["took a large quantity of acetaminophen tablets at once"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "card_digoxin_toxicity_01",
+    "condition_family": "medication toxicity",
+    "department": "cardiology",
+    "esi_levels": [2, 3],
+    "age_range": [65, 90],
+    "probable_condition": "digoxin toxicity",
+    "contributing_factors": [],
+    "red_flags": ["visual disturbances with irregular heartbeat on digoxin"],
+    "rationale": "Nausea, visual halos, and an irregular slow heartbeat in an elderly patient on digoxin, especially with reduced kidney function or a recent dose change, suggests digoxin toxicity.",
+    "duration_options": ["2 days", "3 days", "1 day"],
+    "exact_problem": "nauseous with visual halos around lights and an irregular slow heartbeat",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "feeling nauseous with strange vision and my heart feels irregular, {duration}",
+      "seeing halos around lights and heart feels off, {duration}, im on heart medication"
+    ],
+    "hpi_templates": [
+      "Patient on long-term digoxin reports nausea, visual disturbances with yellow-green halos, and palpitations for {duration}, associated with {aggravating_factor}.",
+      "Elderly patient taking digoxin for {heart_history} presents with {duration} of nausea, confusion, and an irregular slow pulse, after {aggravating_factor}."
+    ],
+    "slots": {
+      "aggravating_factor": ["reduced fluid intake and a recent bout of diarrhea", "a recent dose increase by the doctor"],
+      "heart_history": ["atrial fibrillation", "heart failure"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [42, 56],
+      "systolic_bp": [96, 120],
+      "diastolic_bp": [56, 74],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.4, 37.0],
+      "spo2": [94, 98],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": ["atrial fibrillation, on long-term digoxin"], "medications": ["digoxin"], "family_history": [], "contributing_factors": ["long-term digoxin use with a recent dose increase by the doctor"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["breakfast this morning", "dinner last night"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": [], "pharmacy_meds_taken": [], "last_medication_taken": "digoxin, this morning as usual", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_vestibular_neuritis_01",
+    "condition_family": "peripheral vestibular",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [25, 55],
+    "probable_condition": "vestibular neuritis (labyrinthitis)",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Continuous severe vertigo with nausea and vomiting lasting days, following a recent viral illness, without hearing loss or other neurological deficits, points to vestibular neuritis.",
+    "duration_options": ["2 days", "1 day", "3 days"],
+    "exact_problem": "constant spinning sensation with nausea and vomiting, worse with head movement",
+    "pain_location": null,
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "room keeps spinning constantly for {duration}, cant keep anything down",
+      "severe dizziness that wont stop, {duration}, vomiting"
+    ],
+    "hpi_templates": [
+      "Patient reports continuous severe vertigo for {duration}, worse with head movement, with associated nausea and vomiting, following {viral_history}. No hearing changes.",
+      "Persistent spinning vertigo for {duration} with nausea, unsteady gait, after {viral_history}. No tinnitus or hearing loss."
+    ],
+    "slots": {
+      "viral_history": ["a cold about a week ago", "a mild viral illness a few days before symptoms started"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 100],
+      "systolic_bp": [110, 132],
+      "diastolic_bp": [70, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "recent_infections": ["a cold about a week ago"], "contributing_factors": ["a cold about a week ago, likely triggering the vestibular nerve inflammation"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "reduced due to nausea", "sleep_routine": "disrupted by dizziness", "physical_activity": "unable to move much due to vertigo", "last_meal_options": ["ate very little, feels too nauseous", "skipped last meal"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["lying still in a dark room"], "pharmacy_meds_taken": ["over-the-counter motion sickness tablet"], "last_medication_taken": "motion sickness tablet, a few hours ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "neuro_trigeminal_neuralgia_01",
+    "condition_family": "cranial nerve pain",
+    "department": "neurology",
+    "esi_levels": [4],
+    "age_range": [45, 75],
+    "probable_condition": "trigeminal neuralgia",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Brief, electric shock-like facial pain triggered by chewing, talking, or touching the face, in an older adult, is characteristic of trigeminal neuralgia.",
+    "duration_options": ["for the past week", "for several days", "for two weeks"],
+    "exact_problem": "sudden electric shock-like pain on one side of the face, triggered by touch or chewing",
+    "pain_location": "one side of the face",
+    "pain_patterns": ["intermittent"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "sudden shock-like face pain, {duration}, triggered by touching my face",
+      "electric jolts of pain in my face when I chew or talk, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports brief, severe electric shock-like facial pain episodes {duration}, triggered by {pain_trigger}. Pain resolves quickly between episodes.",
+      "Recurrent sharp, stabbing facial pain {duration}, precipitated by {pain_trigger}. No facial weakness or numbness."
+    ],
+    "slots": {
+      "pain_trigger": ["chewing food and brushing teeth", "cold wind on the face and talking", "light touch while shaving or applying makeup"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [72, 96],
+      "systolic_bp": [116, 138],
+      "diastolic_bp": [74, 88],
+      "respiratory_rate": [12, 16],
+      "temperature_c": [36.6, 37.0],
+      "spo2": [97, 100],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "avoiding chewing on the affected side", "recent_diet_change": "switched to softer foods to avoid triggering pain", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["soft food, eaten carefully", "avoided eating much due to pain"], "contributing_factors": ["switched to softer foods to avoid triggering the facial pain"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["avoiding touching the face"], "pharmacy_meds_taken": ["over-the-counter pain reliever, minimal relief"], "last_medication_taken": "pain reliever, earlier today", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_colles_fracture_fall_01",
+    "condition_family": "trauma",
+    "department": "orthopedics",
+    "esi_levels": [4],
+    "age_range": [55, 85],
+    "sex": "female",
+    "probable_condition": "distal radius (Colles) fracture",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A fall onto an outstretched hand resulting in a deformed, swollen wrist ('dinner fork' deformity) in an older adult is characteristic of a distal radius fracture.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "this morning"],
+    "exact_problem": "wrist pain and visible deformity after falling on an outstretched hand",
+    "pain_location": "wrist",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "fell on my hand {duration}, wrist looks deformed and hurts badly",
+      "wrist is swollen and bent out of shape after a fall, {duration}"
+    ],
+    "hpi_templates": [
+      "Patient reports a fall onto an outstretched hand {duration}, with immediate wrist pain, swelling, and visible deformity, occurring during {fall_context}.",
+      "Wrist deformity and severe pain following a fall on the outstretched hand {duration}, during {fall_context}. Unable to move the wrist."
+    ],
+    "slots": {
+      "fall_context": ["a slip on a wet floor at home", "a trip over a rug", "a fall while walking the dog on an icy path"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 100],
+      "systolic_bp": [118, 140],
+      "diastolic_bp": [74, 88],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [96, 99],
+      "pain_score": [7, 9]
+    },
+    "backgrounds": [
+      {"medical_history": ["osteoporosis"], "medications": [], "family_history": [], "contributing_factors": ["known osteoporosis making the bone more prone to fracture from a low-impact fall"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular walking", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice pack on the wrist"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "ortho_achilles_rupture_01",
+    "condition_family": "tendon injury",
+    "department": "orthopedics",
+    "esi_levels": [4],
+    "age_range": [30, 55],
+    "sex": "male",
+    "probable_condition": "Achilles tendon rupture",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "A sudden pop and sharp pain in the back of the ankle during a push-off movement, with inability to rise onto the toes, is characteristic of an Achilles tendon rupture.",
+    "duration_options": ["30 minutes ago", "1 hour ago", "this afternoon"],
+    "exact_problem": "felt a pop in the back of the ankle and now cant push off or stand on toes",
+    "pain_location": "back of the ankle",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "heard a pop in my ankle {duration}, cant walk properly now",
+      "sudden sharp pain in the back of my ankle, {duration}, felt like being kicked"
+    ],
+    "hpi_templates": [
+      "Patient reports a sudden pop and sharp pain in the back of the ankle {duration}, during {activity_context}, with immediate difficulty walking and inability to push off.",
+      "Acute Achilles pain {duration} occurring during {activity_context}, described as feeling like being struck in the back of the leg."
+    ],
+    "slots": {
+      "activity_context": ["a recreational basketball game", "a sudden sprint during a tennis match", "an unaccustomed sprint at the start of a run"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [76, 98],
+      "systolic_bp": [116, 136],
+      "diastolic_bp": [72, 86],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "weekend recreational sports, not regularly conditioned", "last_meal_options": ["lunch earlier", "breakfast this morning"], "contributing_factors": ["weekend recreational sports without regular conditioning, prone to sudden tendon injury"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ice and elevation"], "pharmacy_meds_taken": ["over-the-counter pain reliever"], "last_medication_taken": "pain reliever, a short while ago", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "surg_acute_urinary_retention_01",
+    "condition_family": "genitourinary",
+    "department": "surgery",
+    "esi_levels": [3, 4],
+    "age_range": [60, 85],
+    "sex": "male",
+    "probable_condition": "acute urinary retention",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Inability to urinate for many hours with a distended, painful bladder in an older man with a history of prostate enlargement is classic for acute urinary retention.",
+    "duration_options": ["8 hours", "10 hours", "since this morning"],
+    "exact_problem": "unable to urinate for hours, lower belly is swollen and painful",
+    "pain_location": "lower abdomen, suprapubic",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "havent been able to pee for {duration}, belly is swollen and hurts",
+      "cant urinate at all, {duration}, lower belly feels like its going to burst"
+    ],
+    "hpi_templates": [
+      "Patient reports complete inability to urinate for {duration}, with increasing suprapubic pain and distension, known history of {prostate_history}.",
+      "Acute urinary retention for {duration} in a patient with {prostate_history}; bladder is palpably distended and tender."
+    ],
+    "slots": {
+      "prostate_history": ["an enlarged prostate followed by a urologist", "prostate enlargement, previously told he may eventually need treatment"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [82, 104],
+      "systolic_bp": [128, 152],
+      "diastolic_bp": [78, 94],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.2],
+      "spo2": [96, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["enlarged prostate"], "medications": [], "family_history": [], "contributing_factors": ["known enlarged prostate followed by a urologist"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "sedentary", "last_meal_options": ["dinner last night", "lunch today"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["trying to urinate in a warm shower"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": ["tried a warm shower to help urinate, without success"]}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "catheterized once before for a similar episode"]
+  },
+  {
+    "blueprint_id": "surg_priapism_01",
+    "condition_family": "genitourinary",
+    "department": "surgery",
+    "esi_levels": [3],
+    "age_range": [20, 50],
+    "sex": "male",
+    "probable_condition": "priapism",
+    "contributing_factors": [],
+    "red_flags": ["painful erection lasting several hours"],
+    "rationale": "A painful erection persisting for several hours, unrelated to sexual activity, in someone with sickle cell disease or on certain medications, is characteristic of priapism, a urologic emergency.",
+    "duration_options": ["4 hours", "5 hours", "6 hours"],
+    "exact_problem": "painful erection that has not gone down for hours",
+    "pain_location": "genital area",
+    "pain_patterns": ["constant", "worsening"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "erection wont go down and its very painful, {duration}",
+      "painful erection for {duration}, not related to any activity"
+    ],
+    "hpi_templates": [
+      "Patient reports a persistent, painful erection for {duration}, unrelated to sexual activity, with known history of {risk_factor}.",
+      "Prolonged painful erection lasting {duration} in a patient with {risk_factor}. No trauma."
+    ],
+    "slots": {
+      "risk_factor": ["sickle cell disease", "recently starting a new medication for erectile dysfunction", "a medication known to sometimes cause this side effect"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [78, 100],
+      "systolic_bp": [116, 138],
+      "diastolic_bp": [74, 88],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [96, 99],
+      "pain_score": [6, 8]
+    },
+    "backgrounds": [
+      {"medical_history": ["sickle cell disease"], "medications": [], "family_history": [], "contributing_factors": ["known sickle cell disease, a common trigger for priapism"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["dinner last night", "lunch today"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["cold compress", "urinating to try to relieve it"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0, 1],
+    "last_treated_options": [null, "had a similar episode treated before"]
+  },
+  {
+    "blueprint_id": "obgyn_hyperemesis_gravidarum_01",
+    "condition_family": "obstetric",
+    "department": "obgyn",
+    "esi_levels": [3, 4],
+    "age_range": [18, 38],
+    "sex": "female",
+    "probable_condition": "hyperemesis gravidarum",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Severe, persistent vomiting in early pregnancy leading to inability to keep down fluids and weight loss indicates hyperemesis gravidarum, beyond typical morning sickness.",
+    "duration_options": ["3 days", "1 week", "5 days"],
+    "exact_problem": "severe vomiting, unable to keep any food or fluids down",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "vomiting nonstop for {duration}, im about {gest_age} pregnant, cant keep anything down",
+      "severe nausea and vomiting, {duration}, {gest_age} weeks pregnant"
+    ],
+    "hpi_templates": [
+      "Patient at approximately {gest_age} weeks gestation reports severe, persistent vomiting for {duration}, unable to tolerate oral fluids, with associated weakness and reduced urination.",
+      "Intractable nausea and vomiting for {duration} in a pregnancy at {gest_age} weeks, with noticeable weight loss since symptoms began."
+    ],
+    "slots": {
+      "gest_age": ["8", "9", "10", "11"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [92, 116],
+      "systolic_bp": [96, 116],
+      "diastolic_bp": [58, 74],
+      "respiratory_rate": [14, 18],
+      "temperature_c": [36.6, 37.1],
+      "spo2": [97, 100],
+      "pain_score": [1, 3]
+    },
+    "backgrounds": [
+      {"medical_history": ["early pregnancy, confirmed"], "medications": [], "family_history": [], "contributing_factors": []}
+    ],
+    "lifestyles": [
+      {"diet_routine": "unable to tolerate most foods", "recent_diet_change": "cannot keep down food or fluids for days", "sleep_routine": "disrupted by nausea", "physical_activity": "reduced due to weakness", "last_meal_options": ["vomited last attempted meal", "unable to keep down water"], "contributing_factors": ["cannot keep down food or fluids for days, leading to dehydration"]}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["ginger tea", "small frequent sips of water"], "pharmacy_meds_taken": ["over-the-counter anti-nausea band, minimal relief"], "last_medication_taken": null, "contributing_factors": ["tried ginger tea and small sips of water with little relief"]}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "peds_pertussis_01",
+    "condition_family": "pediatric respiratory infection",
+    "department": "pediatrics",
+    "esi_levels": [3, 4],
+    "age_range": [0, 5],
+    "probable_condition": "pertussis (whooping cough)",
+    "contributing_factors": [],
+    "red_flags": ["turning blue during coughing fits in an infant"],
+    "rationale": "Paroxysmal coughing fits ending in a high-pitched inspiratory whoop, sometimes with vomiting, in an under-vaccinated child, is characteristic of pertussis.",
+    "duration_options": ["1 week", "10 days", "5 days"],
+    "exact_problem": "severe coughing fits that end in a whooping sound, sometimes vomits after coughing",
+    "pain_location": null,
+    "pain_patterns": [],
+    "fever_pattern_options": [null, "mild, low-grade"],
+    "chief_complaint_templates": [
+      "coughing fits with a whooping sound for {duration}",
+      "child coughs so hard it ends in a whoop and sometimes vomits, {duration}"
+    ],
+    "hpi_templates": [
+      "Child with {duration} of paroxysmal coughing spells ending in an inspiratory whoop, occasionally followed by post-tussive vomiting, with {vaccination_history}.",
+      "{duration} of severe coughing fits with a characteristic whoop in a child with {vaccination_history}. Worse at night."
+    ],
+    "slots": {
+      "vaccination_history": ["vaccinations not fully up to date", "delayed vaccination schedule due to a recent move"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [110, 140],
+      "systolic_bp": [90, 106],
+      "diastolic_bp": [56, 68],
+      "respiratory_rate": [26, 36],
+      "temperature_c": [37.0, 37.8],
+      "spo2": [94, 98],
+      "pain_score": [0, 2]
+    },
+    "backgrounds": [
+      {"medical_history": [], "medications": [], "family_history": [], "contributing_factors": ["vaccinations not fully up to date"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "reduced due to post-cough vomiting", "sleep_routine": "disrupted by coughing fits at night", "physical_activity": "normal for age between fits", "last_meal_options": ["vomited after last feed", "ate less than usual"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["honey for cough (over age 1)", "humidifier"], "pharmacy_meds_taken": [], "last_medication_taken": null, "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  },
+  {
+    "blueprint_id": "psych_acute_dystonic_reaction_01",
+    "condition_family": "medication side effect",
+    "department": "psychiatry",
+    "esi_levels": [3, 4],
+    "age_range": [18, 40],
+    "probable_condition": "acute dystonic reaction",
+    "contributing_factors": [],
+    "red_flags": [],
+    "rationale": "Sudden onset of involuntary muscle spasms of the neck and eyes shortly after starting or increasing an antipsychotic medication is characteristic of an acute dystonic reaction.",
+    "duration_options": ["1 hour ago", "2 hours ago", "since this morning"],
+    "exact_problem": "neck twisted to one side and eyes rolled up, cant control it",
+    "pain_location": "neck",
+    "pain_patterns": ["constant"],
+    "fever_pattern_options": [null],
+    "chief_complaint_templates": [
+      "my neck keeps twisting to one side and I cant stop it, {duration}",
+      "eyes rolled back and neck spasming, {duration}, started new medication recently"
+    ],
+    "hpi_templates": [
+      "Patient reports sudden onset of involuntary neck twisting and upward eye deviation {duration}, after {medication_history}. Fully alert and distressed but oriented.",
+      "Acute muscle spasms of the neck and face {duration}, following {medication_history}. No prior similar episodes."
+    ],
+    "slots": {
+      "medication_history": ["starting a new antipsychotic medication two days ago", "a recent increase in antipsychotic medication dose", "starting an anti-nausea medication with similar effects"]
+    },
+    "vitals_ranges": {
+      "heart_rate": [84, 106],
+      "systolic_bp": [118, 140],
+      "diastolic_bp": [76, 90],
+      "respiratory_rate": [16, 20],
+      "temperature_c": [36.7, 37.2],
+      "spo2": [97, 100],
+      "pain_score": [4, 6]
+    },
+    "backgrounds": [
+      {"medical_history": ["recently started antipsychotic medication"], "medications": ["antipsychotic medication, recently started"], "family_history": [], "contributing_factors": ["recently started antipsychotic medication two days ago"]}
+    ],
+    "lifestyles": [
+      {"diet_routine": "regular", "sleep_routine": "regular", "physical_activity": "regular", "last_meal_options": ["breakfast this morning", "lunch earlier"], "contributing_factors": []}
+    ],
+    "self_treatments": [
+      {"home_remedies_tried": ["trying to stretch the neck"], "pharmacy_meds_taken": [], "last_medication_taken": "antipsychotic medication, this morning", "contributing_factors": []}
+    ],
+    "prior_episodes_options": [0],
+    "last_treated_options": [null]
+  }
+]
